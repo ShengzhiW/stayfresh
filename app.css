@@ -360,3 +360,7 @@ h1 {
 .bg-danger {
     background-color: red;
 }
+
+.progress-bar {
+    color: black;
+}
