@@ -7,12 +7,6 @@ h1 {
     font-size: 28px;
 }
 
-.button, p, h2 {
-}
-
-.col {
-    text-align: center;
-}
 
 .back {
     margin-top: 2vw;
@@ -77,8 +71,34 @@ h1 {
     float: right;
 }
 
+.fridge-list-container {
+
+    width: 90%;
+    margin: 30px auto;
+
+    text-align: left;
+}
+
+.fridge-header-row, .fridge-item-row {
+    border-bottom: 2px solid grey;
+    height: 50px;
+}
+
+.fridge-item-row {
+    padding: 4px 0px;
+}
+
+.fridge-header-row, .fridge-header-col {
+    text-align: left;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
 
 
+/* ---- Add ingredients ---- */
 
 .page-header {
     text-align: center;
@@ -327,4 +347,16 @@ h1 {
 }
 
 .carousel-cards img{
+}
+
+.bg-success {
+    background-color: green;
+}
+
+.bg-warning {
+    background-color: yellow;
+}
+
+.bg-danger {
+    background-color: red;
 }
