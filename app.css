@@ -1,18 +1,13 @@
 .body {
     background: linear-gradient(rgb(183, 196, 240), E8E8E8);
-
-    
+    font-family: "Avenir", sans-serif;   
 }
 
 h1 {
-    font-size: 5vw;
-    font-family: "Avenir";
-
-    letter-spacing: 0.5vw;
+    font-size: 28px;
 }
 
 .button, p, h2 {
-    font-family: "Avenir";
 }
 
 .col {
@@ -22,7 +17,6 @@ h1 {
 .back {
     margin-top: 2vw;
     float: left;
-
     font-size: 5vw;
 }
 
@@ -30,13 +24,9 @@ h1 {
 
 .header-home {
     text-align: center;
-
     background: linear-gradient(#BED7F2, #76BBFF);
-    border-bottom: 2px solid rgb(60, 117, 173);
-
     box-sizing: border-box;
-    height: 10vw;
-
+    height: 50px;
 }
 
 .home-title {
@@ -63,12 +53,18 @@ h1 {
 
 #recipes-title, #my-fridge-title {
     float: left;
-
     font-size: 6vw;
     letter-spacing: 0.4vw;
 }
 
 .plus-button, .minus-button {
+    width: 30px;
+    height: 30px;
+    border:  0;
+    background-color: #19C7F1;
+    color:  white;
+    font-size: 20px;
+    line-height: 10px;
     box-sizing: border-box;
     border-radius: 100%;
 }
@@ -318,4 +314,17 @@ h1 {
 
     float: right;
     
+}
+
+.carousel-cards{
+    padding: 10px;
+}
+
+.carousel-cards .item{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+.carousel-cards img{
 }
