@@ -53,7 +53,10 @@ h1 {
 
 .plus-button, .minus-button {
     width: 30px;
+    max-width: 30px;
     height: 30px;
+    max-height: 30px;
+    overflow: hidden;
     border:  0;
     background-color: #19C7F1;
     color:  white;
