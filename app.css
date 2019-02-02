@@ -63,6 +63,7 @@ h1 {
     font-size: 20px;
     line-height: 30px;
     box-sizing: border-box;
+    border-radius: 100%;
 }
 
 .plus-button-home {
