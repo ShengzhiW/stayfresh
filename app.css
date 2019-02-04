@@ -353,15 +353,15 @@ h1 {
 }
 
 .bg-success {
-    background-color: green;
+    background: linear-gradient(rgb(0, 255, 0), rgb(0, 182, 0));
 }
 
 .bg-warning {
-    background-color: yellow;
+    background: linear-gradient(rgb(247, 247, 147), yellow);
 }
 
 .bg-danger {
-    background-color: red;
+    background: linear-gradient(rgb(255, 160, 160), red);
 }
 
 .progress-bar {
