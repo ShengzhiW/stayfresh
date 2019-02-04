@@ -9,13 +9,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 
-  <h1 id="rate-your-recipe">Rate Your Recipe</h1>
+  <div class="container top-containers">
+        <div class="row">
+            <h1 id="rate-your-recipe">Rate Your Recipe</h1>
+    </div>
 
   <h2 class="rate-recipe-title">Peanut Tofu</h2>
-<div class="container rate-recipe-container">
+
+<div class="container recipe-intro-container">
     <div class="row">
-      <div class="col col-xs-4"> 
-            Time: <p class="recipe-time">1 hr</p>
+      <div class="col col-xs-4">
+            Cooking Time: <p class="recipe-time">1 hr</p>
             <br>
             Serving size: <p class="serving-size">4</p>
       </div>
@@ -27,31 +31,29 @@
 
 <div class="container rate-img-container">
   <div class="row">
-    <div class="col col-xs-6">
+    <div class="col col-xs-6 rate-left">
         <img class="img-rate" src="images/rate-frown.png"/>
     </div>
-    <div class="col col-xs-6">
+    <div class="col col-xs-6 rate-right">
         <img class="img-rate" src="images/rate-smile.png"/>
       </div>
   </div>
 </div>
 
 
-<footer class="footer">
-    <div class="row">
-        <div class="col col-xs-6">
-            <a href="index.html">
-            <button class="discard confirmation-buttons">Discard</button>
-            </a>
-        </div>
-        <div class="col col-xs-6">
-            <a href="index.html">
-            <button class="save confirmation-buttons">Save</button>
-            </a>
-          </div>
-      </div>
-    
 
-    
-</footer>
+  <div class="row">
+      <div class="col col-xs-6 rate-left">
+          <a href="home.html">
+          <button class="discard confirmation-buttons">Discard</button>
+          </a>
+      </div>
+      <div class="col col-xs-6 rate-right">
+          <a href="home.html">
+          <button class="save confirmation-buttons">Save</button>
+          </a>
+        </div>
+    </div>
+
+
 </html>

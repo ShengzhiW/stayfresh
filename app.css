@@ -19,10 +19,12 @@ button {
     background: none;
 }
 
-.headers {
+.top-containers {
     border-bottom: 2px solid rgb(233, 233, 233));
 
     background: linear-gradient(rgb(245, 245, 245), rgb(228, 228, 228));
+
+    height: 58px;
 }
 
 /* --- Home ---- */
@@ -127,6 +129,8 @@ button {
 
 .done, .save {
     background: rgb(152, 201, 152);
+    width: 75px;
+    height: 30px;
 }
 
 .discard {
@@ -319,6 +323,7 @@ h2#recipe-info-header {
 
 .img-recipe-info {
     width: 90%;
+    padding-right: 10px;
 }
 
 .recipe-body-container {
@@ -359,6 +364,10 @@ h2#recipe-info-header {
     text-align: center;
 }
 
+#rate-your-recipe {
+    font-size: 18px;
+}
+
 .rate-recipe-title {
     padding-top: 10vw;
 }
@@ -370,11 +379,19 @@ h2#recipe-info-header {
 
 .rate-img-container {
     box-sizing: border-box;
-    padding-top: 10vw;
+    padding: 75px 0px;
 }
 
 .img-rate {
-    width: 25vw;
+    width: 50px;
+}
+
+.rate-left {
+    padding-left: 50px;
+}
+
+.rate-right {
+    padding-right: 50px;
 }
 
 /* ---- Edit Recipe ---- */
