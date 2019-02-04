@@ -4,7 +4,7 @@
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 
@@ -12,6 +12,11 @@ h1 {
     margin-top: 2vw;
     float: left;
     font-size: 5vw;
+}
+
+button {
+    border: none;
+    background: none;
 }
 
 /* --- Home ---- */
@@ -82,13 +87,18 @@ h1 {
     text-align: left;
 }
 
-.fridge-header-row, .fridge-item-row {
-    border-bottom: 2px solid grey;
-    height: 50px;
+.fridge-header-row {
+    height: 30px;
+    border-bottom: 2px solid rgb(233, 233, 233);
 }
 
 .fridge-item-row {
-    padding: 4px 0px;
+    border-bottom: 2px solid rgb(233, 233, 233);
+    height: 45px;
+}
+
+.fridge-item-row {
+    padding: 10px 0px 0px 0px;
 }
 
 .fridge-header-row, .fridge-header-col {
@@ -225,7 +235,7 @@ ul {
     background: linear-gradient(rgb(139, 255, 139), rgb(81, 173, 81));
 }
 #okay {
-    background:linear-gradient(rgb(255, 254, 184), yellow);;
+    background:linear-gradient(rgb(255, 254, 184), rgb(255, 255, 20));;
 }
 
 #eat-soon {
@@ -398,7 +408,7 @@ ul {
 }
 
 .bg-success {
-    background: linear-gradient(rgb(0, 255, 0), rgb(0, 182, 0));
+    background: linear-gradient(rgb(162, 255, 162), rgb(124, 255, 124));
 }
 
 .bg-warning {
@@ -411,4 +421,21 @@ ul {
 
 .progress-bar {
     color: black;
+}
+
+/* 
+--- View All ingredients --- */
+
+.view-all-ingredients-container {
+    border-bottom: 2px solid rgb(233, 233, 233));
+
+    background: linear-gradient(rgb(245, 245, 245), rgb(228, 228, 228));
+}
+
+.plus-button-vai {
+    margin-top: 15px;
+}
+
+.plus-button p {
+    margin-top: -2px;
 }
