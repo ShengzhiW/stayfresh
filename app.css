@@ -1,6 +1,6 @@
 .body {
     background: linear-gradient(rgb(183, 196, 240), #E8E8E8);
-    font-family: "Avenir", sans-serif;   
+    font-family: "Avenir", sans-serif;
 }
 
 h1 {
@@ -147,8 +147,8 @@ button {
     border-radius: 15%;
     margin-top: 18px;
     margin-left: -20px;
-    
-    
+
+
 }
 
 /* ---- Add Ingredients ----- */
@@ -160,7 +160,7 @@ button {
     margin: 20px auto;
 
     box-sizing: border-box;
-    
+
 }
 
 .search-bar {
@@ -176,7 +176,7 @@ button {
 .add-dropdown {
     width: 100%;
     margin: 0 auto;
-   
+
 
     border-bottom: 2px solid rgb(233, 233, 233);
 }
@@ -273,11 +273,11 @@ ul {
 }
 
 .footer-confirmation {
-    
+
 
     background: rgb(231, 231, 231);
 
-    
+
 
     border-top: 2px solid grey;
 }
@@ -407,7 +407,7 @@ h2#recipe-info-header {
     width: 50%;
     margin: 0 auto;
     border-bottom: 2px solid black;
-    
+
 }
 
 .edit-recipe-container {
@@ -473,7 +473,7 @@ h2#recipe-info-header {
     color: black;
 }
 
-/* 
+/*
 --- View All ingredients --- */
 
 .view-all-ingredients-container {
@@ -488,4 +488,18 @@ h2#recipe-info-header {
 
 .plus-button p {
     margin-top: -2px;
+}
+
+/* --- View All Recipes --- */
+#recommended-title {
+  padding-left: 20px;
+}
+
+.view-recipes-images {
+  width: 100px;
+  height: 50px;
+}
+
+.view-recipes-bullets {
+  list-style: none;
 }
