@@ -505,3 +505,69 @@ h2#recipe-info-header {
 .view-recipes-bullets {
   list-style: none;
 }
+
+/* --- Add Recipe --- */
+
+.ingredient-category {
+
+    font-size: 18px;
+    padding: 0px;
+
+    box-sizing: border-box;
+    height: 20px;
+}
+
+.select-ingredients-row {
+    overflow-x: scroll;
+        overflow-y: hidden;
+        height: 50px;
+    white-space:nowrap;
+
+    margin-top: 10px;
+}
+
+.select-ingredients {
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin-left: 15px;
+    width: 100px;
+
+    font-size: 16px;
+}
+
+.ingredient-expiration-select {
+    float: right;
+    border: 2px solid grey;
+}
+
+.add-recipe-logistics-title {
+    font-size: 16px;
+    padding: 2px 0px;
+}
+
+.add-recipe-logistics {
+    text-align: center;
+    border: 2px solid grey;
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.add-recipe-list {
+    height: 100px;
+    overflow: scroll;
+}
+
+.add-recipe-logistics-add {
+    float: right;
+}
+
+.add-recipe-save {
+    width: 75px;
+    border: 2px solid grey;
+}
+
+.add-recipe-save-container {
+    text-align: center;
+}
