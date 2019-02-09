@@ -1,6 +1,4 @@
-img{
-    filter: grayscale(100%)!important;
-}
+
 
 .body {
     background: linear-gradient(rgb(183, 196, 240), #E8E8E8);
@@ -26,12 +24,11 @@ button {
 .top-containers {
     border-bottom: 2px solid rgb(233, 233, 233);
 
-    /* background: linear-gradient(rgb(245, 245, 245), rgb(228, 228, 228)); */
+    background: linear-gradient(rgb(245, 245, 245), rgb(228, 228, 228));
 
     height: 58px;
 
-    /* temp */
-    border-bottom: 1px solid black;
+    
 }
 
 .confirmation-buttons {
@@ -40,22 +37,18 @@ button {
 
     font-size: 16px;
 
-    /* temp */
-    width: 100px;
-    height: 35px;
-    border: 1px solid black;
+    
 }
 
 /* --- Home ---- */
 
 .header-home {
     text-align: center;
-    /* background: linear-gradient(#BED7F2, #76BBFF); */
+    background: linear-gradient(#BED7F2, #76BBFF);
     box-sizing: border-box;
     height: 50px;
 
-    /* temp */
-    border-bottom: 1px solid black;
+    
 }
 
 .home-title {
@@ -93,16 +86,14 @@ button {
     max-height: 30px;
     overflow: hidden;
     border:  0;
-    /* background-color: #19C7F1; */
+    background-color: #19C7F1;
     color:  white;
     font-size: 20px;
     line-height: 30px;
     box-sizing: border-box;
     border-radius: 100%;
 
-    /* temp */
-    border: 1px solid black;
-    color: black;
+    
 }
 
 .plus-button-home {
@@ -154,19 +145,17 @@ button {
 
 
 .done, .save {
-    /* background: rgb(152, 201, 152); */
+    background: rgb(152, 201, 152);
     width: 75px;
     height: 30px;
 
-    /* temp */
-    border: 1px solid black;
+    
 }
 
 .discard {
-    /* background: rgb(255, 150, 150); */
+    background: rgb(255, 150, 150);
 
-    /* temp */
-    border: 1px solid black;
+    
 }
 
 .done {
@@ -277,7 +266,7 @@ ul {
     color: black;
 }
 
-/* #fresh {
+#fresh {
     background: linear-gradient(rgb(139, 255, 139), rgb(81, 173, 81));
 }
 #okay {
@@ -286,13 +275,9 @@ ul {
 
 #eat-soon {
     background: linear-gradient(rgb(189, 169, 169), brown);;
-} */
-
-/* temp */
-
-#fresh, #okay, #eat-soon {
-    border: 1px solid black;
 }
+
+
 
 /* --- confirmation page --- */
 
@@ -367,8 +352,7 @@ h2#recipe-info-header {
     height: 30px;
     border: 1px solid rgb(133, 133, 133);
 
-    /* temp */
-    border: 1px solid black;
+    
 }
 
 /* --- Rate Your Recipe --- */
@@ -455,8 +439,7 @@ h2#recipe-info-header {
     height: 30px;
     border: 1px solid rgb(133, 133, 133);
 
-    /* temp */
-    border: 1px solid black;
+    
 }
 
 
@@ -474,7 +457,7 @@ h2#recipe-info-header {
 .carousel-cards img{
 }
 
-/* .bg-success {
+.bg-success {
     background: linear-gradient(rgb(162, 255, 162), rgb(124, 255, 124));
 }
 
@@ -484,18 +467,9 @@ h2#recipe-info-header {
 
 .bg-danger {
     background: linear-gradient(rgb(255, 160, 160), red);
-} */
-
-/* temp */
-
-.bg-success, .bg-warning, .bg-danger {
-    background: white;
-    border: 1px solid black;
 }
 
-.progress-bar {
-    color: black;
-}
+
 
 /*
 --- View All ingredients --- */
