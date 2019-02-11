@@ -1,8 +1,14 @@
 
 
-.body {
-    background: linear-gradient(rgb(183, 196, 240), #E8E8E8);
-    font-family: "Avenir", sans-serif;
+@font-face {
+    font-family: 'Rationale';
+    src: url('./fonts/Rationale-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, p, a {
+    font-family: "Rationale";
 }
 
 h1 {
@@ -24,11 +30,16 @@ button {
 .top-containers {
     border-bottom: 2px solid rgb(233, 233, 233);
 
-    background: linear-gradient(rgb(245, 245, 245), rgb(228, 228, 228));
+    background: black;
+    text-align: center;
 
     height: 58px;
+}
 
-    
+.top-containers h1 {
+    color: white;
+    position: relative;
+    top: 10px;
 }
 
 .confirmation-buttons {
@@ -39,6 +50,70 @@ button {
 
     
 }
+
+/* Login */
+
+.welcome, .login, .new-account {
+    text-align: center;
+
+    font-family: 'Rationale';
+}
+
+.welcome {
+    width: 164px;
+    height: 80px;
+    margin: 0 auto;
+
+    margin-top: 60px;
+    margin-bottom: 110px;
+
+    
+}
+
+.welcome-line-1 {
+    font-size: 29px;
+}
+
+.welcome-line-2 {
+    font-size: 35px;
+}
+
+.login {
+    width: 80%;
+    margin: 0 auto;
+
+    margin-bottom: 110px;
+}
+
+.login-input {
+    width: 274px;
+    height: 43px;
+    border-radius: 37px;
+
+    background-color: #F9F9F9;
+    border: none;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+    
+}
+
+#login-submit {
+    width: 148px;
+    height: 36px;
+    background-color: #7F7F7F;
+    border-radius: 11px;
+
+    color: white;
+}
+
+.new-account a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+
 
 /* --- Home ---- */
 

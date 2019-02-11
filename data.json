@@ -1,0 +1,55 @@
+{
+    "ingredients": [
+        {
+            "name": "Beef (Ground)",
+            "imageURL": "images/icon-beef-ground.png",
+            "category": "Protein"
+        },
+        {
+            "name": "Cheese",
+            "imageURL": "images/icon-cheese.png",
+            "category": "Other"
+        },
+        {
+            "name": "Garlic",
+            "imageURL": "images/icon-garlic.png",
+            "category": "Vegetable"
+        },
+        {
+            "name": "Lettuce",
+            "imageURL": "images/icon-lettuce.png",
+            "category": "Vegetable"
+        },
+        {
+            "name": "Pasta",
+            "imageURL": "images/icon-pasta.png",
+            "category": "Carbs"
+        },
+        {
+            "name": "Onion",
+            "imageURL": "images/icon-onion.png",
+            "category": "Vegetable"
+        },
+        {
+            "name": "Peanut Butter",
+            "imageURL": "images/icon-peanut-butter.png",
+            "category": "Other"
+        },
+        {
+            "name": "Tofu",
+            "imageURL": "images/icon-tofu.png",
+            "category": "Protein"
+        }
+    ],
+
+    "recipes": [
+        {
+            "name": "Peanut Tofu",
+            "recipe ingredients": ["Tofu", "Onion", "Garlic", "Peanut Butter"],
+            "cooking time": "1 hr",
+            "serving size": 4,
+            "steps": ["Chop garlic and onions, sautee for 2 minutes", "Stir in soy sauce, ketchup, peanut butter, maple syrup, vegetable broth, and crushed red peppers. Mix.",
+            "Add tofu, bring to boil and let sauce reduce and thicken"]
+        }
+    ]
+}
