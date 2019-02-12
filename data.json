@@ -124,6 +124,7 @@
     "recipes": [
         {
             "name": "Peanut Tofu",
+            "imageURL": "images/recipes-peanut-tofu.jpg",
             "recipe ingredients": ["Tofu", "Onion", "Garlic", "Peanut Butter"],
             "cooking time": "1 hr",
             "serving size": 4,
@@ -132,6 +133,7 @@
         },
         {
             "name": "Baked Lemon Chicken",
+            "imageURL": "images/recipes-baked-lemon-chicken.jpg",
             "recipe ingredients": ["Chicken", "Butter", "Garlic", "Lemon", "Parsley"],
             "cooking time": "35 min",
             "serving size": 4,
@@ -144,6 +146,7 @@
         },
         {
             "name": "Beef Broccoli",
+            "imageURL": "images/recipes-beef-broccoli.jpg",
             "recipe ingredients": ["Beef", "Broccoli", "Garlic", "Onion", "Ginger"],
             "cooking time": "25 min",
             "serving size": 4,
@@ -153,6 +156,7 @@
         },
         {
             "name": "Pork and Potato Hash",
+            "imageURL": "images/recipes-pork-and-potato-hash.jpg",
             "recipe ingredients": ["Pork", "Potato", "Onion", "Garlic", "Scallions"],
             "cooking time": "50 min",
             "serving size": 6,
@@ -164,7 +168,8 @@
               "The mixture will brown faster in the last 10 minutes of cooking and should be stirred every 2-3 minutes."]
         },
         {
-            "name": "Pan-Seared Salmon",
+            "name": "Pan Seared Salmon",
+            "imageURL": "images/recipes-pan-seared-salmon.jpg",
             "recipe ingredients": ["Salmon", "Capers", "Lemon"],
             "cooking time": "20 min",
             "serving size": 4,
@@ -172,6 +177,16 @@
               "Coat salmon with olive oil. Place in skillet, and increase heat to high. Cook for 3 minutes."
               "Sprinkle with capers, and salt and pepper. Turn salmon over, and cook for 5 minutes, or until browned. Salmon is done when it flakes easily with a fork.",
               "Transfer salmon to individual plates, and garnish with lemon slices."]
+        },
+        {
+            "name": "Spaghetti",
+            "imageURL": "images/recipes-spaghetti.jpg",
+            "recipe ingredients": ["Beef (Ground)", "Pasta", "Onion", "Garlic", "Tomato", "Cheese"],
+            "cooking time": "1 hr",
+            "serving size": 4,
+            "steps": ["Cook first 3 ingredients in a Dutch oven, stirring until beef crumbles and is no longer pink; drain well. Return beef mixture to pan.",
+              "Stir in tomato sauce and next 8 ingredients; bring to a boil. Cover, reduce heat, and simmer, stirring often, 30 minutes.",
+              "Add pasta; cover and simmer, stirring often, 20 minutes or until pasta is tender. Serve with cheese, and garnish."]
         }
     ]
 }
