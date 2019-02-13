@@ -72,6 +72,10 @@
      border-radius: 10px;
      font-size: 16px;
 }
+
+.shadow {
+    box-shadow: 0px 0px 15px #E5E5E5;
+}
 /* ----- Login ----- */
  .login-welcome, .login-main, .login-new-account {
      text-align: center;
@@ -691,18 +695,6 @@ h2.home-title{
     margin-top: 10px;
 }
 
-/* ----- View All Recipes ----- */
- #recommended-title {
-     padding-left: 20px;
-}
- .view-recipes-images {
-     width: 100px;
-     height: 50px;
-}
- .view-recipes-bullets {
-     list-style: none;
-}
-/* ----- 
 
 /* Add Recipes */
 
@@ -794,4 +786,91 @@ h2.home-title{
     margin-bottom: 20px;
 
     margin: 0 auto;
+}
+
+/* View all recipes */
+
+.recipes-new-recipe {
+    float:right;
+    background: #868686;
+    width: 88px;
+    height: 21px;
+    color: white;
+    border-radius: 6px;
+
+    margin-top: 10px;
+    margin-right: 30px;
+
+}
+
+
+
+.recipe-filter-left {
+    width: 124px;
+    
+    background: black;
+    color: white;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid black;
+
+    margin-left: 60px;
+    margin-top: 30px;
+
+    
+    
+}
+
+.recipe-filter-right {
+    width: 124px;
+    
+    color: black;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid black;
+    margin-right: 30px;
+    margin-top: 30px;
+    
+}
+
+.recipe-card {
+    width: 325px;
+    height: 164px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+    color: white;
+    
+    
+    
+}
+
+.recipe-card-name, .recipe-card-time, .recipe-card-make {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.recipe-card-left {
+    width: 162px;
+    height: 162px;
+    background-image: url("images/recipes-pan-seared-salmon.jpg");
+
+
+}
+
+.recipe-card-right {
+    text-align: left;
+    color: black;
+    padding: 10px 0px 10px 0px;
+}
+
+.recipe-card-have, .recipe-card-ingredient, .recipe-card-freshness {
+    text-align: left;
+}
+
+.recipe-card-ingredient {
+    margin-left: -10px;
+}
+
+.recipe-card-freshness img {
+    margin-left: -20px;
 }
