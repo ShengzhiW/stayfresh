@@ -578,6 +578,11 @@ h2.home-title{
      border: 1px solid rgb(133, 133, 133);
 }
 /* ----- Rate Your Recipe ----- */
+
+.rate-container {
+    color: black;
+}
+
  #rate-your-recipe, .rate-recipe-title {
      text-align: center;
 }
