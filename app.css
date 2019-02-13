@@ -660,9 +660,40 @@ h2.home-title{
      background: linear-gradient(rgb(255, 160, 160), red);
 }
 /* ----- View All ingredients ----- */
- .plus-button-vai {
-     margin-top: 15px;
-}Z
+
+.fridge-container {
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #C9CACE;
+    padding-left: 10px; 
+    
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+.fridge-filter {
+    background: #CFCFCF;
+    color: white;
+    border-radius: 8px;
+    width: 127px;
+    height: 24px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.fridge-edit {
+    background: #7F7F7F;
+    width: 46px;
+    height: 24px;
+    float: right;
+    margin-right: 24px;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: left;
+    margin-top: 10px;
+}
+
 /* ----- View All Recipes ----- */
  #recommended-title {
      padding-left: 20px;
