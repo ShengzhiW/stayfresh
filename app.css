@@ -205,7 +205,7 @@ h2.home-title{
      border: 0;
      background-color: #7F7F7F;
      color: white;
-     font-size: 18px;
+     font-size: 14px;
      box-sizing: border-box;
      border-radius: 6px;
      line-height: 25px;
@@ -532,10 +532,7 @@ h2.home-title{
      margin-right: 15vw;
 }
 /* ----- Recipe Info ----- */
- #recipe-name {
-     margin-top: 10px;
-     padding: 5px 0px;
-}
+
  .recipe-intro-container {
      box-sizing: border-box;
      padding: 40px 0px 5px 30px;
@@ -705,53 +702,96 @@ h2.home-title{
  .view-recipes-bullets {
      list-style: none;
 }
-/* ----- Add Recipe ----- */
- .ingredient-category {
-     font-size: 18px;
-     padding: 0px;
-     box-sizing: border-box;
-     height: 20px;
+/* ----- 
+
+/* Add Recipes */
+
+.untitled-recipe {
+    width: 250px;
+    border-bottom: 1px solid #C4C4C4;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    color: #6D6D6D;
+    font-size: 24px;
+
+    
 }
- .select-ingredients-row {
-     overflow-x: scroll;
-     overflow-y: hidden;
-     height: 50px;
-     white-space:nowrap;
-     margin-top: 10px;
+
+.untitled-recipe input {
+    text-align: center;
 }
- .select-ingredients {
-     border: 2px solid grey;
-     border-radius: 15px;
-     margin-left: 15px;
-     width: 100px;
-     font-size: 16px;
+
+.untitled-recipe img {
+    float: right;
+    position: relative;
+    top: 12px;
 }
- .ingredient-expiration-select {
-     float: right;
-     border: 2px solid grey;
+
+.add-recipe-categories {
+    box-shadow: 0px 0px 15px #E5E5E5;
+    border-radius: 15px;
+    
+    width: 152px;
+    height: 50px;
+    margin-left: 24px;
+    margin-top: 30px;
+    font-size: 20px;
+ 
 }
- .add-recipe-logistics-title {
-     font-size: 16px;
-     padding: 2px 0px;
+
+.add-recipe-summary-container {
+    box-shadow: 0px 0px 15px #E5E5E5;
+    border-radius: 15px;
+    width: 325px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 10px;
 }
- .add-recipe-logistics {
-     text-align: center;
-     border: 2px solid grey;
-     width: 90%;
-     margin: 0 auto;
-     margin-top: 15px;
+
+.add-recipe-summary-container h4 {
+    float: left;
+    
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
- .add-recipe-list {
-     height: 100px;
-     overflow: scroll;
+
+.add-recipe-summary-item {
+    
+    border-bottom: 1px solid #E4E4E4;
+    margin-top: 8px;
+    
 }
- .add-recipe-logistics-add {
-     float: right;
+
+.col-center {
+    display: inline-block;
+    float: none;
+    
+    
 }
- .add-recipe-save {
-     width: 75px;
-     border: 2px solid grey;
+
+.add-recipe-grey-buttons {
+    background: #868686;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
 }
- .add-recipe-save-container {
-     text-align: center;
+
+.add-recipe-create {
+    width: 100px;
+    height: 32px;
+    background: #868686;
+    color: white;
+    font-size: 24px;
+
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    margin: 0 auto;
 }
