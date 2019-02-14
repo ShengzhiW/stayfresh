@@ -9,103 +9,156 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
-<div class="container top-containers">
-  <div class="row">
-    <a href="index.html">
-    <div class="col col-xs-2">
-      <p class="back">&lt;</p>
-    </div>
+<body>
+  
+  <div class="container top-containers">
+    <div class="row">
+      <a href="index.html">
+      <div class="col col-xs-2">
+            <p class="back">Cancel</p>
+      </div>
     </a>
       <div class="col col-xs-8">
-        <h1 id="my-Recipes">My Recipes</h1>
+        <h1 id="recipe-name">Recipes</h1>
       </div>
-      <div class="col col-xs-2 done-col">
-        <a href="index.html">
-        <button class="done">Done</button>
+    </div>
+</div>
+
+  <div class="container">
+    
+    <div class="row">
+      <a href="add-recipe.html">
+        <div class="col recipes-new-recipe">
+        + New Recipe
+        </div>
       </a>
+    </div>
+
+    <div class="row">
+      <div class="col col-xs-6 recipe-filter-left">
+          Recommended
+      </div>
+      <div class="col col-xs-6 recipe-filter-right">
+          My Recipes
       </div>
     </div>
-</div>
 
-<h2 id="recommended-title">Recommended</h2>
+    <!-- Recipes -->
 
-<div class="container recipe">
-  <div class="row recipe-name">
-    <h3 class="my-recipe-name">Peanut Tofu</h3>
+    <div class="row">
+      <div class="col recipe-card shadow">
+        <div class="col col-xs-6 recipe-card-left">
+          <div class="row">
+            <div class="col recipe-card-name">
+              Steak Tacos
+            </div>
+          </div>
+          <div class="row">
+              <div class="col recipe-card-time">
+                <img src="images/clock.png"/> 30 minutes
+              </div>
+          </div>
+          <div class="row">
+              <a href="recipe-info.html">
+                <div class="col recipe-card-make">
+                  <img src="images/make-this-recipe.png">
+                </div>
+              </a>
+          </div>
+        </div>
+
+        <!-- end card left -->
+
+        <div class="col col-xs-6 recipe-card-right">
+          
+          <div class="row recipe-card-item">
+            <div class="col col-center col-xs-2 recipe-card-have">
+                <img src="images/have-true.png"/>
+            </div>
+            <div class="col col-center col-xs-5 recipe-card-ingredient">
+                Steak
+            </div>
+            <div class="col col-center col-xs-1 recipe-card-freshness">
+                <img src="images/freshness-mini-eat-soon.png"/>
+            </div>
+            </div>
+        
+
+
+        <div class="row recipe-card-item">
+            <div class="col col-center col-xs-2 recipe-card-have">
+                <img src="images/have-true.png"/>
+            </div>
+            <div class="col col-center col-xs-5 recipe-card-ingredient">
+                Steak
+            </div>
+            <div class="col col-center col-xs-1 recipe-card-freshness">
+                <img src="images/freshness-mini-eat-soon.png"/>
+            </div>
+            </div>
+        
+
+
+        <div class="row recipe-card-item">
+            <div class="col col-center col-xs-2 recipe-card-have">
+                <img src="images/have-true.png"/>
+            </div>
+            <div class="col col-center col-xs-5 recipe-card-ingredient">
+                Steak
+            </div>
+            <div class="col col-center col-xs-1 recipe-card-freshness">
+                <img src="images/freshness-mini-eat-soon.png"/>
+            </div>
+            </div>
+        
+
+        <div class="row recipe-card-item">
+            <div class="col col-center col-xs-2 recipe-card-have">
+                <img src="images/have-true.png"/>
+            </div>
+            <div class="col col-center col-xs-5 recipe-card-ingredient">
+                Steak
+            </div>
+            <div class="col col-center col-xs-1 recipe-card-freshness">
+                <img src="images/freshness-mini-eat-soon.png"/>
+            </div>
+            </div>
+
+            <div class="row recipe-card-item">
+                <div class="col col-center col-xs-2 recipe-card-have">
+                    <img src="images/have-true.png"/>
+                </div>
+                <div class="col col-center col-xs-5 recipe-card-ingredient">
+                    Steak
+                </div>
+                <div class="col col-center col-xs-1 recipe-card-freshness">
+                    <img src="images/freshness-mini-eat-soon.png"/>
+                </div>
+                </div>
+
+                <div class="row recipe-card-item">
+                    <div class="col col-center col-xs-2 recipe-card-have">
+                        <img src="images/have-true.png"/>
+                    </div>
+                    <div class="col col-center col-xs-5 recipe-card-ingredient">
+                        Steak
+                    </div>
+                    <div class="col col-center col-xs-1 recipe-card-freshness">
+                        <img src="images/freshness-mini-eat-soon.png"/>
+                    </div>
+                    </div>
+        
+      </div>
+      <!-- End card right -->
+
+        </div>
+
+
+      </div>
+    </div>
+
   </div>
-  <div class="row">
-    <div class="col col-xs-3">
-      <img class="view-recipes-images" src="images/recipes-peanut-tofu.jpg" alt="Peanut Tofu Image">
-    </div>
-    <div class="col col-xs-3">
-      <ul>
-        <li class="view-recipes-bullets">Tofu</li>
-        <li class="view-recipes-bullets">Onion</li>
-        <li class="view-recipes-bullets">Garlic</li>
-        <li class="view-recipes-bullets">Peanut Butter</li>
-      </ul>
-    </div>
-    <div class="col col-xs-3">
-      <ul>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="container recipe">
-  <div class="row recipe-name">
-    <h3 class="my-recipe-name">Spaghetti</h3>
-  </div>
-  <div class="row">
-    <div class="col col-xs-3">
-      <img class="view-recipes-images" src="images/recipes-spaghetti.jpg" alt="Spaghetti Image">
-    </div>
-    <div class="col col-xs-3">
-      <ul>
-        <li class="view-recipes-bullets">Tomato</li>
-        <li class="view-recipes-bullets">Pasta</li>
-        <li class="view-recipes-bullets">Meatball</li>
-        <li class="view-recipes-bullets">Cheese</li>
-      </ul>
-    </div>
-    <div class="col col-xs-3">
-      <ul>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="container recipe">
-  <div class="row recipe-name">
-    <h3 class="my-recipe-name">Taco</h3>
-  </div>
-  <div class="row">
-    <div class="col col-xs-3">
-      <img class="view-recipes-images" src="images/recipes-taco.png" alt="Taco Image">
-    </div>
-    <div class="col col-xs-3">
-      <ul>
-        <li class="view-recipes-bullets">Meat</li>
-        <li class="view-recipes-bullets">Cheese</li>
-        <li class="view-recipes-bullets">Lettuce</li>
-        <li class="view-recipes-bullets">Tomato</li>
-      </ul>
-    </div>
-    <div class="col col-xs-3">
-      <ul>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-        <li class="view-recipes-bullets">Ingredient</li>
-      </ul>
-    </div>
-  </div>
-</div>
+
+</body>
 
 </html>
