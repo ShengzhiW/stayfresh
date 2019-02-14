@@ -3,7 +3,7 @@
 }
  @font-face {
      font-family: 'Rationale';
-     src: url('./fonts/Rationale-Regular.otf') format('opentype');
+     src: url('/fonts/Rationale-Regular.otf') format('opentype');
      font-weight: normal;
      font-style: normal;
 }

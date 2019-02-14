@@ -9,6 +9,18 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var addRecipe = require('./routes/add-recipe');
+var addIng = require('./routes/add-ingredients');
+var confirmation = require('./routes/confirmation');
+var editRecipe = require('./routes/edit-recipe');
+var login = require('./routes/login');
+var recipeInfo = require('./routes/recipe-info');
+var recipeRate = require('./routes/recipe-rate');
+var vAIng = require('./routes/view-all-ingredients');
+var vARecipe = require('./routes/view-all-recipes');
+
+
+
 // Example route
 // var user = require('./routes/user');
 
@@ -34,7 +46,19 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', login.view);
+app.get('/index', index.view);
+app.get('/add-recipe', addRecipe.view);
+app.get('/add-ingredients', addIng.view);
+app.get('/confirmation', confirmation.view);
+app.get('/edit-recipe', editRecipe.view);
+app.get('/recipe-info', recipeInfo.view);
+app.get('/recipe-rate', recipeRate.view);
+app.get('/view-all-ingredients', vAIng.view);
+app.get('/view-all-recipes', vARecipe.view);
+
+
+
 // Example route
 // app.get('/users', user.list);
 
