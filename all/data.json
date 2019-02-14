@@ -1,0 +1,192 @@
+{
+    "ingredients": [
+        {
+            "name": "Beef (Ground)",
+            "imageURL": "images/icon-beef-ground.png",
+            "category": "Protein",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Cheese",
+            "imageURL": "images/icon-cheese.png",
+            "category": "Dairy",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Garlic",
+            "imageURL": "images/icon-garlic.png",
+            "category": "Vegetable",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Lettuce",
+            "imageURL": "images/icon-lettuce.png",
+            "category": "Vegetable",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Pasta",
+            "imageURL": "images/icon-pasta.png",
+            "category": "Carbs",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Onion",
+            "imageURL": "images/icon-onion.png",
+            "category": "Vegetable",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Peanut Butter",
+            "imageURL": "images/icon-peanut-butter.png",
+            "category": "Other",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Tofu",
+            "imageURL": "images/icon-tofu.png",
+            "category": "Protein",
+            "quantity": 0,
+            "condition": "fresh"
+        }
+        {
+            "name": "Chicken",
+            "imageURL": "images/icon-chicken.png",
+            "category": "Protein",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Butter",
+            "imageURL": "images/icon-butter.png",
+            "category": "Dairy",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Lemon",
+            "imageURL": "images/icon-lemon.png",
+            "category": "Fruit",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Broccoli",
+            "imageURL": "images/icon-broccoli.png",
+            "category": "Vegetable",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Pork",
+            "imageURL": "images/icon-pork.png",
+            "category": "Protein",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Potato",
+            "imageURL": "images/icon-potato.png",
+            "category": "Vegetable",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Salmon",
+            "imageURL": "images/icon-salmon.png",
+            "category": "Protein",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Celery",
+            "imageURL": "images/icon-celery.png",
+            "category": "Vegetable",
+            "quantity": 0,
+            "condition": "fresh"
+        },
+        {
+            "name": "Tomato",
+            "imageURL": "images/icon-tomato.png",
+            "category": "Fruit",
+            "quantity": 0,
+            "condition": "fresh"
+        }
+    ],
+
+    "recipes": [
+        {
+            "name": "Peanut Tofu",
+            "imageURL": "images/recipes-peanut-tofu.jpg",
+            "recipe ingredients": ["Tofu", "Onion", "Garlic", "Peanut Butter"],
+            "cooking time": "1 hr",
+            "serving size": 4,
+            "steps": ["Chop garlic and onions, sautee for 2 minutes.", "Stir in soy sauce, ketchup, peanut butter, maple syrup, vegetable broth, and crushed red peppers. Mix.",
+              "Add tofu, bring to boil and let sauce reduce and thicken."]
+        },
+        {
+            "name": "Baked Lemon Chicken",
+            "imageURL": "images/recipes-baked-lemon-chicken.jpg",
+            "recipe ingredients": ["Chicken", "Butter", "Garlic", "Lemon", "Parsley"],
+            "cooking time": "35 min",
+            "serving size": 4,
+            "steps": ["Preheat the oven to 400 degrees. Season the chicken breasts on both sides with salt, pepper and the Italian seasoning.",
+              "Heat the olive oil in a large pan over medium high heat. Add the chicken breasts and cook for 3-5 minutes on each side or until browned.",
+              "Transfer the chicken to a baking dish.",
+              "In a small bowl, mix together the butter, garlic, chicken broth and lemon juice. Pour the butter mixture over the chicken.",
+              "Bake for 25 minutes or until chicken is cooked through. Bake time may vary depending on the thickness of your chicken breasts.",
+              "Spoon the sauce on the bottom of the baking dish over the chicken, then sprinkle with parsley and serve. Garnish with lemon slices if desired."]
+        },
+        {
+            "name": "Beef Broccoli",
+            "imageURL": "images/recipes-beef-broccoli.jpg",
+            "recipe ingredients": ["Beef", "Broccoli", "Garlic", "Onion", "Ginger"],
+            "cooking time": "25 min",
+            "serving size": 4,
+            "steps": ["Mix garlic powder and 2 tablespoons each cornstarch and water; toss with beef. In a small bowl, mix soy sauce, brown sugar, ginger and the remaining cornstarch and water until smooth.",
+              "In a large skillet, heat 1 tablespoon oil over medium-high heat; stir-fry beef until browned, 2-3 minutes. Remove from pan.",
+              "In same pan, stir-fry broccoli and onion in remaining oil over medium-high heat until crisp-tender, 4-5 minutes. Stir soy sauce mixture; add to pan. Cook and stir until thickened, 1-2 minutes. Return beef to pan; heat through."]
+        },
+        {
+            "name": "Pork and Potato Hash",
+            "imageURL": "images/recipes-pork-and-potato-hash.jpg",
+            "recipe ingredients": ["Pork", "Potato", "Onion", "Garlic", "Scallions"],
+            "cooking time": "50 min",
+            "serving size": 6,
+            "steps": ["Place the sliced potatoes, 1 1/2 cups water, onions, and juice from pork roast in a nonstick skillet.",
+              "Bring to a boil, cover, and boil over medium heat for 10 minutes.",
+              "Add garlic, scallions, olive oil, Tabasco, salt, Worcestershire and pork.",
+              "Mix well and cook, uncovered, over high heat, stirring, for about 5 minutes.",
+              "Continue to cook over medium heat for about 20 minutes, stirring every 3-4 minutes.",
+              "The mixture will brown faster in the last 10 minutes of cooking and should be stirred every 2-3 minutes."]
+        },
+        {
+            "name": "Pan Seared Salmon",
+            "imageURL": "images/recipes-pan-seared-salmon.jpg",
+            "recipe ingredients": ["Salmon", "Capers", "Lemon"],
+            "cooking time": "20 min",
+            "serving size": 4,
+            "steps": ["Preheat a large heavy skillet over medium heat for 3 minutes.",
+              "Coat salmon with olive oil. Place in skillet, and increase heat to high. Cook for 3 minutes."
+              "Sprinkle with capers, and salt and pepper. Turn salmon over, and cook for 5 minutes, or until browned. Salmon is done when it flakes easily with a fork.",
+              "Transfer salmon to individual plates, and garnish with lemon slices."]
+        },
+        {
+            "name": "Spaghetti",
+            "imageURL": "images/recipes-spaghetti.jpg",
+            "recipe ingredients": ["Beef (Ground)", "Pasta", "Onion", "Garlic", "Tomato", "Cheese"],
+            "cooking time": "1 hr",
+            "serving size": 4,
+            "steps": ["Cook first 3 ingredients in a Dutch oven, stirring until beef crumbles and is no longer pink; drain well. Return beef mixture to pan.",
+              "Stir in tomato sauce and next 8 ingredients; bring to a boil. Cover, reduce heat, and simmer, stirring often, 30 minutes.",
+              "Add pasta; cover and simmer, stirring often, 20 minutes or until pasta is tender. Serve with cheese, and garnish."]
+        }
+    ]
+}
