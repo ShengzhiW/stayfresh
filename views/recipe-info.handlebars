@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Recipe info</title>
+    <title>{{recipes.name}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -9,8 +9,42 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 
+<body>
+  <script type="text/javascript">
+  function parse_query_string(query) {
+var vars = query.split("&");
+var query_string = {};
+for (var i = 0; i < vars.length; i++) {
+  var pair = vars[i].split("=");
+  var key = decodeURIComponent(pair[0]);
+  var value = decodeURIComponent(pair[1]);
+  // If first entry with this name
+  if (typeof query_string[key] === "undefined") {
+    query_string[key] = decodeURIComponent(value);
+    // If second entry with this name
+  } else if (typeof query_string[key] === "string") {
+    var arr = [query_string[key], decodeURIComponent(value)];
+    query_string[key] = arr;
+    // If third or later entry with this name
+  } else {
+    query_string[key].push(decodeURIComponent(value));
+  }
+}
+return query_string;
+}
 
+var query_string = "a=1&b=3&c=m2-m3-m4-m5";
+var parsed_qs = parse_query_string(query_string);
+console.log(parsed_qs.c);
+  </script>
+  var query = window.location.search.substring(1);
+var qs = parse_query_string(query);
+  <div class="">
+    {{#matchesRecipe recipes}}
+  </div>
 
+</body>
+<!--
 
   <div class="container top-containers">
       <div class="row">
@@ -56,6 +90,6 @@
   <a href="edit-recipe">
     <button id="edit-recipe-button">Edit Recipe</button>
 </a>
-</div>
+</div> -->
 
 </html>

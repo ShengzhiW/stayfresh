@@ -1,5 +1,9 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-  res.render('recipe-info', data);
+  var name = req.params.recipeName;
+  res.render('recipe-info', {
+      "recipeName" : name,
+
+    });
 };

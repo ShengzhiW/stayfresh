@@ -41,6 +41,7 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.get("/recipe-info/:recipeName", recipeInfo.view);
 
 // development only
 if ('development' == app.get('env')) {
@@ -61,6 +62,7 @@ app.get('/sign-up', signup.view);
 
 
 
+
 // Example route
 // app.get('/users', user.list);
 
@@ -72,7 +74,7 @@ http.createServer(app).listen(app.get('port'), function(){
 var hbs = handlebars.create({
     // Specify helpers which are only registered on this instance.
     helpers: {
-        each_upto: function (ary, max, options) { 
+        each_upto: function (ary, max, options) {
             if(!ary || ary.length == 0)
                 return options.inverse(this);
 
@@ -81,8 +83,23 @@ var hbs = handlebars.create({
                 result.push(options.fn(ary[i]));
             return result.join('');
     },
-        bar: function () { return 'BAR!'; }
+        matchesRecipe: function (ary, name) {
+          if(!ary || ary.length == 0)
+              return options.inverse(this);
+
+          var result = [ ];
+          for(var i = 0; i < ary.length; i++) {
+            if(ary[i].keySet().get('name') == name) {
+              console.log(ary[i].keySet().get('name'))
+              result.push(ary[i]);
+              break;
+            }
+          }
+          return result;
+        }
     }
 });
+
+
 
 app.engine('handlebars', hbs.engine);
