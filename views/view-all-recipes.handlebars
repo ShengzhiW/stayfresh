@@ -34,7 +34,7 @@
       </a>
     </div>
 
-    <div class="row">
+{{!--     <div class="row">
       <div class="col col-xs-6 recipe-filter-left">
           Recommended
       </div>
@@ -42,115 +42,8 @@
           My Recipes
       </div>
     </div>
+ --}}
 
-    <!-- Recipes -->
-
-
-    <div class="row">
-      <div class="col recipe-card shadow">
-        <div class="col col-xs-6 recipe-card-left">
-          <div class="row">
-            <div class="col recipe-card-name">
-              Spaghetti
-            </div>
-          </div>
-          <div class="row">
-              <div class="col recipe-card-time">
-                <img src="images/clock.png"/> 30 minutes
-              </div>
-          </div>
-          <div class="row">
-              <a href="recipe-info">
-                <div class="col recipe-card-make">
-                  <img src="images/make-this-recipe.png">
-                </div>
-              </a>
-          </div>
-        </div>
-
-        <!-- end card left -->
-
-        <div class="col col-xs-6 recipe-card-right">
-          
-          <div class="row recipe-card-item">
-            <div class="col col-center col-xs-2 recipe-card-have">
-                <img src="images/have-true.png"/>
-            </div>
-            <div class="col col-center col-xs-5 recipe-card-ingredient">
-                Steak
-            </div>
-            <div class="col col-center col-xs-1 recipe-card-freshness">
-                <img src="images/freshness-mini-eat-soon.png"/>
-            </div>
-            </div>
-        
-
-
-        <div class="row recipe-card-item">
-            <div class="col col-center col-xs-2 recipe-card-have">
-                <img src="images/have-true.png"/>
-            </div>
-            <div class="col col-center col-xs-5 recipe-card-ingredient">
-                Steak
-            </div>
-            <div class="col col-center col-xs-1 recipe-card-freshness">
-                <img src="images/freshness-mini-eat-soon.png"/>
-            </div>
-            </div>
-        
-
-
-        <div class="row recipe-card-item">
-            <div class="col col-center col-xs-2 recipe-card-have">
-                <img src="images/have-true.png"/>
-            </div>
-            <div class="col col-center col-xs-5 recipe-card-ingredient">
-                Steak
-            </div>
-            <div class="col col-center col-xs-1 recipe-card-freshness">
-                <img src="images/freshness-mini-eat-soon.png"/>
-            </div>
-            </div>
-        
-
-        <div class="row recipe-card-item">
-            <div class="col col-center col-xs-2 recipe-card-have">
-                <img src="images/have-true.png"/>
-            </div>
-            <div class="col col-center col-xs-5 recipe-card-ingredient">
-                Steak
-            </div>
-            <div class="col col-center col-xs-1 recipe-card-freshness">
-                <img src="images/freshness-mini-eat-soon.png"/>
-            </div>
-            </div>
-
-            <div class="row recipe-card-item">
-                <div class="col col-center col-xs-2 recipe-card-have">
-                    <img src="images/have-true.png"/>
-                </div>
-                <div class="col col-center col-xs-5 recipe-card-ingredient">
-                    Steak
-                </div>
-                <div class="col col-center col-xs-1 recipe-card-freshness">
-                    <img src="images/freshness-mini-eat-soon.png"/>
-                </div>
-                </div>
-
-                <div class="row recipe-card-item">
-                    <div class="col col-center col-xs-2 recipe-card-have">
-                        <img src="images/have-true.png"/>
-                    </div>
-                    <div class="col col-center col-xs-5 recipe-card-ingredient">
-                        Steak
-                    </div>
-                    <div class="col col-center col-xs-1 recipe-card-freshness">
-                        <img src="images/freshness-mini-eat-soon.png"/>
-                    </div>
-                    </div>
-        
-      </div>
-      <!-- End card right -->
 
         </div>
 
@@ -160,6 +53,21 @@
 
   </div>
 
+    <!-- Recipes -->
+
+<div class="outer-container">
+{{#each recipes}}
+<div class="var-card shadow">
+  <div><h1>{{name}}</h1></div>
+
+  <div>Ingredients: {{recipeIngredients}}</div>
+  <div>Servings: {{servingSize}}</div>
+  <div>Time: {{cookingTime}}</div>
+  <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
+</div>
+
+{{/each}}
+</div>
 </body>
 
 </html>
