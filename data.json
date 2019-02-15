@@ -1,4 +1,112 @@
 {
+
+    "ingredients": [
+        {
+            "name": "Beef (Ground)",
+            "imageURL": "/images/icon-beef-ground.png",
+            "category": "Protein",
+            "quantity": 2
+        },
+        {
+            "name": "Cheese",
+            "imageURL": "/images/icon-cheese.png",
+            "category": "Dairy",
+            "quantity": 1
+        },
+        {
+            "name": "Garlic",
+            "imageURL": "/images/icon-garlic.png",
+            "category": "Vegetable",
+            "quantity": 1
+        },
+        {
+            "name": "Lettuce",
+            "imageURL": "/images/icon-lettuce.png",
+            "category": "Vegetable",
+            "quantity": 2
+        },
+        {
+            "name": "Pasta",
+            "imageURL": "/images/icon-pasta.png",
+            "category": "Carbs",
+            "quantity": 1
+        },
+        {
+            "name": "Onion",
+            "imageURL": "/images/icon-onion.png",
+            "category": "Vegetable",
+            "quantity": 2
+        },
+        {
+            "name": "Peanut Butter",
+            "imageURL": "/images/icon-peanut-butter.png",
+            "category": "Other",
+            "quantity": 2
+        },
+        {
+            "name": "Tofu",
+            "imageURL": "/images/icon-tofu.png",
+            "category": "Protein",
+            "quantity": 3
+        },
+
+        {
+            "name": "Chicken",
+            "imageURL": "/images/icon-chicken.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Butter",
+            "imageURL": "/images/icon-butter.png",
+            "category": "Dairy",
+            "quantity": 0
+        },
+        {
+            "name": "Lemon",
+            "imageURL": "/images/icon-lemon.png",
+            "category": "Fruit",
+            "quantity": 0
+        },
+        {
+            "name": "Broccoli",
+            "imageURL": "/images/icon-broccoli.png",
+            "category": "Vegetable",
+            "quantity": 0
+        },
+        {
+            "name": "Pork",
+            "imageURL": "/images/icon-pork.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Potato",
+            "imageURL": "/images/icon-potato.png",
+            "category": "Vegetable",
+            "quantity": 0
+        },
+        {
+            "name": "Salmon",
+            "imageURL": "/images/icon-salmon.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Celery",
+            "imageURL": "/images/icon-celery.png",
+            "category": "Vegetable",
+            "quantity": 0
+        },
+        {
+            "name": "Tomato",
+            "imageURL": "/images/icon-tomato.png",
+            "category": "Fruit",
+            "quantity": 0
+        }
+    ],
+
+
     "ingredients-fresh": [
         {
             "name": "Beef (Ground)",

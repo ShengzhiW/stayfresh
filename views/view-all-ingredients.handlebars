@@ -48,210 +48,57 @@
               <h4 class="home-freshness home-freshness-1">
                   Eat Soon
               </h4>
+              {{#each ingredients-fresh}}
               <div class="row home-freshness-row">
+
                   <div class="home-freshness-col-1 col-xs-3">
-                      <img class="icon" src="images/icon-tomato.png"/>
+                      <img class="icon" src="{{imageURL}}"/>
                   </div>
                   <div class="home-freshness-col-2 col-xs-6">
-                      Tomato
+                      {{name}}
                   </div>
                   <div class="home-freshness-col-3 col-xs-3">
-                      x 3
+                      x {{quantity}}
                   </div>
               </div>
-              <div class="row home-freshness-row">
-                  <div class="home-freshness-col-1 col-xs-3">
-                      <img class="icon" src="images/icon-tomato.png"/>
-                  </div>
-                  <div class="home-freshness-col-2 col-xs-6">
-                      Tomato
-                  </div>
-                  <div class="home-freshness-col-3 col-xs-3">
-                      x 3
-                  </div>
-              </div>
-              <div class="row home-freshness-row">
-                <div class="home-freshness-col-1 col-xs-3">
-                    <img class="icon" src="images/icon-tomato.png"/>
-                </div>
-                <div class="home-freshness-col-2 col-xs-6">
-                    Tomato
-                </div>
-                <div class="home-freshness-col-3 col-xs-3">
-                    x 3
-                </div>
-            </div>
-            <div class="row home-freshness-row">
-                <div class="home-freshness-col-1 col-xs-3">
-                    <img class="icon" src="images/icon-tomato.png"/>
-                </div>
-                <div class="home-freshness-col-2 col-xs-6">
-                    Tomato
-                </div>
-                <div class="home-freshness-col-3 col-xs-3">
-                    x 3
-                </div>
-            </div>
-            <div class="row home-freshness-row">
-              <div class="home-freshness-col-1 col-xs-3">
-                  <img class="icon" src="images/icon-tomato.png"/>
-              </div>
-              <div class="home-freshness-col-2 col-xs-6">
-                  Tomato
-              </div>
-              <div class="home-freshness-col-3 col-xs-3">
-                  x 3
-              </div>
-          </div>
-          <div class="row home-freshness-row">
-              <div class="home-freshness-col-1 col-xs-3">
-                  <img class="icon" src="images/icon-tomato.png"/>
-              </div>
-              <div class="home-freshness-col-2 col-xs-6">
-                  Tomato
-              </div>
-              <div class="home-freshness-col-3 col-xs-3">
-                  x 3
-              </div>
-          </div>
+              {{/each}}
+
               <h4 class="home-freshness home-freshness-2">
                   Okay
               </h4>
+
+              {{#each ingredients-ok}}
               <div class="row home-freshness-row">
+
                   <div class="home-freshness-col-1 col-xs-3">
-                      <img class="icon" src="images/icon-tomato.png"/>
+                      <img class="icon" src="{{imageURL}}"/>
                   </div>
                   <div class="home-freshness-col-2 col-xs-6">
-                      Tomato
+                      {{name}}
                   </div>
                   <div class="home-freshness-col-3 col-xs-3">
-                      x 3
+                      x {{quantity}}
                   </div>
               </div>
-              <div class="row home-freshness-row">
-                  <div class="home-freshness-col-1 col-xs-3">
-                      <img class="icon" src="images/icon-tomato.png"/>
-                  </div>
-                  <div class="home-freshness-col-2 col-xs-6">
-                      Tomato
-                  </div>
-                  <div class="home-freshness-col-3 col-xs-3">
-                      x 3
-                  </div>
-              </div>
-              <div class="row home-freshness-row">
-                <div class="home-freshness-col-1 col-xs-3">
-                    <img class="icon" src="images/icon-tomato.png"/>
-                </div>
-                <div class="home-freshness-col-2 col-xs-6">
-                    Tomato
-                </div>
-                <div class="home-freshness-col-3 col-xs-3">
-                    x 3
-                </div>
-            </div>
-            <div class="row home-freshness-row">
-                <div class="home-freshness-col-1 col-xs-3">
-                    <img class="icon" src="images/icon-tomato.png"/>
-                </div>
-                <div class="home-freshness-col-2 col-xs-6">
-                    Tomato
-                </div>
-                <div class="home-freshness-col-3 col-xs-3">
-                    x 3
-                </div>
-            </div>
-            <div class="row home-freshness-row">
-              <div class="home-freshness-col-1 col-xs-3">
-                  <img class="icon" src="images/icon-tomato.png"/>
-              </div>
-              <div class="home-freshness-col-2 col-xs-6">
-                  Tomato
-              </div>
-              <div class="home-freshness-col-3 col-xs-3">
-                  x 3
-              </div>
-          </div>
-          <div class="row home-freshness-row">
-              <div class="home-freshness-col-1 col-xs-3">
-                  <img class="icon" src="images/icon-tomato.png"/>
-              </div>
-              <div class="home-freshness-col-2 col-xs-6">
-                  Tomato
-              </div>
-              <div class="home-freshness-col-3 col-xs-3">
-                  x 3
-              </div>
-          </div>
+              {{/each}}
+
               <h4 class="home-freshness home-freshness-3">
                   Fresh
               </h4>
+              {{#each ingredients-fresh}}
               <div class="row home-freshness-row">
+
                   <div class="home-freshness-col-1 col-xs-3">
-                      <img class="icon" src="images/icon-tomato.png"/>
+                      <img class="icon" src="{{imageURL}}"/>
                   </div>
                   <div class="home-freshness-col-2 col-xs-6">
-                      Tomato
+                      {{name}}
                   </div>
                   <div class="home-freshness-col-3 col-xs-3">
-                      x 3
+                      x {{quantity}}
                   </div>
               </div>
-              <div class="row home-freshness-row">
-                  <div class="home-freshness-col-1 col-xs-3">
-                      <img class="icon" src="images/icon-tomato.png"/>
-                  </div>
-                  <div class="home-freshness-col-2 col-xs-6">
-                      Tomato
-                  </div>
-                  <div class="home-freshness-col-3 col-xs-3">
-                      x 3
-                  </div>
-              </div>
-              <div class="row home-freshness-row">
-                <div class="home-freshness-col-1 col-xs-3">
-                    <img class="icon" src="images/icon-tomato.png"/>
-                </div>
-                <div class="home-freshness-col-2 col-xs-6">
-                    Tomato
-                </div>
-                <div class="home-freshness-col-3 col-xs-3">
-                    x 3
-                </div>
-            </div>
-            <div class="row home-freshness-row">
-                <div class="home-freshness-col-1 col-xs-3">
-                    <img class="icon" src="images/icon-tomato.png"/>
-                </div>
-                <div class="home-freshness-col-2 col-xs-6">
-                    Tomato
-                </div>
-                <div class="home-freshness-col-3 col-xs-3">
-                    x 3
-                </div>
-            </div>
-            <div class="row home-freshness-row">
-              <div class="home-freshness-col-1 col-xs-3">
-                  <img class="icon" src="images/icon-tomato.png"/>
-              </div>
-              <div class="home-freshness-col-2 col-xs-6">
-                  Tomato
-              </div>
-              <div class="home-freshness-col-3 col-xs-3">
-                  x 3
-              </div>
-          </div>
-          <div class="row home-freshness-row">
-              <div class="home-freshness-col-1 col-xs-3">
-                  <img class="icon" src="images/icon-tomato.png"/>
-              </div>
-              <div class="home-freshness-col-2 col-xs-6">
-                  Tomato
-              </div>
-              <div class="home-freshness-col-3 col-xs-3">
-                  x 3
-              </div>
-          </div>
+              {{/each}}
           </div>
       </div>
   </div>

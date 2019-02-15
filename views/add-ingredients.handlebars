@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/app.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <script src="/js/add-ingredients.js"></script>
   </head>
 
   <body>
@@ -29,42 +29,47 @@
     
 
     <div class="search-bar-container">
-        <input class="search-bar" type="text" placeholder="To |">
+        <input class="search-bar" type="text" placeholder="Search foods">
     </div>
 
     <div class="search-list-container">
       <ul>
-        <li class="search-list-item">
+        <!--<li class="search-list-item">
             <div class="row">
                 <img class="icon icon-add" src="images/icon-tomato.png"/>
                 <p class="add-ingredient-name col-xs-5">Tomato</p>
-                
-            <div class="ingredient-plus">+</div>
+                <a href=""><div class="ingredient-plus">+</div></a>
             </div>
-        </li>
+        </li>-->
+        {{#each ingredients}}
         <li class="search-list-item search-list-item-active">
             <div class="row">
-            <img class="icon icon-add" src="images/icon-tomato.png"/>
-            <p class="add-ingredient-name col-xs-5">Tomato</p>
+            <img class="icon icon-add" src="{{imageURL}}"/>
+            <p class="add-ingredient-name col-xs-5">{{name}}</p>
             </div>
+
 
             <div class="qaf-container">
               <div class="row qaf-row-1">
                 Quantity: <span class="qaf-quantity">0</span>
-                <button class="qaf-plus-minus">+</button>
-                <button class="qaf-plus-minus">-</button>
-              </div>
-              <div class="row qaf-row-2">
-                <button class="qaf-freshness qaf-freshness-1">Fresh</button>
+                <button class="qaf-plus-minus quantplus">+</button>
+                <button class="qaf-plus-minus quantminus">-</button>
+                <br>
+                {{!-- <button class="qaf-freshness qaf-freshness-1">Fresh</button>
                 <button class="qaf-freshness qaf-freshness-2">Okay</button>
-                <button class="qaf-freshness qaf-freshness-3">Eat Soon</button>
-                </div>
-                <div class="row qaf-row-3">
-                  <p class="qaf-add">+ Add</p>
+                <button class="qaf-freshness qaf-freshness-3">Eat Soon</button> --}}
+                <input type="checkbox" name="eatsoon" value="eatsoon" id="eatsoon" class="CB-eatsoon">
+                <label for="eatsoon">Eat Soon</label>
+                <input type="checkbox" name="okay" value="okay" id="okay" class="CB-okay">
+                <label for="okay">Okay</label>
+                <input type="checkbox" name="fresh" value="fresh" id="fresh" class="CB-fresh">
+                <label for="fresh">Fresh</label>
+                <a href="#"><p class="qaf-add">+ Add</p></a>
                 </div>
             </div>
             
         </li>
+        {{/each}}
       </ul>
     </div>
 
