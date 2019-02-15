@@ -1,4 +1,4 @@
- *{
+*{
      font-family: 'Rationale';
 }
  @font-face {
@@ -48,7 +48,7 @@
 }
 
  .top-containers {
-     background: rgba(0, 0, 0, .5);
+     background: rgba(0, 0, 0, .7);
      -webkit-backdrop-filter: blur(5px);
      color: white;
      text-align: center;
@@ -127,7 +127,7 @@
 
 .home-view-more{
     text-align: right;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .home-view-more a{
@@ -135,66 +135,68 @@
     background-image: url(images/recipes-spaghetti.jpg);
 }
 
-.home-recipe-card,
-.home-recipe-card-l,
-.home-recipe-card-r{
-    z-index: 5;
-}
-
-.home-recipe-card-l{
-    padding-right: 10px;
-    z-index: 5;
-}
-
-.home-recipe-card-r{
-    padding-left: 10px;
+.home-recipe-card{
     z-index: 5;
 }
 
 .home-recipe-card-inner{
+    box-shadow: 0px 0px 10px #C9CACE;
     width: 100%;
     height: 80px;
-    box-shadow: 0px 0px 10px #C9CACE;
     margin-top: 15px;
     border-radius: 15px;
     text-align: left;
-    background-image: url("images/recipes-spaghetti.jpg");
-    -webkit-background-size: cover;
-    background-size: cover;
     vertical-align: bottom;
+    overflow: hidden;
 }
 
 .home-recipe-card-inner-text{
     height: 30px;
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
     overflow: hidden;
     position: absolute;
     bottom: 10px;
-    left: 30px;
+    right: 15px;
     font-size: 20px;
-    color: gray;
+    color: #505050;
     padding-left: 10px;
-    background-color: rgba(255, 255, 255, .6);
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(255, 255, 255, .7);
     -webkit-backdrop-filter: blur(3px);
+}
+
+.home-recipe-card-inner-image{
+    height: 80px;
+    width: calc(100% - 30px);
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.home-recipe-card-inner-image img{
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 
 .home-view-more{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .home-view-more .col-xs-12{
     text-align: right;
-    font-size: 18px
+    font-size: 20px
 }
 
 .home-title-row{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .home-title{
-     font-size: 22px;
-     height: 30px;
+     font-size: 30px;
+     height: 40px;
+     line-height: 40px;
      text-align: left;
 }
 
@@ -206,15 +208,16 @@ h2.home-title{
 
 .home-plus-button {
      width: 100%;
-     height: 25px;
+     height: 30px;
      overflow: hidden;
      border: 0;
      background-color: #7F7F7F;
      color: white;
-     font-size: 14px;
+     font-size: 18px;
      box-sizing: border-box;
      border-radius: 6px;
-     line-height: 25px;
+     line-height: 30px;
+     margin-top: 5px;
 }
 
 
@@ -275,15 +278,21 @@ h2.home-title{
 
  .home-freshness {
      width: 83px;
-     height: 15px;
+     height: 25px;
      border-radius: 21px;
      color: white;
      text-align: center;
-     font-size: 15px;
+     font-size: 18px;
+     line-height: 25px;
+     margin-top: 30px;
+     margin-left: 20px;
 }
  .home-freshness-row {
-     margin: 0 auto;
+    width: 80%;
+     margin: 5px auto;
+     padding: 5px 0;
      border-bottom: 1px solid #E4E4E4;
+     font-size: 18px;
 }
  .home-freshness-1 {
      background-color: #FF0000;
@@ -298,11 +307,12 @@ h2.home-title{
      text-align: left;
 }
  .home-freshness-col-3 {
-     background-color: #7F7F7F;
+     background-color: #A2A5A5;
      color: white;
      width: 50px;
-     height: 20px;
-     border-radius: 8.5px;
+     height: 25px;
+     line-height: 25px;
+     border-radius: 100px;
 }
  .home-freshness-col-1 {
      display: inline;

@@ -1,130 +1,118 @@
 {
-    "ingredients": [
+    "ingredients-fresh": [
         {
             "name": "Beef (Ground)",
-            "imageURL": "images/icon-beef-ground.png",
+            "imageURL": "/images/icon-beef-ground.png",
             "category": "Protein",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 2
         },
         {
             "name": "Cheese",
-            "imageURL": "images/icon-cheese.png",
+            "imageURL": "/images/icon-cheese.png",
             "category": "Dairy",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 1
         },
         {
             "name": "Garlic",
-            "imageURL": "images/icon-garlic.png",
+            "imageURL": "/images/icon-garlic.png",
             "category": "Vegetable",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 1
         },
         {
             "name": "Lettuce",
-            "imageURL": "images/icon-lettuce.png",
+            "imageURL": "/images/icon-lettuce.png",
             "category": "Vegetable",
-            "quantity": 0,
-            "condition": "fresh"
-        },
+            "quantity": 2
+        }
+    ],
+    "ingredients-ok":[
         {
             "name": "Pasta",
-            "imageURL": "images/icon-pasta.png",
+            "imageURL": "/images/icon-pasta.png",
             "category": "Carbs",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 1
         },
         {
             "name": "Onion",
-            "imageURL": "images/icon-onion.png",
+            "imageURL": "/images/icon-onion.png",
             "category": "Vegetable",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 2
         },
         {
             "name": "Peanut Butter",
-            "imageURL": "images/icon-peanut-butter.png",
+            "imageURL": "/images/icon-peanut-butter.png",
             "category": "Other",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 2
         },
         {
             "name": "Tofu",
-            "imageURL": "images/icon-tofu.png",
+            "imageURL": "/images/icon-tofu.png",
             "category": "Protein",
-            "quantity": 0,
-            "condition": "fresh"
-        },
+            "quantity": 3
+        }
+    ],
+
+    "ingredients-soon":[
         {
             "name": "Chicken",
-            "imageURL": "images/icon-chicken.png",
+            "imageURL": "/images/icon-chicken.png",
             "category": "Protein",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Butter",
-            "imageURL": "images/icon-butter.png",
+            "imageURL": "/images/icon-butter.png",
             "category": "Dairy",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Lemon",
-            "imageURL": "images/icon-lemon.png",
+            "imageURL": "/images/icon-lemon.png",
             "category": "Fruit",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Broccoli",
-            "imageURL": "images/icon-broccoli.png",
+            "imageURL": "/images/icon-broccoli.png",
             "category": "Vegetable",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Pork",
-            "imageURL": "images/icon-pork.png",
+            "imageURL": "/images/icon-pork.png",
             "category": "Protein",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Potato",
-            "imageURL": "images/icon-potato.png",
+            "imageURL": "/images/icon-potato.png",
             "category": "Vegetable",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Salmon",
-            "imageURL": "images/icon-salmon.png",
+            "imageURL": "/images/icon-salmon.png",
             "category": "Protein",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Celery",
-            "imageURL": "images/icon-celery.png",
+            "imageURL": "/images/icon-celery.png",
             "category": "Vegetable",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         },
         {
             "name": "Tomato",
-            "imageURL": "images/icon-tomato.png",
+            "imageURL": "/images/icon-tomato.png",
             "category": "Fruit",
-            "quantity": 0,
-            "condition": "fresh"
+            "quantity": 0
         }
     ],
 
     "recipes": [
         {
             "name": "Peanut Tofu",
-            "imageURL": "images/recipes-peanut-tofu.jpg",
+            "imageURL": "/images/recipes-peanut-tofu.jpg",
             "recipe ingredients": ["Tofu", "Onion", "Garlic", "Peanut Butter"],
             "cooking time": "1 hr",
             "serving size": 4,
@@ -133,7 +121,7 @@
         },
         {
             "name": "Baked Lemon Chicken",
-            "imageURL": "images/recipes-baked-lemon-chicken.jpg",
+            "imageURL": "/images/recipes-baked-lemon-chicken.jpg",
             "recipe ingredients": ["Chicken", "Butter", "Garlic", "Lemon", "Parsley"],
             "cooking time": "35 min",
             "serving size": 4,
@@ -146,7 +134,7 @@
         },
         {
             "name": "Beef Broccoli",
-            "imageURL": "images/recipes-beef-broccoli.jpg",
+            "imageURL": "/images/recipes-beef-broccoli.jpg",
             "recipe ingredients": ["Beef", "Broccoli", "Garlic", "Onion", "Ginger"],
             "cooking time": "25 min",
             "serving size": 4,
@@ -156,7 +144,7 @@
         },
         {
             "name": "Pork and Potato Hash",
-            "imageURL": "images/recipes-pork-and-potato-hash.jpg",
+            "imageURL": "/images/recipes-pork-and-potato-hash.jpg",
             "recipe ingredients": ["Pork", "Potato", "Onion", "Garlic", "Scallions"],
             "cooking time": "50 min",
             "serving size": 6,
@@ -169,7 +157,7 @@
         },
         {
             "name": "Pan Seared Salmon",
-            "imageURL": "images/recipes-pan-seared-salmon.jpg",
+            "imageURL": "/images/recipes-pan-seared-salmon.jpg",
             "recipe ingredients": ["Salmon", "Capers", "Lemon"],
             "cooking time": "20 min",
             "serving size": 4,
@@ -180,7 +168,7 @@
         },
         {
             "name": "Spaghetti",
-            "imageURL": "images/recipes-spaghetti.jpg",
+            "imageURL": "/images/recipes-spaghetti.jpg",
             "recipe ingredients": ["Beef (Ground)", "Pasta", "Onion", "Garlic", "Tomato", "Cheese"],
             "cooking time": "1 hr",
             "serving size": 4,

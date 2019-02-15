@@ -34,78 +34,51 @@
                         <h4 class="home-freshness home-freshness-1">
                             Eat Soon
                         </h4>
+                        {{#each_upto ingredients-soon 3}}
                         <div class="row home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-3">
-                                <img class="icon" src="images/icon-tomato.png"/>
+                            <div class="home-freshness-col-1 col-xs-2">
+                                <img class="icon" src="{{imageURL}}"/>
                             </div>
                             <div class="home-freshness-col-2 col-xs-6">
-                                Tomato
+                                {{name}}
                             </div>
-                            <div class="home-freshness-col-3 col-xs-3">
-                                x 3
-                            </div>
-                        </div>
-                        <div class="row home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-3">
-                                <img class="icon" src="images/icon-tomato.png"/>
-                            </div>
-                            <div class="home-freshness-col-2 col-xs-6">
-                                Tomato
-                            </div>
-                            <div class="home-freshness-col-3 col-xs-3">
-                                x 3
+                            <div class="home-freshness-col-3 col-xs-4">
+                                x {{quantity}}
                             </div>
                         </div>
+                        {{/each_upto}}
                         <h4 class="home-freshness home-freshness-2">
                             Okay
                         </h4>
+                        {{#each_upto ingredients-ok 3}}
                         <div class="row home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-3">
-                                <img class="icon" src="images/icon-tomato.png"/>
+                            <div class="home-freshness-col-1 col-xs-2">
+                                <img class="icon" src="{{this.imageURL}}"/>
                             </div>
                             <div class="home-freshness-col-2 col-xs-6">
-                                Tomato
+                                {{this.name}}
                             </div>
-                            <div class="home-freshness-col-3 col-xs-3">
-                                x 3
-                            </div>
-                        </div>
-                        <div class="row home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-3">
-                                <img class="icon" src="images/icon-tomato.png"/>
-                            </div>
-                            <div class="home-freshness-col-2 col-xs-6">
-                                Tomato
-                            </div>
-                            <div class="home-freshness-col-3 col-xs-3">
-                                x 3
+                            <div class="home-freshness-col-3 col-xs-4">
+                                x {{this.quantity}}
                             </div>
                         </div>
+                        {{/each_upto}}
                         <h4 class="home-freshness home-freshness-3">
                             Fresh
                         </h4>
+                        {{#each_upto ingredients-fresh 3}}
                         <div class="row home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-3">
-                                <img class="icon" src="images/icon-tomato.png"/>
+                            <div class="home-freshness-col-1 col-xs-2">
+                                <img class="icon" src="{{this.imageURL}}"/>
                             </div>
                             <div class="home-freshness-col-2 col-xs-6">
-                                Tomato
+                                {{this.name}}
                             </div>
-                            <div class="home-freshness-col-3 col-xs-3">
-                                x 3
-                            </div>
-                        </div>
-                        <div class="row home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-3">
-                                <img class="icon" src="images/icon-tomato.png"/>
-                            </div>
-                            <div class="home-freshness-col-2 col-xs-6">
-                                Tomato
-                            </div>
-                            <div class="home-freshness-col-3 col-xs-3">
-                                x 3
+                            <div class="home-freshness-col-3 col-xs-4">
+                                x {{this.quantity}}
                             </div>
                         </div>
+                        {{/each_upto}}
                     </div>
                 </div>
             </div>
@@ -128,32 +101,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-6 home-recipe-card-l">
+                <div class="col-xs-6 home-recipe-card">
                     <a href="">
                         <div class="home-recipe-card-inner">
+                            <div class="home-recipe-card-inner-image"><img src="/images/recipes-spaghetti.jpg" alt=""></div>
                             <div class="home-recipe-card-inner-text">Spagetti</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-6 home-recipe-card-r">
+                <div class="col-xs-6 home-recipe-card">
                     <a href="">
                         <div class="home-recipe-card-inner">
+                            <div class="home-recipe-card-inner-image"><img src="/images/recipes-spaghetti.jpg" alt=""></div>
                             <div class="home-recipe-card-inner-text">Spagetti</div>
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 home-recipe-card-l">
+                <div class="col-xs-6 home-recipe-card">
                     <a href="">
                         <div class="home-recipe-card-inner">
+                            <div class="home-recipe-card-inner-image"><img src="/images/recipes-spaghetti.jpg" alt=""></div>
                             <div class="home-recipe-card-inner-text">Spagetti</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-6 home-recipe-card-r">
+                <div class="col-xs-6 home-recipe-card">
                     <a href="">
                         <div class="home-recipe-card-inner">
+                            <div class="home-recipe-card-inner-image"><img src="/images/recipes-spaghetti.jpg" alt=""></div>
                             <div class="home-recipe-card-inner-text">Spagetti</div>
                         </div>
                     </a>
