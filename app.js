@@ -67,7 +67,7 @@ http.createServer(app).listen(app.get('port'), function(){
 });
 
 
-var hbs = exphbs.create({
+var hbs = handlebars.create({
     // Specify helpers which are only registered on this instance.
     helpers: {
         each_upto: function (ary, max, options) { 
