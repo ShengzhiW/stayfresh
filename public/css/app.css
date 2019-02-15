@@ -68,6 +68,7 @@
  .outer-container{
      width: calc(100vw - 40px);
      margin-left: 20px;
+     margin-bottom: 50px;
 }
  .confirmation-buttons {
      box-sizing: border-box;
