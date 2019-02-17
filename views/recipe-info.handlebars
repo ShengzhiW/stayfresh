@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>{{recipes.name}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/app.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+<body>
+  <script type="text/javascript">
+  function parse_query_string(query) {
+var vars = query.split("&");
+var query_string = {};
+for (var i = 0; i < vars.length; i++) {
+  var pair = vars[i].split("=");
+  var key = decodeURIComponent(pair[0]);
+  var value = decodeURIComponent(pair[1]);
+  // If first entry with this name
+  if (typeof query_string[key] === "undefined") {
+    query_string[key] = decodeURIComponent(value);
+    // If second entry with this name
+  } else if (typeof query_string[key] === "string") {
+    var arr = [query_string[key], decodeURIComponent(value)];
+    query_string[key] = arr;
+    // If third or later entry with this name
+  } else {
+    query_string[key].push(decodeURIComponent(value));
+  }
+}
+return query_string;
+}
+
+var query_string = "a=1&b=3&c=m2-m3-m4-m5";
+var parsed_qs = parse_query_string(query_string);
+console.log(parsed_qs.c);
+  </script>
+  var query = window.location.search.substring(1);
+var qs = parse_query_string(query);
+  <div class="">
+    {{#matchesRecipe recipes}}
+  </div>
+
+</body>
+<!--
+
+  <div class="container top-containers">
+      <div class="row">
+        <a href="index">
+        <div class="col col-xs-2">
+              <p class="back">&lt;</p>
+        </div>
+      </a>
+        <div class="col col-xs-8">
+          <h1 id="recipe-name">Recipe Info</h1>
+        </div>
+        <div class="col col-xs-2 done-col">
+          <a href="recipe-rate">
+          <button class="done">Done</button>
+        </a>
+        </div>
+      </div>
+  </div>
+
+<div class="container recipe-intro-container">
+    <div class="row">
+      <div class="col col-xs-4">
+            Cooking Time: <p class="recipe-time">1 hr</p>
+            <br>
+            Serving size: <p class="serving-size">4</p>
+      </div>
+      <div class="col col-xs-8">
+        <img class="img-recipe-info" src="images/recipes-peanut-tofu.jpg"/>
+      </div>
+    </div>
+</div>
+
+<h2 id="recipe-info-header">Recipe</h2>
+
+<div class="container recipe-body-container">
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </div>
+
+  <div class="edit-recipe-button-container">
+  <a href="edit-recipe">
+    <button id="edit-recipe-button">Edit Recipe</button>
+</a>
+</div> -->
+
+</html>

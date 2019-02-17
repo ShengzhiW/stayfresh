@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>My Recipes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/app.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="container top-containers">
+    <div class="row">
+      <a href="index">
+      <div class="col col-xs-2">
+            <p class="back">Cancel</p>
+      </div>
+    </a>
+      <div class="col col-xs-8">
+        <h1 id="recipe-name">Recipes</h1>
+      </div>
+    </div>
+</div>
+
+  <div class="container">
+    
+    <div class="row">
+      <a href="add-recipe">
+        <div class="col recipes-new-recipe">
+        + New Recipe
+        </div>
+      </a>
+    </div>
+
+{{!--     <div class="row">
+      <div class="col col-xs-6 recipe-filter-left">
+          Recommended
+      </div>
+      <div class="col col-xs-6 recipe-filter-right">
+          My Recipes
+      </div>
+    </div>
+ --}}
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+    <!-- Recipes -->
+
+<div class="outer-container">
+{{#each recipes}}
+<div class="var-card shadow">
+  <div><h1>{{name}}</h1></div>
+
+  <div>Ingredients: {{recipeIngredients}}</div>
+  <div>Servings: {{servingSize}}</div>
+  <div>Time: {{cookingTime}}</div>
+  <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
+</div>
+
+{{/each}}
+</div>
+</body>
+
+</html>
