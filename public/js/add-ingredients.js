@@ -62,6 +62,11 @@ function quantDeIncrement(e) { 
     quant.html(num);
 }
 
+function goBack() {
+  window.history.back();
+}
+
+
 function addFood(e) {
     var quant = $(this).closest('.row').find('.qaf-quantity').html();
     var cbEat = $(this).closest('.row').find('.CB-eatsoon').is(":checked");
@@ -75,14 +80,16 @@ function addFood(e) {
         // window.location.replace("view-all-ingredients");
     }
 
+
     var json_data = {
         food: foodName, 
         image: img, 
-        quantity: quant
+        quantity: quant,
+
     }
     alert(JSON.stringify(json_data));
 
-    $.get("add-ingredients", json_data,
+    $.get("view-all-ingredients", json_data,
         function(data){
             alert("Data: " + data + "\nStatus: " + status);
             $(window).html(data);

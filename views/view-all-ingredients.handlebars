@@ -22,25 +22,25 @@
       </div>
    </div>
    <div class="outer-container">
-      <div class="search-bar-container">
+      {{!-- <div class="search-bar-container">
          <input class="search-bar" type="text" placeholder="Search for a food to add">
-      </div>
+      </div> --}}
       <div class="row">
          <div class="col-xs-12">
             <div class="fridge-container">
                <div class="row">
                   <div class="col-xs-4"></div>
-                  <div class="col-xs-4 fridge-filter">
+                  {{!-- <div class="col-xs-4 fridge-filter">
                      Filter     &#9660;
-                  </div>
-                  <div class="col-xs-4 fridge-edit">
+                  </div> --}}
+                  {{!-- <div class="col-xs-4 fridge-edit">
                      Edit
-                  </div>
+                  </div> --}}
                </div>
                <h4 class="home-freshness home-freshness-1">
                   Eat Soon
                </h4>
-               {{#each ingredients-fresh}}
+               {{#each ingredients_soon}}
                <div class="row home-freshness-row">
                   <div class="home-freshness-col-1 col-xs-3">
                      <img class="icon" src="{{imageURL}}"/>
@@ -56,7 +56,7 @@
                <h4 class="home-freshness home-freshness-2">
                   Okay
                </h4>
-               {{#each ingredients-ok}}
+               {{#each ingredients_ok}}
                <div class="row home-freshness-row">
                   <div class="home-freshness-col-1 col-xs-3">
                      <img class="icon" src="{{imageURL}}"/>
@@ -72,7 +72,7 @@
                <h4 class="home-freshness home-freshness-3">
                   Fresh
                </h4>
-               {{#each ingredients-fresh}}
+               {{#each ingredients_fresh}}
                <div class="row home-freshness-row">
                   <div class="home-freshness-col-1 col-xs-3">
                      <img class="icon" src="{{imageURL}}"/>
