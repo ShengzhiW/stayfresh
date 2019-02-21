@@ -22,6 +22,8 @@ var signup = require('./routes/sign-up');
 
 
 
+
+
 // Example route
 // var user = require('./routes/user');
 
@@ -41,7 +43,6 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-app.get("/recipe-info/:recipeName", recipeInfo.view);
 
 // development only
 if ('development' == app.get('env')) {
@@ -59,6 +60,7 @@ app.get('/recipe-rate', recipeRate.view);
 app.get('/view-all-ingredients', vAIng.view);
 app.get('/view-all-recipes', vARecipe.view);
 app.get('/sign-up', signup.view);
+app.get("/recipe-info/:recipeName", recipeInfo.view);
 
 
 
@@ -99,7 +101,5 @@ var hbs = handlebars.create({
         }
     }
 });
-
-
 
 app.engine('handlebars', hbs.engine);

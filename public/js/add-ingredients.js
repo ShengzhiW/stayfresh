@@ -68,14 +68,25 @@ function addFood(e) {
     var cbOkay = $(this).closest('.row').find('.CB-okay').is(":checked");
     var cbFresh = $(this).closest('.row').find('.CB-fresh').is(":checked");
     var foodName = $(this).closest('.row').closest('.qaf-container').closest('.search-list-item').find('.add-ingredient-name').html();
+    var img = $(this).closest('.row').closest('.qaf-container').closest('.search-list-item').find('.icon-add').attr("src");
     if (!quant > 0)
         return;
     else if(cbEat ||cbOkay||cbFresh){
-        window.location.replace("view-all-ingredients");
+        // window.location.replace("view-all-ingredients");
     }
 
-    
+    var json_data = {
+        food: foodName, 
+        image: img, 
+        quantity: quant
+    }
+    alert(JSON.stringify(json_data));
 
+    $.get("add-ingredients", json_data,
+        function(data){
+            alert("Data: " + data + "\nStatus: " + status);
+            $(window).html(data);
+        });
 }
 
 function storeJson(name, fresh, amount){

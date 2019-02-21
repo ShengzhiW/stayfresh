@@ -5,49 +5,49 @@
             "name": "Beef (Ground)",
             "imageURL": "/images/icon-beef-ground.png",
             "category": "Protein",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "Cheese",
             "imageURL": "/images/icon-cheese.png",
-            "category": "Dairy",
-            "quantity": 1
+            "category": "Other",
+            "quantity": 0
         },
         {
             "name": "Garlic",
             "imageURL": "/images/icon-garlic.png",
             "category": "Vegetable",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "Lettuce",
             "imageURL": "/images/icon-lettuce.png",
             "category": "Vegetable",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "Pasta",
             "imageURL": "/images/icon-pasta.png",
             "category": "Carbs",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "Onion",
             "imageURL": "/images/icon-onion.png",
             "category": "Vegetable",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "Peanut Butter",
             "imageURL": "/images/icon-peanut-butter.png",
             "category": "Other",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "Tofu",
             "imageURL": "/images/icon-tofu.png",
             "category": "Protein",
-            "quantity": 3
+            "quantity": 0
         },
 
         {
@@ -59,7 +59,7 @@
         {
             "name": "Butter",
             "imageURL": "/images/icon-butter.png",
-            "category": "Dairy",
+            "category": "Other",
             "quantity": 0
         },
         {
@@ -117,7 +117,7 @@
         {
             "name": "Cheese",
             "imageURL": "/images/icon-cheese.png",
-            "category": "Dairy",
+            "category": "Other",
             "quantity": 1
         },
         {
@@ -170,7 +170,7 @@
         {
             "name": "Butter",
             "imageURL": "/images/icon-butter.png",
-            "category": "Dairy",
+            "category": "Other",
             "quantity": 0
         },
         {
