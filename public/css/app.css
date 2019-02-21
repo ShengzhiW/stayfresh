@@ -98,7 +98,7 @@
  .login-welcome-line-2 {
      font-size: 35px;
 }
- .login-input {
+ .login-input, .sign-up-input {
      height: 50px;
      margin: 10px auto 10px auto;
      text-align: center;
@@ -108,7 +108,7 @@
      background-color: #F0F0F0;
      font-size: 18px;
 }
- #login-submit {
+ #login-submit, .sign-up-submit {
      height: 40px;
      color: white;
      width: 170px;
@@ -920,3 +920,23 @@ h2.home-title{
     border-radius: 15px;
     padding: 20px 20px 0 20px;
 }
+
+/* Sign Up */
+
+#please-form {
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sign-up-main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sign-up-input {
+    margin-top: 20px;
+}
+

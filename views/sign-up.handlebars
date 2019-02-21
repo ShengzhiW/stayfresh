@@ -10,9 +10,16 @@
 </head>
 <body>
     <div class="container top-containers">
-        <h1 class="nav-title">Sign Up</h1>
-        <p>Please fill in this form to create an account.</p>
+        <a href="login">
+            <div class="col col-xs-2">
+                <p class="back"><</p>
+            </div>
+        </a>
+        <div class="col col-xs-8">
+                <h1 class="nav-title">Sign Up</h1>
+            </div>
     </div>
+    <p id="please-form">Please fill in this form to create an account.</p>
     <div class="container sign-up-main">
         <input class="sign-up-input" type="text" name="Email" placeholder="Email" required>
         <br>
@@ -25,7 +32,7 @@
         <input class="sign-up-submit" type="submit" value="Sign Up">
         </a>
     </div>
-    <div class="cancel-new-account"> <a href="login"><</a></div>
-    <div class="create-new-account"> <a href="index">Sign Up</a></div>
+    {{!-- <div class="cancel-new-account"> <a href="login"></a></div>
+    <div class="create-new-account"> <a href="index">Sign Up</a></div> --}}
 </body>
 </html>
