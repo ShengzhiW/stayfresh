@@ -259,6 +259,12 @@ h2.home-title{
      float: left;
      font-size: 22px;
      letter-spacing: 2.0px;
+
+}
+
+.graytext{
+    color: gray;
+    border-bottom: 0!important
 }
 
  .plus-button-home {
@@ -687,7 +693,7 @@ h2.home-title{
     border-radius: 15px;
     box-shadow: 0px 0px 10px #C9CACE;
     padding-left: 10px; 
-    
+    padding-bottom: 30px;
     margin: 0 auto;
     margin-top: 15px;
 }

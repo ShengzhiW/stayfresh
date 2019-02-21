@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -19,9 +18,6 @@ var recipeRate = require('./routes/recipe-rate');
 var vAIng = require('./routes/view-all-ingredients');
 var vARecipe = require('./routes/view-all-recipes');
 var signup = require('./routes/sign-up');
-
-
-
 
 
 // Example route
@@ -63,43 +59,39 @@ app.get('/sign-up', signup.view);
 app.get("/recipe-info/:recipeName", recipeInfo.view);
 
 
-
-
 // Example route
 // app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
 
 
 var hbs = handlebars.create({
-    // Specify helpers which are only registered on this instance.
-    helpers: {
+      // Specify helpers which are only registered on this instance.
+      helpers: {
         each_upto: function (ary, max, options) {
-            if(!ary || ary.length == 0)
-                return options.inverse(this);
+          if (!ary || ary.length == 0)
+            return options.inverse(this);
 
-            var result = [ ];
-            for(var i = 0; i < max && i < ary.length; ++i)
-                result.push(options.fn(ary[i]));
-            return result.join('');
-    },
-        matchesRecipe: function (ary, name) {
-          if(!ary || ary.length == 0)
-              return options.inverse(this);
+          var result = [];
+          for (var i = 0; i < max && i < ary.length; ++i)
+            result.push(options.fn(ary[i]));
+          return result.join('');
+        },
+        math: function (lvalue, operator, rvalue) {
+            lvalue = parseFloat(lvalue);
+            rvalue = parseFloat(rvalue);
 
-          var result = [ ];
-          for(var i = 0; i < ary.length; i++) {
-            if(ary[i].keySet().get('name') == name) {
-              console.log(ary[i].keySet().get('name'))
-              result.push(ary[i]);
-              break;
-            }
+            return {
+              "+": lvalue + rvalue,
+              "-": lvalue - rvalue,
+              "*": lvalue * rvalue,
+              "/": lvalue / rvalue,
+              "%": lvalue % rvalue
+            }[operator];
           }
-          return result;
         }
-    }
-});
+      });
 
-app.engine('handlebars', hbs.engine);
+    app.engine('handlebars', hbs.engine);
