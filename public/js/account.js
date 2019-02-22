@@ -14,5 +14,5 @@ function facebookLogout(){
             });
         }
     });
-    window.location = "/";    
+    window.location = "/";
 }

@@ -76,12 +76,19 @@ function addFood(e) {
     var img = $(this).closest('.row').closest('.qaf-container').closest('.search-list-item').find('.icon-add').attr("src");
     if (!quant > 0)
         return;
-    else if(cbEat ||cbOkay||cbFresh){
-        // window.location.replace("view-all-ingredients");
+    else if(!(cbEat ||cbOkay||cbFresh)){
+         return;
     }
+    if(cbEat)
+        var cat = "soon";
+    else if (cbOkay)
+        var cat = "okay";
+    else if (cbFresh)
+        var cat = "fresh"
 
 
     var json_data = {
+        category: cat,
         food: foodName, 
         image: img, 
         quantity: quant,
@@ -94,21 +101,6 @@ function addFood(e) {
             alert("Data: " + data + "\nStatus: " + status);
             $(window).html(data);
         });
-}
-
-<<<<<<< HEAD
-function storeJson(name, fresh, amount){
-    var fs = require('fs');
-    fs.readFile('/data/test.json', function (err, data) {
-        var json = JSON.parse(data);
-        console.log('ll');
-        // console.log(json);
-        json.push('search result: ' + currentSearchResult);    
-        fs.writeFile("/data/test.json", JSON.stringify(json), function(err){
-          if (err) throw err;
-          console.log('The "data to append" was appended to file!');
-    });
-    })
 }
 
 // function storeJson(name, fresh, amount){
@@ -124,4 +116,3 @@ function storeJson(name, fresh, amount){
 //     });
 //     })
 // }
->>>>>>> 767656ba3f7d8302c27d04c4986bdb67c5614624
