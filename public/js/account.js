@@ -1,20 +1,8 @@
 // $(document).ready(function() {
-//   init();
+//   setTimeout(loadAfterTime, 1000);
+//   var htm = "<div class='logoutbtn'><a href='#'' onclick='facebookLogout()'>Log Out</a></div>";
+//   $(".login-main").html(htm);
 // })
-
-
-
-// function init(){
-//     FB.getLoginStatus(function(response) {
-//         if (response.status === 'connected') {
-//             var html ="Hello, you are currently logged in";
-//             $(".login-main").html(html);
-//         }
-//         else{
-//           window.location = "/";
-//         }
-//     });
-// }
 
 
 

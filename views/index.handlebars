@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/css/app.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    {{> facebook}}
+    <script src="/js/account.js"></script>
 </head>
 <body>
     <div class="container top-containers">
         <h1 class="nav-title">Home</h1>
-        <a href="/account"><img class="icon-profile" src="images/profile.png"/></a>
+        <a onclick="facebookLogout()"><img class="icon-profile account-logout" src="images/logout.png"/></a>
     </div>
     <div class="outer-container">
         <div class="container">
