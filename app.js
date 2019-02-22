@@ -51,12 +51,12 @@ app.get('/add-recipe', addRecipe.view);
 app.get('/add-ingredients', addIng.view);
 app.get('/confirmation', confirmation.view);
 app.get('/edit-recipe', editRecipe.view);
-app.get('/recipe-info', recipeInfo.view);
+app.get('/recipe-info', vARecipe.view);
 app.get('/recipe-rate', recipeRate.view);
 app.get('/view-all-ingredients', vAIng.view);
 app.get('/view-all-recipes', vARecipe.view);
 app.get('/sign-up', signup.view);
-app.get("/recipe-info/:recipeName", recipeInfo.view);
+app.get("/recipe-info/:recipeID", recipeInfo.view);
 
 
 // Example route

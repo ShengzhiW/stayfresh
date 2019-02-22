@@ -205,7 +205,8 @@
     ],
 
     "recipes": [
-        {
+        {   
+            "id" : 1,
             "name": "Peanut Tofu",
             "imageURL": "/images/recipes-peanut-tofu.jpg",
             "recipeIngredients": ["Tofu", "Onion", "Garlic", "Peanut Butter"],
@@ -214,7 +215,8 @@
             "steps": ["Chop garlic and onions, sautee for 2 minutes.", "Stir in soy sauce, ketchup, peanut butter, maple syrup, vegetable broth, and crushed red peppers. Mix.",
               "Add tofu, bring to boil and let sauce reduce and thicken."]
         },
-        {
+        {   
+            "id" : 2,
             "name": "Baked Lemon Chicken",
             "imageURL": "/images/recipes-baked-lemon-chicken.jpg",
             "recipeIngredients": ["Chicken", "Butter", "Garlic", "Lemon", "Parsley"],
@@ -227,7 +229,8 @@
               "Bake for 25 minutes or until chicken is cooked through. Bake time may vary depending on the thickness of your chicken breasts.",
               "Spoon the sauce on the bottom of the baking dish over the chicken, then sprinkle with parsley and serve. Garnish with lemon slices if desired."]
         },
-        {
+        {   
+            "id" : 3,
             "name": "Beef Broccoli",
             "imageURL": "/images/recipes-beef-broccoli.jpg",
             "recipeIngredients": ["Beef", "Broccoli", "Garlic", "Onion", "Ginger"],
@@ -237,7 +240,8 @@
               "In a large skillet, heat 1 tablespoon oil over medium-high heat; stir-fry beef until browned, 2-3 minutes. Remove from pan.",
               "In same pan, stir-fry broccoli and onion in remaining oil over medium-high heat until crisp-tender, 4-5 minutes. Stir soy sauce mixture; add to pan. Cook and stir until thickened, 1-2 minutes. Return beef to pan; heat through."]
         },
-        {
+        {   
+            "id" : 4,
             "name": "Pork and Potato Hash",
             "imageURL": "/images/recipes-pork-and-potato-hash.jpg",
             "recipeIngredients": ["Pork", "Potato", "Onion", "Garlic", "Scallions"],
@@ -251,6 +255,7 @@
               "The mixture will brown faster in the last 10 minutes of cooking and should be stirred every 2-3 minutes."]
         },
         {
+            "id" : 5,
             "name": "Pan Seared Salmon",
             "imageURL": "/images/recipes-pan-seared-salmon.jpg",
             "recipeIngredients": ["Salmon", "Capers", "Lemon"],
@@ -262,6 +267,7 @@
               "Transfer salmon to individual plates, and garnish with lemon slices."]
         },
         {
+            "id" : 6,
             "name": "Spaghetti",
             "imageURL": "/images/recipes-spaghetti.jpg",
             "recipeIngredients": ["Beef (Ground)", "Pasta", "Onion", "Garlic", "Tomato", "Cheese"],

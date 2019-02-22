@@ -437,19 +437,18 @@ h2.home-title{
      text-align: center;
 }
  .done, .save {
-     background: rgb(152, 201, 152);
-     width: 75px;
+     /* background: rgb(152, 201, 152); */
+     background-color: white;
+    width: 50px;
      height: 30px;
+     font-size: 20px;
 }
  .discard {
      background: rgb(255, 150, 150);
 }
  .done {
-     width: 50px;
-     height: 25px;
-     box-sizing: border-box;
-     border-radius: 15%;
-     margin-top: 18px;
+     border-radius: 5px;
+     margin-top: 10px;
      margin-left: -20px;
 }
 /* ------ Add Ingredients ------ */
@@ -638,9 +637,15 @@ h2.home-title{
 /* ----- Recipe Info ----- */
 
  .recipe-intro-container {
-     box-sizing: border-box;
-     padding: 40px 0px 5px 30px;
+    width: 300px;
+    margin-right: auto; 
+    margin-left: auto;
 }
+
+.recipe-info-name{
+    margin-bottom: 50px;
+}
+
  h2#recipe-info-header {
      font-size: 18px;
 }
@@ -654,11 +659,10 @@ h2.home-title{
 }
  .recipe-body-container {
      width: 95%;
-     height: 75vw;
      overflow: scroll;
      margin: 0 auto;
      box-sizing: border-box;
-     padding: 3vw 4vw;
+     padding: 10px;
      border: 1px solid rgb(194, 194, 194);
 }
  #recipe-info-header {
