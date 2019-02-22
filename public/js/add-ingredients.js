@@ -96,16 +96,16 @@ function addFood(e) {
         });
 }
 
-function storeJson(name, fresh, amount){
-    var fs = require('fs');
-    fs.readFile('/data/test.json', function (err, data) {
-        var json = JSON.parse(data);
-        console.log('ll');
-        // console.log(json);
-        json.push('search result: ' + currentSearchResult);    
-        fs.writeFile("/data/test.json", JSON.stringify(json), function(err){
-          if (err) throw err;
-          console.log('The "data to append" was appended to file!');
-    });
-    })
-}
+// function storeJson(name, fresh, amount){
+//     var fs = require('fs');
+//     fs.readFile('/data/test.json', function (err, data) {
+//         var json = JSON.parse(data);
+//         console.log('ll');
+//         // console.log(json);
+//         json.push('search result: ' + currentSearchResult);    
+//         fs.writeFile("/data/test.json", JSON.stringify(json), function(err){
+//           if (err) throw err;
+//           console.log('The "data to append" was appended to file!');
+//     });
+//     })
+// }
