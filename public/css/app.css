@@ -230,8 +230,10 @@
 
 .home-view-more .col-xs-12{
     text-align: right;
-    font-size: 22px
+    font-size: 22px;
 }
+
+
 
 .home-title-row{
     margin-top: 40px;
@@ -280,7 +282,7 @@ h2.home-title{
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 22px;
     
 }
 
@@ -843,8 +845,11 @@ h2.home-title{
 
 .add-recipe-summary-item {
     
+    width: 300px;
     border-bottom: 1px solid #E4E4E4;
     margin-top: 8px;
+    margin: 0 auto;
+    padding-bottom: 10px;
     
 }
 
