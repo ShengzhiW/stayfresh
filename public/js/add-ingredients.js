@@ -76,12 +76,19 @@ function addFood(e) {
     var img = $(this).closest('.row').closest('.qaf-container').closest('.search-list-item').find('.icon-add').attr("src");
     if (!quant > 0)
         return;
-    else if(cbEat ||cbOkay||cbFresh){
-        // window.location.replace("view-all-ingredients");
+    else if(!(cbEat ||cbOkay||cbFresh)){
+         return;
     }
+    if(cbEat)
+        var cat = "soon";
+    else if (cbOkay)
+        var cat = "okay";
+    else if (cbFresh)
+        var cat = "fresh"
 
 
     var json_data = {
+        category: cat,
         food: foodName, 
         image: img, 
         quantity: quant,
