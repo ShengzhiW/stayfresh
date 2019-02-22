@@ -18,6 +18,7 @@ var recipeRate = require('./routes/recipe-rate');
 var vAIng = require('./routes/view-all-ingredients');
 var vARecipe = require('./routes/view-all-recipes');
 var signup = require('./routes/sign-up');
+var account = require('./routes/account');
 
 
 // Example route
@@ -57,6 +58,7 @@ app.get('/view-all-ingredients', vAIng.view);
 app.get('/view-all-recipes', vARecipe.view);
 app.get('/sign-up', signup.view);
 app.get("/recipe-info/:recipeName", recipeInfo.view);
+app.get('/account', account.view);
 
 
 // Example route

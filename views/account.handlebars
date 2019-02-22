@@ -8,25 +8,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     {{> facebook}}
-    <script src="/js/facebook.js"></script>
+    <script src="/js/account.js"></script>
     <link rel="stylesheet" href="/css/loader.css">
 </head>
 <body>
     <div class="container top-containers">
-        <h1 class="nav-title">StayFresh</h1>
-    </div>
-    <div class="container login-welcome">
-        <h2 class="login-welcome-line-1">Welcome to</h2>
-        <h3 class="login-welcome-line-2">StayFresh!</h3>
+        <h1 class="nav-title">My Account</h1>
     </div>
 
     <div class="container login-main">
         <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        Please refresh if the app does not load...
+        <br>
     </div>
-{{!--     <div class="container fbloginbtn">
-        <fb:login-button scope='public_profile,email' onlogin='checkLoginState();'></fb:login-button>
-    </div> --}}
-    
+
+    <a href="#" onclick="facebookLogout()"><div>Log Out</div></a>
     
 
 </body>
