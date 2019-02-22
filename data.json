@@ -160,47 +160,47 @@
         {
             "name": "Chicken",
             "imageURL": "/images/icon-chicken.png",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "Butter",
             "imageURL": "/images/icon-butter.png",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "Lemon",
             "imageURL": "/images/icon-lemon.png",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "Broccoli",
             "imageURL": "/images/icon-broccoli.png",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "Pork",
             "imageURL": "/images/icon-pork.png",
-            "quantity": 0
+            "quantity": 3
         },
         {
             "name": "Potato",
             "imageURL": "/images/icon-potato.png",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "Salmon",
             "imageURL": "/images/icon-salmon.png",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "Celery",
             "imageURL": "/images/icon-celery.png",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "Tomato",
             "imageURL": "/images/icon-tomato.png",
-            "quantity": 0
+            "quantity": 50
         }
     ],
 
