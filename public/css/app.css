@@ -271,7 +271,7 @@ h2.home-title{
 }
 
 .home-view-more {
-    width: 100px;
+    width: 130px;
     float: right;
     background:  #A2A5A5;
     border-radius: 6px;
@@ -280,8 +280,7 @@ h2.home-title{
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 10px;
-    font-size: 14px;
-    
+    font-size: 22px;
 }
 
 
