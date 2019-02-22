@@ -75,9 +75,12 @@
 }
 
  .confirmation-buttons {
-     box-sizing: border-box;
+    background-color: gray!important;
      border-radius: 10px;
-     font-size: 16px;
+     height: 50px!important;
+     width: 80px!important;
+     font-size: 16px!important;
+     color: white!important;
 }
 
 
@@ -444,7 +447,7 @@ h2.home-title{
      font-size: 20px;
 }
  .discard {
-     background: rgb(255, 150, 150);
+     background: #CDCFD6!important;
 }
  .done {
      border-radius: 5px;
@@ -482,6 +485,12 @@ h2.home-title{
  .search-list-item-active {
      height: 190px;
 }
+
+.rate-face{
+    background-color: gray;
+    width: 100px;
+}
+
  .ingredient-plus {
      width: 27px;
      height: 27px;
@@ -495,6 +504,7 @@ h2.home-title{
      position: relative;
      right: 20px;
      top: 5px;
+}
 }
  .add-ingredient-name {
      float: center;
