@@ -21,8 +21,8 @@ exports.view = function(req, res){
             console.log(cat);
             data.ingredients_soon.push(newfood);
         }
-        var fs = require('fs');
-        fs.writeFile('../data.json', data, 'utf8', callback);
+        // var fs = require('fs');
+        // fs.writeFile('../data.json', data, 'utf8', callback);
     };
     res.render('view-all-ingredients', data);
 };

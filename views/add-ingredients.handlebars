@@ -28,6 +28,7 @@
         <input class="search-bar" type="text" placeholder="Search foods">
     </div>
     --}}
+    <div class="add-ingredients-added-count" id="add-ingredients-added-count">0</div>
     <div class="search-list-container">
         <ul>
             {{#each ingredients}}
@@ -46,11 +47,11 @@
                         <button class="qaf-freshness qaf-freshness-2">Okay</button>
                         <button class="qaf-freshness qaf-freshness-3">Eat Soon</button> --}}
                         <input type="checkbox" name="eatsoon" value="eatsoon" id="eatsoon" class="CB-eatsoon">
-                        <label for="eatsoon">Eat Soon</label>
+                        <label>Eat Soon</label>
                         <input type="checkbox" name="okay" value="okay" id="okay" class="CB-okay">
-                        <label for="okay">Okay</label>
+                        <label>Okay</label>
                         <input type="checkbox" name="fresh" value="fresh" id="fresh" class="CB-fresh">
-                        <label for="fresh">Fresh</label>
+                        <label>Fresh</label>
                         <a href="#">
                             <p class="qaf-add">+ Add</p>
                         </a>

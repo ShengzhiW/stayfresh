@@ -214,6 +214,21 @@
     min-height: 100%;
 }
 
+.add-ingredients-added-count{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    box-shadow: 0px 0px 30px #939497;
+}
+
 
 .home-view-more{
     margin-top: 20px;
@@ -230,8 +245,10 @@
 
 .home-view-more .col-xs-12{
     text-align: right;
-    font-size: 22px
+    font-size: 22px;
 }
+
+
 
 .home-title-row{
     margin-top: 40px;
@@ -842,8 +859,11 @@ h2.home-title{
 
 .add-recipe-summary-item {
     
+    width: 300px;
     border-bottom: 1px solid #E4E4E4;
     margin-top: 8px;
+    margin: 0 auto;
+    padding-bottom: 10px;
     
 }
 
