@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/css/app.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    {{> facebook}}
+    <script src="/js/account.js"></script>
 </head>
 <body>
     <div class="container top-containers">
         <h1 class="nav-title">Home</h1>
-        <img class="icon-profile" src="images/profile.png"/>
+        <a onclick="facebookLogout()"><img class="icon-profile account-logout" src="images/logout.png"/></a>
     </div>
     <div class="outer-container">
         <div class="container">
@@ -39,10 +41,10 @@
                             <div class="home-freshness-col-1 col-xs-2">
                                 <img class="icon" src="{{imageURL}}"/>
                             </div>
-                            <div class="home-freshness-col-2 col-xs-6">
+                            <div class="home-freshness-col-2 col-xs-5">
                                 {{name}}
                             </div>
-                            <div class="home-freshness-col-3 col-xs-4">
+                            <div class="home-freshness-col-3 col-xs-5">
                                 x {{quantity}}
                             </div>
                         </div>
@@ -58,10 +60,10 @@
                             <div class="home-freshness-col-1 col-xs-2">
                                 <img class="icon" src="{{this.imageURL}}"/>
                             </div>
-                            <div class="home-freshness-col-2 col-xs-6">
+                            <div class="home-freshness-col-2 col-xs-5">
                                 {{this.name}}
                             </div>
-                            <div class="home-freshness-col-3 col-xs-4">
+                            <div class="home-freshness-col-3 col-xs-5">
                                 x {{this.quantity}}
                             </div>
                         </div>
@@ -77,10 +79,10 @@
                             <div class="home-freshness-col-1 col-xs-2">
                                 <img class="icon" src="{{this.imageURL}}"/>
                             </div>
-                            <div class="home-freshness-col-2 col-xs-6">
+                            <div class="home-freshness-col-2 col-xs-5">
                                 {{this.name}}
                             </div>
-                            <div class="home-freshness-col-3 col-xs-4">
+                            <div class="home-freshness-col-3 col-xs-5">
                                 x {{this.quantity}}
                             </div>
                         </div>
@@ -121,7 +123,11 @@
                 </div>
                 {{/each_upto}}
             </div>
+<<<<<<< HEAD
             <div class="row ">
+=======
+            <div class="row home-view-more view-more20-2">
+>>>>>>> 767656ba3f7d8302c27d04c4986bdb67c5614624
                 <a href="view-all-recipes">
                     <div class="col-xs-12 home-view-more">View More ></div>
                 </a>

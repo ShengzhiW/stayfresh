@@ -7,7 +7,6 @@ exports.view = function(req, res){
             imageURL: req.query.image, 
             quantity: req.query.quantity
         }
-        
         console.log(JSON.stringify(newfood));
         data.ingredients_fresh.push(newfood);
     };

@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/css/app.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
+    <link rel="stylesheet" href="/css/loader.css">
 </head>
 <body>
     <div class="container top-containers">
@@ -16,15 +19,15 @@
         <h2 class="login-welcome-line-1">Welcome to</h2>
         <h3 class="login-welcome-line-2">StayFresh!</h3>
     </div>
+
     <div class="container login-main">
-        <input class="login-input" type="text" name="email" placeholder="Email" required>
-        <br>
-        <input class="login-input" type="password" name="password" placeholder="Password" required>
-        <br>
-        <a href="index">
-        <input id="login-submit" type="submit" value="Login">
-        </a>
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
     </div>
-    <div class="login-new-account">Don't have an account? <a href="sign-up">Sign Up</a></div>
+    <div class="container fbloginbtn">
+        <fb:login-button scope='public_profile,email' onlogin='checkLoginState();'></fb:login-button>
+    </div>
+    
+    
+
 </body>
 </html>

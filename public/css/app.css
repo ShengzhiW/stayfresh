@@ -73,16 +73,48 @@
      margin-left: 20px;
      margin-bottom: 50px;
 }
+
  .confirmation-buttons {
      box-sizing: border-box;
      border-radius: 10px;
      font-size: 16px;
 }
 
+
 .shadow {
     box-shadow: 0px 0px 15px #E5E5E5;
 }
 /* ----- Login ----- */
+
+.login_greet{
+    font-size: 30px;
+}
+
+.fbloginbtn{
+    text-align: center;
+}
+
+.login_greet_img{
+    margin-top: 30px;
+    width: 180px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #C9CACE;
+    padding: 10px;
+}
+
+.login-proceed{
+    margin: 50px auto 10px auto;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    line-height: 100px;
+    border-radius: 100%;
+    background-color: #E8E8E8;
+    padding-top: 5px;
+    font-size: 50px;
+
+}
+
  .login-welcome, .login-main, .login-new-account {
      text-align: center;
 }
@@ -131,7 +163,6 @@
 
 .home-view-more{
     text-align: right;
-    font-size: 20px;
 }
 
 .home-view-more a{
@@ -186,11 +217,20 @@
 
 .home-view-more{
     margin-top: 20px;
+    width: 140px;
+    margin-right: 5px;
+    float: right;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+}
+
+.view-more20-2{
+    margin-bottom: 10px;
 }
 
 .home-view-more .col-xs-12{
     text-align: right;
-    font-size: 20px
+    font-size: 22px
 }
 
 .home-title-row{
@@ -208,6 +248,12 @@ h2.home-title{
     margin-top: 0px;
     margin-bottom: 0px;
 
+}
+
+.account-logout{
+    width: 24px;
+    background-color: white;
+    border-radius: 100px;
 }
 
 .home-plus-button {
@@ -335,7 +381,7 @@ h2.home-title{
  .home-freshness-col-3 {
      background-color: #A2A5A5;
      color: white;
-     width: 50px;
+     width: 70px;
      height: 25px;
      line-height: 25px;
      border-radius: 100px;
