@@ -6,8 +6,8 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-    $("a#rate-left").click(rateLeft);
-    $("a#rate-right").click(rateRight);
+    $("#rate-left").click(rateLeft);
+    $("#rate-right").click(rateRight);
 }
 
 
