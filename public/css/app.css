@@ -866,14 +866,16 @@ h2.home-title{
     width: 325px;
     height: 350px;
     margin: 0 auto;
-    margin-top: 22px;
+    margin-top: 30px;
     margin-bottom: 10px;
+
+    text-align: center
 }
 
 .add-recipe-summary-container h4 {
-    float: left;
+    float: center;
     
-    margin-left: 50px;
+    
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -896,13 +898,7 @@ h2.home-title{
     
 }
 
-.add-recipe-grey-buttons {
-    background: #868686;
-    color: white;
-    width: 20px;
-    height: 20px;
-    border-radius: 100px;
-}
+
 
 .add-recipe-create {
     width: 100px;

@@ -36,32 +36,51 @@
         <img src="images/pencil.png"/>
       </div>
 
+      {{!-- TODO : Add ingredients to categories --}}
+
       <div class="row">
         <div class="col col-xs-6 add-recipe-categories">
-          <selector>Protein &#9668;
-            <option value="beef"></option>
-          
+          <label for="protein-select">
+            Select Protein
+          </label>
+          <select id="protein-select">
+            
+          </select>
         </div>
+
         <div class="col col-xs-6 add-recipe-categories">
-          Carbs &#9668;
+          <label for="carb-select">
+            Select Carb
+          </label>
+          <select id="carb-select">
+            
+          </select>
         </div>
       </div>
+
+
       <div class="row">
         <div class="col col-xs-6 add-recipe-categories">
-          Vegetable &#9668;
+          <label for="vegetable-select">
+            Select Vegetable
+          </label>
+          <select id="vegetable-select">
+            
+          </select>
         </div>
+
+
         <div class="col col-xs-6 add-recipe-categories">
-          Dairy &#9668;
+          <label for="other-select">
+            Select Other
+          </label>
+          <select id="other-select">
+            
+          </select>
         </div>
+
       </div>
-      <div class="row">
-        <div class="col col-xs-6<h">
-          
-        </div>
-        <div class="col col-xs-6 add-recipe-categories">
-          Other &#9668;
-        </div>
-      </div>
+
 
       <div class="add-recipe-summary-container">
         <div class="row">
@@ -75,15 +94,7 @@
           <div class="col col-center col-xs-4">
             Chicken
           </div>
-          <div class="col col-center col-xs-1 add-recipe-grey-buttons">
-            2
-          </div>
-          <div class="col col-center col-xs-1 add-recipe-grey-buttons">
-            +
-          </div>
-          <div class="col col-center col-xs-1 add-recipe-grey-buttons">
-            -
-          </div>
+          
           {{!-- End first item --}}
         </div>
       
