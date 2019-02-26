@@ -513,13 +513,13 @@ h2.home-title{
      right: 20px;
      top: 5px;
 }
-}
+
  .add-ingredient-name {
-     float: center;
+     float: left;
      font-size: 20px;
      position: relative;
      top: 5px;
-     left: 50px;
+     left: 80px;
 }
  .icon-add {
      float: left;
@@ -528,6 +528,7 @@ h2.home-title{
      left: 50px;
 }
  .qaf-container {
+     text-align: center;
      color: #727272;
 }
  .qaf-freshness {
