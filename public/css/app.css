@@ -858,8 +858,22 @@ h2.home-title{
     margin-left: 24px;
     margin-top: 30px;
     font-size: 20px;
+
+    text-align: center;
  
 }
+
+.add-recipe-categories label {
+    position: relative;
+    top: 5px;
+    
+}
+
+.categories-select-2 {
+    position: relative;
+    left: 10px;
+}
+
 
 .add-recipe-summary-container {
     box-shadow: 0px 0px 15px #E5E5E5;
@@ -872,6 +886,8 @@ h2.home-title{
 
     text-align: center
 }
+
+=
 
 .add-recipe-summary-container h4 {
     float: center;
