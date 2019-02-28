@@ -1356,25 +1356,18 @@ textarea {
 
 .shadowPulse{
      animation: shadow-pulse 1s infinite;
-     background-color: blue;
 }
 
 
 @keyframes shadow-pulse
 {
      0% {
-          transform: scale(0.9);
+          transform: scale(1.0);
      }
-     100% {
+     50% {
           transform: scale(1.1);
      }
-}
-
-@-webkit-keyframes shadow-pulse {
-    0% {
-        -webkit-transform: scale(0.9);
-    }
-    100% {
-        -webkit-transform: scale(1.1);
-    }
+     100% {
+          transform: scale(1.0);
+     }
 }
