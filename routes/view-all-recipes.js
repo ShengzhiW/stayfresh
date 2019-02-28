@@ -12,6 +12,7 @@ exports.view = function(req, res){
             steps: req.query.steps
 
         }           
+        console.log(newrecipe);
         data.recipes.push(newrecipe);
         
     };
