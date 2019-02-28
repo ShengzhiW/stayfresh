@@ -424,6 +424,19 @@ h2.home-title {
     transition: margin .5s, height .5s, padding .5s;
 }
 
+.home-home-freshness-row{
+
+    height: 36px;
+    width: 90%;
+    margin: 5px 5% 5px 5%;
+    padding: 5px 0;
+    border-bottom: 1px solid #E4E4E4;
+    font-size: 18px;
+    transition: margin .5s, height .5s, padding .5s;
+    overflow: hidden;
+
+}
+
 .home-freshness-row-edit{
     margin: 5px 0% 5px 0%;
     transition: margin .5s;
