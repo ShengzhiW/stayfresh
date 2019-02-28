@@ -16,13 +16,13 @@
         {
             "name": "Garlic",
             "imageURL": "/images/icon-garlic.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 0
         },
         {
             "name": "Lettuce",
             "imageURL": "/images/icon-lettuce.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 0
         },
         {
@@ -34,7 +34,7 @@
         {
             "name": "Onion",
             "imageURL": "/images/icon-onion.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 0
         },
         {
@@ -65,13 +65,13 @@
         {
             "name": "Lemon",
             "imageURL": "/images/icon-lemon.png",
-            "category": "Fruit",
+            "category": "Produce",
             "quantity": 0
         },
         {
             "name": "Broccoli",
             "imageURL": "/images/icon-broccoli.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 0
         },
         {
@@ -83,7 +83,7 @@
         {
             "name": "Potato",
             "imageURL": "/images/icon-potato.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 0
         },
         {
@@ -95,13 +95,13 @@
         {
             "name": "Celery",
             "imageURL": "/images/icon-celery.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 0
         },
         {
             "name": "Tomato",
             "imageURL": "/images/icon-tomato.png",
-            "category": "Fruit",
+            "category": "Produce",
             "quantity": 0
         }
     ],
@@ -123,13 +123,13 @@
         {
             "name": "Garlic",
             "imageURL": "/images/icon-garlic.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 1
         },
         {
             "name": "Lettuce",
             "imageURL": "/images/icon-lettuce.png",
-            "category": "Vegetable",
+            "category": "Produce",
             "quantity": 2
         }
     ],
@@ -210,9 +210,9 @@
             "name": "Peanut Tofu",
             "imageURL": "/images/recipes-peanut-tofu.jpg",
             "recipeIngredients": ["Tofu", "Onion", "Garlic", "Peanut Butter"],
-            "cookingTime": "1 hr",
+            "cookingTime": 60,
             "servingSize": 4,
-            "steps": ["Chop garlic and onions, sautee for 2 minutes.", "Stir in soy sauce, ketchup, peanut butter, maple syrup, vegetable broth, and crushed red peppers. Mix.",
+            "steps": ["Chop garlic and onions, sautee for 2 minutes.", "Stir in soy sauce, ketchup, peanut butter, maple syrup, Produce broth, and crushed red peppers. Mix.",
               "Add tofu, bring to boil and let sauce reduce and thicken."]
         },
         {   
@@ -220,7 +220,7 @@
             "name": "Baked Lemon Chicken",
             "imageURL": "/images/recipes-baked-lemon-chicken.jpg",
             "recipeIngredients": ["Chicken", "Butter", "Garlic", "Lemon", "Parsley"],
-            "cookingTime": "35 min",
+            "cookingTime": 35,
             "servingSize": 4,
             "steps": ["Preheat the oven to 400 degrees. Season the chicken breasts on both sides with salt, pepper and the Italian seasoning.",
               "Heat the olive oil in a large pan over medium high heat. Add the chicken breasts and cook for 3-5 minutes on each side or until browned.",
@@ -234,7 +234,7 @@
             "name": "Beef Broccoli",
             "imageURL": "/images/recipes-beef-broccoli.jpg",
             "recipeIngredients": ["Beef", "Broccoli", "Garlic", "Onion", "Ginger"],
-            "cookingTime": "25 min",
+            "cookingTime": 25,
             "servingSize": 4,
             "steps": ["Mix garlic powder and 2 tablespoons each cornstarch and water; toss with beef. In a small bowl, mix soy sauce, brown sugar, ginger and the remaining cornstarch and water until smooth.",
               "In a large skillet, heat 1 tablespoon oil over medium-high heat; stir-fry beef until browned, 2-3 minutes. Remove from pan.",
@@ -245,7 +245,7 @@
             "name": "Pork and Potato Hash",
             "imageURL": "/images/recipes-pork-and-potato-hash.jpg",
             "recipeIngredients": ["Pork", "Potato", "Onion", "Garlic", "Scallions"],
-            "cookingTime": "50 min",
+            "cookingTime": 50,
             "servingSize": 6,
             "steps": ["Place the sliced potatoes, 1 1/2 cups water, onions, and juice from pork roast in a nonstick skillet.",
               "Bring to a boil, cover, and boil over medium heat for 10 minutes.",
@@ -259,7 +259,7 @@
             "name": "Pan Seared Salmon",
             "imageURL": "/images/recipes-pan-seared-salmon.jpg",
             "recipeIngredients": ["Salmon", "Capers", "Lemon"],
-            "cookingTime": "20 min",
+            "cookingTime": 20,
             "servingSize": 4,
             "steps": ["Preheat a large heavy skillet over medium heat for 3 minutes.",
               "Coat salmon with olive oil. Place in skillet, and increase heat to high. Cook for 3 minutes.",
@@ -271,7 +271,7 @@
             "name": "Spaghetti",
             "imageURL": "/images/recipes-spaghetti.jpg",
             "recipeIngredients": ["Beef (Ground)", "Pasta", "Onion", "Garlic", "Tomato", "Cheese"],
-            "cookingTime": "1 hr",
+            "cookingTime": 60,
             "servingSize": 4,
             "steps": ["Cook first 3 ingredients in a Dutch oven, stirring until beef crumbles and is no longer pink; drain well. Return beef mixture to pan.",
               "Stir in tomato sauce and next 8 ingredients; bring to a boil. Cover, reduce heat, and simmer, stirring often, 30 minutes.",

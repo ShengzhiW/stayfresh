@@ -827,7 +827,6 @@ h2.home-title{
 /* Add Recipes */
 
 .untitled-recipe {
-    width: 250px;
     border-bottom: 1px solid #C4C4C4;
     margin: 0 auto;
     margin-top: 40px;
@@ -918,17 +917,14 @@ h2.home-title{
 
 
 .add-recipe-create {
-    width: 100px;
-    height: 32px;
+    width: 150px;
+    height: 50px;
     background: #868686;
     color: white;
-    font-size: 24px;
-
+    font-size: 30px;
+    line-height: 50px;
     border-radius: 6px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 /* View all recipes */
@@ -1101,4 +1097,84 @@ li .wrapper {
 .wrapper .del {
     background: #F90101;
     border-color: #F90101;
+}
+
+
+
+
+#recipe-name-edit{
+    border: 0!important;
+    height: 50px;
+    width: 80vw;
+    margin:  0 auto 0 auto;
+    font-size: 35px;
+}
+
+.food-selectors{
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.recipe-instructions{
+    width: 350px;
+    height: 350px;
+    font-size: 20px;
+    padding: 10px;
+    border:  2px solid #B8BBBB;
+    border-radius: 10px;
+}
+
+.nre-recipe-time{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border:  2px solid #B8BBBB;
+    border-radius: 10px;
+}
+
+.recipe-instructions::placeholder{
+    text-align: left;
+}
+
+.newrecipe-h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.recipe-time-h3{
+    text-align: center;
+}
+
+textarea {
+   resize: none;
+}
+
+.recipe-time-h3 input{
+    text-align: center;
+}
+
+
+
+.rate-buttons{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+.rate-buttons img{
+    width:100%;
+}
+
+.ratedn{
+    background-color: red;
+}
+
+.ratedy{
+    background-color: #8EFF09;
 }

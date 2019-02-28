@@ -5,114 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/app.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/multi-select.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="/js/login.js"></script>
-
 </head>
-
 <body>
-
   <div class="container top-containers">
     <div class="row">
       <a href="index">
-      <div class="col col-xs-2">
-            <p class="back"><</p>
-      </div>
-    </a>
+        <div class="col col-xs-2">
+          <p class="back"><</p>
+        </div>
+      </a>
       <div class="col col-xs-8">
-        <h1 id="recipe-name">Recipes</h1>
-      </div>
-
+        <h1>Recipes</h1>
       </div>
     </div>
-
-  <div class="container add-recipe-categories-container">
-    
-      <div class="row untitled-recipe">
-        <input placeholder="Untitled Recipe">
-        
-      </input>
-        <img src="images/pencil.png"/>
-      </div>
-
-      {{!-- TODO : Add ingredients to categories --}}
-
-      <div class="row">
-        <div class="col col-xs-6 add-recipe-categories">
-          <label for="protein-select" class="categories-select">
-            Select Protein
-          </label>
-          <select id="protein-select">
-            
-          </select>
-        </div>
-
-        <div class="col col-xs-6 add-recipe-categories">
-          <label for="carb-select" class="categories-select-2">
-            Select Carb
-          </label>
-          <select id="carb-select">
-            
-          </select>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col col-xs-6 add-recipe-categories">
-          <label for="vegetable-select" class="categories-select">
-            Select Vegetable
-          </label>
-          <select id="vegetable-select">
-            
-          </select>
-        </div>
-
-
-        <div class="col col-xs-6 add-recipe-categories">
-          <label for="other-select" class="categories-select-2">
-            Select Other
-          </label>
-          <select id="other-select">
-            
-          </select>
-        </div>
-
-      </div>
-
-
-      <div class="add-recipe-summary-container">
-        <div class="row">
-          <h4>Ingredients</h4>
-        </div>
-        <div class="row add-recipe-summary-item">
-          
-          <div class="col col-center col-xs-1">
-            <img class="icon" src="images/icon-chicken.png"/>
-          </div>
-          <div class="col col-center col-xs-4">
-            Chicken
-          </div>
-          
-          {{!-- End first item --}}
-        </div>
-      
-
-      
-    </div>
-      <!-- End ingredients container -->
-      
-      <div class="row add-recipe-create">
-          Create
-      </div>
-      
-    
-    
   </div>
-
-
+  <div class="container add-recipe-categories-container">
+    <div class="row untitled-recipe">
+      <input placeholder="✎ Recipe Name" id="recipe-name-edit"></input>
+    </div>
+    <div class="food-selectors">
+      <h3 class="newrecipe-h3">Select Proteins:</h3>
+      <select id='callbacks' multiple='multiple'>
+        {{#foodtype ingredients "Protein"}}
+        <option value='{{name}}' style="background-image:url({{imageURL}}); padding-left: 50px;" class="foodadder">{{name}}</option>
+        {{/foodtype}}
+      </select>
+      <h3 class="newrecipe-h3">Select Carbs:</h3>
+      <select id='callbacks2' multiple='multiple'>
+        {{#foodtype ingredients "Carbs"}}
+        <option value='{{name}}' style="background-image:url({{imageURL}}); padding-left: 50px;" class="foodadder">{{name}}</option>
+        {{/foodtype}}
+      </select>
+      <h3 class="newrecipe-h3">Select Fruits and Vegetables:</h3>
+      <select id='callbacks3' multiple='multiple'>
+        {{#foodtype ingredients "Produce"}}
+        <option value='{{name}}' style="background-image:url({{imageURL}}); padding-left: 50px;" class="foodadder">{{name}}</option>
+        {{/foodtype}}
+      </select>
+      <h3 class="newrecipe-h3">Select Other Foods:</h3>
+      <select id='callbacks4' multiple='multiple'>
+        {{#foodtype ingredients "Other"}}
+        <option value='{{name}}' style="background-image:url({{imageURL}}); padding-left: 50px;" class="foodadder">{{name}}</option>
+        {{/foodtype}}
+      </select>
+      <h3 class="newrecipe-h3">Add Cooking Instructions:</h3>
+      <textarea name="paragraph_text" cols="50" rows="10" class="recipe-instructions" placeholder="1. Wash and dry all produce. Place rice and 1 cup water in a small pot..." id="nre-cooking-instructions"></textarea>
+      <h3 class="newrecipe-h3">Estimated Cooking Time:</h3>
+      <h3 class="recipe-time-h3"><input type="tel" pattern="[0-9]*" novalidate class="nre-recipe-time" id="nre-cooking-time"> Minutes</h3>
+    </div>
+  </div>
+  <div class="row add-recipe-create" id="rcp-add">
+    Create
+  </div>
+  </div>
+  <script src="/js/jquery.multi-select.js"></script>
+  <script src="/js/add-recipe.js"></script>
 </body>
-
- 
 </html>

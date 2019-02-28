@@ -79,6 +79,26 @@ var hbs = handlebars.create({
             result.push(options.fn(ary[i]));
           return result.join('');
         },
+
+        foodtype: function (ary, categoryName, options) {
+          if (!ary || ary.length == 0)
+            return options.inverse(this);
+
+          var result = [];
+          for (var i = 0; i < ary.length; ++i){
+            // console.log(ary[i]);
+            // console.log(ary[i].category);
+             if (ary[i]['category'] == categoryName){
+              console.log('yes')
+              result.push(options.fn(ary[i]));
+             }
+          }
+         
+            // if (ary[i]['category'] == categoryName) {
+            //   
+            // }            
+          return result.join('');
+        },
         math: function (lvalue, operator, rvalue) {
             lvalue = parseFloat(lvalue);
             rvalue = parseFloat(rvalue);

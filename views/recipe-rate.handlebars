@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head>
+<html>
+  <head>
     <title>Rate Your Recipe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,56 +10,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="/js/rate-recipe.js"></script>
   </head>
-
-  <div class="container top-containers rate-container">
-        <div class="row">
-            <h1 id="rate-your-recipe">Rate Your Recipe</h1>
-    </div>
-{{!-- 
-  <h2 class="rate-recipe-title">Peanut Tofu</h2>
-
-<div class="container recipe-intro-container">
+  <body>
+    <div class="container top-containers rate-container">
     <div class="row">
-      <div class="col col-xs-4">
-            Cooking Time: <p class="recipe-time">1 hr</p>
-            <br>
-            Serving size: <p class="serving-size">4</p>
-      </div>
-      <div class="col col-xs-8">
-        <img class="img-recipe-info" src="images/recipes-peanut-tofu.jpg"/>
-      </div>
+      <h1 id="rate-your-recipe">Rate Your Recipe</h1>
     </div>
-</div> --}}
-
-<div class="container rate-img-container">
-  <div class="row">
-     <a href="#" >
-    <div class="col col-xs-6 rate-left rate-face" onclick="rateLeft()" id="rate-right">
-        <img class="img-rate" src="images/rate-frown.png"/>
-    </div>
-    </a>
-    <a href="#" >
-    <div class="col col-xs-6 rate-right rate-face" onclick="rateRight()" id="rate-right">
-        <img class="img-rate" src="images/rate-smile.png"/>
+    <div class="container">
+      <h3>How was this recipe?</h3>
+      <div class="row">
+        <div class="col col-xs6 rate-buttons" id="yay"><img class="img-rate" src="images/thumbup.png"/></div>
+        <div class="col col-xs6 rate-buttons" id="nay"><img class="img-rate" src="images/thumbdown.png"/></div>
       </div>
+      <br><br><br>
+      <a href="/index">
+        <div class="row add-recipe-create">Rate</div>
       </a>
-  </div>
-</div>
-
-
-
-  <div class="row">
-      <div class="col col-xs-6 rate-left">
-          <a href="index">
-          <button class="discard confirmation-buttons">Discard</button>
-          </a>
-      </div>
-      <div class="col col-xs-6 rate-right">
-          <a href="index">
-          <button class="save confirmation-buttons">Save</button>
-          </a>
-        </div>
     </div>
-
-
+    <script>
+      $("#nay").click(function () {
+         $(this).toggleClass("ratedn");
+          if ($("#yay").hasClass('ratedy')) 
+            $("#yay").toggleClass("ratedy");
+      });
+      $("#yay").click(function () {
+         $(this).toggleClass("ratedy");
+         if ($("#nay").hasClass('ratedn')) 
+            $("#nay").toggleClass("ratedn");
+      });
+    </script>
+  </body>
 </html>
