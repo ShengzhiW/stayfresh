@@ -84,7 +84,8 @@ function addRecipe() {
     }
     alert(JSON.stringify(json_data))
     $.get("view-all-recipes", json_data, function(data){
-        alert("Data: " + data + "\nStatus: " + status);
-        $(window).html(data);
+        // alert("Data: " + data + "\nStatus: " + status);
+        // $(window).html(data);
     });
+    window.location.href = "/view-all-recipes";
 }
