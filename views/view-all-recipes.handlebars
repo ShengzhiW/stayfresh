@@ -25,25 +25,12 @@
 </div>
 
   <div class="container">
-    
-{{!--     <div class="row">
-      <a href="add-recipe">
-        <div class="col recipes-new-recipe">
-        + New Recipe
-        </div>
-      </a>
-    </div> --}}
-
-{{!--     <div class="row">
-      <div class="col col-xs-6 recipe-filter-left">
-          Recommended
-      </div>
-      <div class="col col-xs-6 recipe-filter-right">
-          My Recipes
-      </div>
+    <div class="row">
+      <div class="col-xs-4 recipe-edit">
+                     Edit
+                  </div>
     </div>
- --}}
-
+  
 
         </div>
 
@@ -54,21 +41,43 @@
   </div>
 
     <!-- Recipes -->
-
+<br><br><br>
 <div class="outer-container">
 {{#each recipes}}
-<a href="/recipe-info/{{id}}">
-<div class="var-card shadow">
-  <div><h1>{{name}}</h1></div>
 
-  <div>Ingredients: {{recipeIngredients}}</div>
-  <div>Servings: {{servingSize}}</div>
-  <div>Time: {{cookingTime}}</div>
+<div class="var-card shadow">
+  
+  <a href="/recipe-info/{{id}}">
+    <div>
+  <div><h1 class="rei-card-text-h1">{{name}}</h1></div>
+
+  <div class="rei-card-text">Ingredients: {{recipeIngredients}}</div>
+  <div class="rei-card-text-r">Servings: {{servingSize}}</div>
+  <div class="rei-card-text-r">Time: {{cookingTime}}</div>
   <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
+  </div>
+  </a>
+  <br>
+  <div class="deleteBTNrecipe">✖︎</div>
+  <br>
 </div>
-</a>
+
 {{/each}}
 </div>
+
+   <script>
+      $(".recipe-edit").click(function(){
+        $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");
+        if ($(".deleteBTNrecipe").hasClass("deleteBTNrecipe-appear")) {
+            $(".recipe-edit").html("Done")
+        }
+        else $(".recipe-edit").html("Edit")
+      });
+      $(".deleteBTNrecipe").click(function(){
+        var card = $(this).closest(".var-card");
+        card.hide('slow', function(){ $(this).remove(); });
+      })
+   </script>
 </body>
 
 </html>
