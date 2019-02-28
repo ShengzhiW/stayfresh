@@ -82,7 +82,7 @@ function addRecipe() {
         servingSize: serving,
         steps: instructions
     }
-    alert(JSON.stringify(json_data))
+    // alert(JSON.stringify(json_data))
     $.get("view-all-recipes", json_data, function(data){
         // alert("Data: " + data + "\nStatus: " + status);
         // $(window).html(data);
