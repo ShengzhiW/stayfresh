@@ -108,25 +108,29 @@
 
 
     "ingredients_fresh": [
-        {
+        {   
+            "id": 1,
             "name": "Beef (Ground)",
             "imageURL": "/images/icon-beef-ground.png",
             "category": "Protein",
             "quantity": 2
         },
         {
+            "id": 2,
             "name": "Cheese",
             "imageURL": "/images/icon-cheese.png",
             "category": "Other",
             "quantity": 1
         },
         {
+            "id": 3,
             "name": "Garlic",
             "imageURL": "/images/icon-garlic.png",
             "category": "Produce",
             "quantity": 1
         },
         {
+            "id": 3,
             "name": "Lettuce",
             "imageURL": "/images/icon-lettuce.png",
             "category": "Produce",
@@ -135,21 +139,25 @@
     ],
     "ingredients_ok":[
         {
+            "id": 4,
             "name": "Pasta",
             "imageURL": "/images/icon-pasta.png",
             "quantity": 1
         },
         {
+            "id": 5,
             "name": "Onion",
             "imageURL": "/images/icon-onion.png",
             "quantity": 2
         },
         {
+            "id": 6,
             "name": "Peanut Butter",
             "imageURL": "/images/icon-peanut-butter.png",
             "quantity": 2
         },
         {
+            "id": 7,
             "name": "Tofu",
             "imageURL": "/images/icon-tofu.png",
             "quantity": 3
@@ -158,31 +166,37 @@
 
     "ingredients_soon":[
         {
+            "id": 8,
             "name": "Chicken",
             "imageURL": "/images/icon-chicken.png",
             "quantity": 1
         },
         {
+            "id": 9,
             "name": "Butter",
             "imageURL": "/images/icon-butter.png",
             "quantity": 2
         },
         {
+            "id": 10,
             "name": "Lemon",
             "imageURL": "/images/icon-lemon.png",
             "quantity": 1
         },
         {
+            "id": 11,
             "name": "Broccoli",
             "imageURL": "/images/icon-broccoli.png",
             "quantity": 2
         },
         {
+            "id": 12,
             "name": "Pork",
             "imageURL": "/images/icon-pork.png",
             "quantity": 3
         },
         {
+            "id": 13,
             "name": "Potato",
             "imageURL": "/images/icon-potato.png",
             "quantity": 1
