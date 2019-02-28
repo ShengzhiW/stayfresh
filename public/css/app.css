@@ -1201,12 +1201,12 @@ textarea {
     width: 100vw;
     max-height: 100vw;
     overflow: hidden;
-
-
-/*     position: absolute;
-    top: 0;
-    left: 0; */
 }
 .recipe-info-recipe-bgc img{
     width: 100%;
+}
+
+.hr-line{
+    background-color: gray;
+    margin-bottom: 10px;
 }
