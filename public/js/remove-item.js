@@ -18,5 +18,5 @@ function removeItem(e) { 
             
     });
 
-    $(this).closest('.home-freshness-col-3').closest('.row')
+    $(this).closest('.home-freshness-col-3').closest('.row').addClass("home-freshness-row-delete")
 }

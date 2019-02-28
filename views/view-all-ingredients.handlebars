@@ -29,11 +29,8 @@
       <div class="row">
          <div class="col-xs-12">
             <div class="fridge-container">
-               <div class="row">
-                  <div class="col-xs-4"></div>
-                  {{!-- <div class="col-xs-4 fridge-filter">
-                     Filter     &#9660;
-                  </div> --}}
+               <div class="row fridge-edit-row">
+                  <div class="col-xs-8"></div>
                   <div class="col-xs-4 fridge-edit">
                      Edit
                   </div>
@@ -61,6 +58,7 @@
                </h4>
                {{#each ingredients_ok}}
                <div class="row home-freshness-row">
+                  <input type="hidden" value="{{id}}" class='h_v'>
                   <div class="home-freshness-col-1 col-xs-3">
                      <img class="icon" src="{{imageURL}}"/>
                   </div>
@@ -69,6 +67,7 @@
                   </div>
                   <div class="home-freshness-col-3 col-xs-5">
                      x {{quantity}}
+                     <div class="edit-delete-button">✖︎</div>
                   </div>
                </div>
                {{/each}}
@@ -77,6 +76,7 @@
                </h4>
                {{#each ingredients_fresh}}
                <div class="row home-freshness-row">
+                  <input type="hidden" value="{{id}}" class='h_v'>
                   <div class="home-freshness-col-1 col-xs-3">
                      <img class="icon" src="{{imageURL}}"/>
                   </div>
@@ -85,6 +85,7 @@
                   </div>
                   <div class="home-freshness-col-3 col-xs-5">
                      x {{quantity}}
+                     <div class="edit-delete-button">✖︎</div>
                   </div>
                </div>
                {{/each}}
@@ -96,6 +97,10 @@
    <script>
       $(".fridge-edit").click(function(){
         $(".home-freshness-row").toggleClass("home-freshness-row-edit");
+        if ($(".home-freshness-row").hasClass("home-freshness-row-edit")) {
+            $(".fridge-edit").html("Cancel")
+        }
+        else $(".fridge-edit").html("Edit")
       });
    </script>
 </body>

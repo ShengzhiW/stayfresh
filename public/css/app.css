@@ -415,14 +415,13 @@ h2.home-title {
 }
 
 .home-freshness-row {
+    height: 36px;
     width: 90%;
     margin: 5px 5% 5px 5%;
     padding: 5px 0;
     border-bottom: 1px solid #E4E4E4;
     font-size: 18px;
-    transition: margin .5s;
-    height: 0;
-    overflow: hidden;
+    transition: margin .5s, height .5s, padding .5s;
 }
 
 .home-freshness-row-edit{
@@ -431,8 +430,12 @@ h2.home-title {
 }
 
 .home-freshness-row-delete{
-    height: 0;
+    height: 0!important;
+    padding: 0 0 !important;
+    border-bottom: 0px solid #E4E4E4!important;
+    margin: 0px 5% 0px 5%;
     overflow: hidden;
+    transition: margin .1s, height .5s, padding .5s;
 }
 
 .edit-delete-button{
@@ -440,16 +443,22 @@ h2.home-title {
     height: 30px;
     color: white;
     background-color: red;
-    margin-left: 120px;
+    margin-left: 40vw;
     margin-top: -30px;
     border-radius: 100px;
     line-height: 32px;
-    transition: margin-left .5s;
+    opacity: 1;
+    transition: margin-left .5s, opacity .1s;
 }
 
 .home-freshness-row-edit .edit-delete-button{
     margin-left: 80px;
     transition: margin-left .5s;
+}
+
+.home-freshness-row-delete .edit-delete-button{
+    opacity: 0;
+    transition: opacity .1s;
 }
 
 .home-freshness-1 {
@@ -978,13 +987,19 @@ h2#recipe-info-header {
     width:90px;
     height: 40px;
     line-height: 40px;
-    float: right;
-    margin-right: 25px;
+    right: 35px;
     color: white;
     font-size: 25px;
     border-radius: 100px;
     text-align: center;
     margin-top: 10px;
+    position: fixed;
+    z-index: 100000;
+    box-shadow: 0px 0px 10px 10px #FFF;
+}
+
+.fridge-edit-row{
+    padding-bottom: 30px;
 }
 
 

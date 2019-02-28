@@ -1,20 +1,38 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
+    var found = false;
     if (Object.keys(req.query).length === 1) {
         var id = req.query.id
-        console.log('here')
         var ary = data.ingredients_soon
-        console.log(ary)
-        console.log('nexe')
         for (var i = 0; i < ary.length; ++i){
-            console.log(ary[i]+ " : " +ary[i].id)
             if (ary[i].id == id) {
-                console.log('found!')
                 ary.splice(i, 1);
                 data.ingredients_soon = ary;
-                console.log(data.ingredients_soon)
+                found = true;
                 break;
+            }
+        }
+        if (!found){
+            ary = data.ingredients_ok
+            for (var i = 0; i < ary.length; ++i){
+                if (ary[i].id == id) {
+                    ary.splice(i, 1);
+                    data.ingredients_ok = ary;
+                    found = true;
+                    break;
+                }
+            }
+        }
+        if (!found){
+            ary = data.ingredients_fresh
+            for (var i = 0; i < ary.length; ++i){
+                if (ary[i].id == id) {
+                    ary.splice(i, 1);
+                    data.ingredients_fresh = ary;
+                    found = true;
+                    break;
+                }
             }
         }
     }
