@@ -96,14 +96,15 @@ function addFood(e) {
         quantity: quant,
 
     }
-    var addcount = $("#add-ingredients-added-count").html();
-    addcount++;
-    $("#add-ingredients-added-count").html(addcount);
-
     // alert(JSON.stringify(json_data));
 
     $.get("view-all-ingredients", json_data, function(data){
             // alert("Data: " + data + "\nStatus: " + status);
             // $(window).html(data);
         });
+
+    
+    var addcount = $("#add-ingredients-added-count").html();
+    addcount++;
+    $("#add-ingredients-added-count").html(addcount);
 }
