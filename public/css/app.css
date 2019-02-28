@@ -228,13 +228,18 @@ html{
     right: 15px;
     background-color: red;
     color: white;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    line-height: 50px;
+    width: 80px;
+    height: 80px;
+    font-size: 15px;
+    line-height: 15px;
     text-align: center;
     border-radius: 100%;
     box-shadow: 0px 0px 30px #939497;
+}
+
+#add-ingredients-added-count{
+    font-size: 25px;
+    line-height: 45px;
 }
 
 
@@ -568,6 +573,7 @@ h2.home-title{
 }
  .qaf-row-1 {
      text-align: center;
+     font-size: 20px;
 }
  .qaf-plus-minus {
      width: 20px;
