@@ -108,8 +108,7 @@
 
 
     "ingredients_fresh": [
-        {   
-            "id": 1,
+        {
             "name": "Beef (Ground)",
             "imageURL": "/images/icon-beef-ground.png",
             "category": "Protein",
