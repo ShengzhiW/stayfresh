@@ -30,28 +30,35 @@
         </div>
       </div>
   </div>
-
+<div class="recipe-info-recipe-bgc">
+        <img class="img-recipe-info" src="{{imageURL}}"/>
+      </div>
 <div class="container recipe-intro-container">
     <div class="row">
       <div class="col col-xs-12">
       <h1 class="recipe-info-name">{{name}}</h1>
       </div>
       </div>
+      <br><br>
     <div class="row">
-      <div class="col col-xs-12">
-        <img class="img-recipe-info" src="{{imageURL}}"/>
+      <div class="col col-xs-6 recipe-info-recipe-details-x">
+            Cooking Time: <p class="recipe-time">{{cookingTime}} Minutes</p>
       </div>
-      <div class="col col-xs-12">
-            Cooking Time: <p class="recipe-time">{{cookingTime}}</p>
-            <br>
+      <div class="col col-xs-6 recipe-info-recipe-details-x">
             Serving size: <p class="serving-size">{{servingSize}}</p>
       </div>
       
     </div>
 </div>
-
-<h2 id="recipe-info-header">Recipe</h2>
-
+<br><br>
+<div class="container">
+<div class="row">
+  <div class="col col-xs-3"></div>
+  <div class="col col-xs-6"><hr><hr></div>
+  <div class="col col-xs-3"></div>
+</div>
+</div>
+<h2 id="recipe-info-header">Cooking Instructions</h2>
 <div class="container recipe-body-container">
   <p>{{steps}}</p>
   </div>

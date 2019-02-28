@@ -1,5 +1,10 @@
+
+html{
+    font-family: 'Rationale';
+}
+
 *{
-     font-family: 'Rationale';
+     font-family: 'Rationale', sans-serif !important;
 }
  @font-face {
      font-family: 'Rationale';
@@ -663,32 +668,36 @@ h2.home-title{
 
 .recipe-info-name{
     margin-bottom: 50px;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, .7);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: -120px;
 }
 
  h2#recipe-info-header {
-     font-size: 18px;
+     font-size: 28px;
+     text-align: center
 }
  .footer-recipe-info {
      text-align: center;
      padding-bottom: 20vw;
 }
- .img-recipe-info {
-     width: 90%;
-     padding-right: 10px;
-}
  .recipe-body-container {
-     width: 95%;
+     width: 90%;
      overflow: scroll;
      margin: 0 auto;
      box-sizing: border-box;
-     padding: 10px;
-     border: 1px solid rgb(194, 194, 194);
+     padding: 20px;
+     font-size: 20px;
+     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
+     border-radius: 20px;
 }
  #recipe-info-header {
      font-size: 6vw;
-     padding-left: 5vw;
-     padding-bottom: 2vw;
      box-sizing: border-box;
+     margin-bottom: 30px;
      letter-spacing: 0.3vw;
 }
  .edit-recipe-button-container {
@@ -1177,4 +1186,27 @@ textarea {
 
 .ratedy{
     background-color: #8EFF09;
+}
+
+.recipe-info-recipe-details-x{
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+    border:  5px solid white;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.recipe-info-recipe-bgc{
+    width: 100vw;
+    max-height: 100vw;
+    overflow: hidden;
+
+
+/*     position: absolute;
+    top: 0;
+    left: 0; */
+}
+.recipe-info-recipe-bgc img{
+    width: 100%;
 }
