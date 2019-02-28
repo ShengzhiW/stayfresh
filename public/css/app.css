@@ -421,11 +421,18 @@ h2.home-title {
     border-bottom: 1px solid #E4E4E4;
     font-size: 18px;
     transition: margin .5s;
+    height: 0;
+    overflow: hidden;
 }
 
 .home-freshness-row-edit{
     margin: 5px 0% 5px 0%;
     transition: margin .5s;
+}
+
+.home-freshness-row-delete{
+    height: 0;
+    overflow: hidden;
 }
 
 .edit-delete-button{

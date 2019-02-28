@@ -18,4 +18,5 @@ function removeItem(e) { 
             
     });
 
+    $(this).closest('.home-freshness-col-3').closest('.row')
 }
