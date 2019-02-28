@@ -201,17 +201,20 @@
             "imageURL": "/images/icon-potato.png",
             "quantity": 1
         },
-        {
+        {   
+            "id": 14,
             "name": "Salmon",
             "imageURL": "/images/icon-salmon.png",
             "quantity": 2
         },
         {
+            "id": 15,
             "name": "Celery",
             "imageURL": "/images/icon-celery.png",
             "quantity": 1
         },
         {
+            "id": 16,
             "name": "Tomato",
             "imageURL": "/images/icon-tomato.png",
             "quantity": 50

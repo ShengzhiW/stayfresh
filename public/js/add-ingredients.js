@@ -84,10 +84,12 @@ function addFood(e) {
     else if (cbOkay)
         var cat = "okay";
     else if (cbFresh)
-        var cat = "fresh"
+        var cat = "fresh";
+    var randID = Math.floor(Math.random() * (1000000-9000000) + 1000000)
 
 
     var json_data = {
+        id: randID,
         category: cat,
         food: foodName, 
         image: img, 

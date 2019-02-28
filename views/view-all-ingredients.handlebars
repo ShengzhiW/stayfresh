@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="/css/app.css"/>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="/js/remove-item.js"></script>
 </head>
 <body>
    <div class="container top-containers">
@@ -33,15 +34,16 @@
                   {{!-- <div class="col-xs-4 fridge-filter">
                      Filter     &#9660;
                   </div> --}}
-                  {{!-- <div class="col-xs-4 fridge-edit">
+                  <div class="col-xs-4 fridge-edit">
                      Edit
-                  </div> --}}
+                  </div>
                </div>
                <h4 class="home-freshness home-freshness-1">
                   Eat Soon
                </h4>
                {{#each ingredients_soon}}
                <div class="row home-freshness-row">
+                  <input type="hidden" value="{{id}}" class='h_v'>
                   <div class="home-freshness-col-1 col-xs-3">
                      <img class="icon" src="{{imageURL}}"/>
                   </div>
@@ -50,6 +52,7 @@
                   </div>
                   <div class="home-freshness-col-3 col-xs-5">
                      x {{quantity}}
+                     <div class="edit-delete-button">✖︎</div>
                   </div>
                </div>
                {{/each}}
@@ -89,5 +92,11 @@
          </div>
       </div>
    </div>
+
+   <script>
+      $(".fridge-edit").click(function(){
+        $(".home-freshness-row").toggleClass("home-freshness-row-edit");
+      });
+   </script>
 </body>
 </html>

@@ -33,13 +33,18 @@
         <ul>
             {{#each ingredients}}
             <li class="search-list-item search-list-item-active">
+                <br>
                 <div class="row">
-                    <img class="icon icon-add" src="{{imageURL}}"/>
-                    <p class="add-ingredient-name col-xs-5">{{name}}</p>
+                    <div class="col col-xs-1"></div>
+                    <div class="col col-xs-1"><img class="icon-add" src="{{imageURL}}"/></div>
+                    <div class="col col-xs-8"><p class="add-ingredient-name">{{name}}</p></div>
+                    <div class="col col-xs-2"></div>
+                    
+                    
                 </div>
                 <div class="qaf-container">
                     <div class="row qaf-row-1">
-                        Quantity: <span class="qaf-quantity">0</span>
+                        Quantity: <span class="qaf-quantity">0</span><br>
                         <div class="qaf-plus-minus quantplus">+</div>
                         <div class="qaf-plus-minus quantminus">-</div>
                         <br>
@@ -60,6 +65,7 @@
             </li>
             {{/each}}
         </ul>
+        <br><br><br><br>
     </div>
 </body>
 </html>
