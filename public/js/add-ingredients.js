@@ -62,9 +62,6 @@ function quantDeIncrement(e) { 
     quant.html(num);
 }
 
-function goBack() {
-  window.history.back();
-}
 
 
 function addFood(e) {
