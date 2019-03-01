@@ -18,6 +18,6 @@ function removeItem(e) { 
             
     });
 
-    // var card = $(this).closest(".var-card");
-    // card.hide('slow', function(){ $(this).remove(); });
+    var card = $(this).closest(".var-card");
+    card.hide('slow', function(){ $(this).remove(); });
 }

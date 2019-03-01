@@ -9,76 +9,64 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="/js/remove-recipe.js"></script>
 </head>
-
 <body>
-  
   <div class="container top-containers">
     <div class="row">
       <a href="index">
-      <div class="col col-xs-2">
-            <p class="back"><</p>
-      </div>
-    </a>
+        <div class="col col-xs-2">
+          <p class="back"><</p>
+        </div>
+      </a>
       <div class="col col-xs-8">
         <h1 id="recipe-name">Recipes</h1>
       </div>
     </div>
-</div>
-
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-xs-4 recipe-edit">
-                     Edit
-                  </div>
-    </div>
-  
-
-        </div>
-
-
+        Edit
       </div>
     </div>
-
   </div>
-
-    <!-- Recipes -->
-<br><br><br>
-<div class="outer-container">
-{{#each recipes}}
-
-<div class="var-card shadow">
-  <input type="hidden" value="{{id}}" class='h_v_r'>
-  <a href="/recipe-info/{{id}}">
-    <div>
-  <div><h1 class="rei-card-text-h1">{{name}}</h1></div>
-
-  <div class="rei-card-text">Ingredients: {{recipeIngredients}}</div>
-  <div class="rei-card-text-r">Servings: {{servingSize}}</div>
-  <div class="rei-card-text-r">Time: {{cookingTime}} Minutes</div>
-  <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
   </div>
-  </a>
-  <br>
-  <div class="deleteBTNrecipe">✖︎</div>
-  <br>
-</div>
-
-{{/each}}
-</div>
-
-   <script>
-      $(".recipe-edit").click(function(){
-        $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");
-        if ($(".deleteBTNrecipe").hasClass("deleteBTNrecipe-appear")) {
-            $(".recipe-edit").html("Done")
-        }
-        else $(".recipe-edit").html("Edit")
-      });
-      $(".deleteBTNrecipe").click(function(){
-        // var card = $(this).closest(".var-card");
-        // card.hide('slow', function(){ $(this).remove(); });
-      });
-   </script>
+  </div>
+  </div>
+  <!-- Recipes -->
+  <br><br><br>
+  <div class="outer-container">
+    {{#each recipes}}
+    <div class="var-card shadow">
+      <input type="hidden" value="{{id}}" class='h_v_r'>
+      <a href="/recipe-info/{{id}}">
+        <div>
+          <div>
+            <h1 class="rei-card-text-h1">{{name}}</h1>
+          </div>
+          <div class="rei-card-text">Ingredients: <br>{{recipeIngredients}}</div>
+          <div class="rei-card-text-r">Servings: {{servingSize}}</div>
+          <div class="rei-card-text-r">Time: {{cookingTime}} Minutes</div>
+          <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
+        </div>
+      </a>
+      <br>
+      <div class="deleteBTNrecipe">✖︎</div>
+      <br>
+    </div>
+    {{/each}}
+  </div>
+  <script>
+    $(".recipe-edit").click(function(){
+      $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");
+      if ($(".deleteBTNrecipe").hasClass("deleteBTNrecipe-appear")) {
+          $(".recipe-edit").html("Done")
+      }
+      else $(".recipe-edit").html("Edit")
+    });
+    $(".deleteBTNrecipe").click(function(){
+      // var card = $(this).closest(".var-card");
+      // card.hide('slow', function(){ $(this).remove(); });
+    });
+  </script>
 </body>
-
 </html>
