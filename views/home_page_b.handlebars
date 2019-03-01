@@ -7,6 +7,11 @@
                     <h2 class="home-title">My Fridge</h2>
                 </div>
                 <div class="col-xs-5">
+                    <a href="add-ingredients">
+                        <div class="black-square-add-b">
+                            +
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -35,13 +40,12 @@
                 </div>
             </div>
 
-            {{> home-recipe-buttons}}
-
             <div class="row home-scroll-cards">
                 {{#each_upto recipes 4}}
                 {{> home-recipe-card}}
                 {{/each_upto}}
             </div>
+            {{> home-recipe-buttons-b}}
 
         </div>
 {{> abtest-bottom}}

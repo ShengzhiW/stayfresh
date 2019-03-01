@@ -1278,3 +1278,15 @@ html {
 .color-green{
     color: #1BCE24
 }
+
+.black-square-add-b{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 45px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    float: right;
+    border-radius: 6px;
+}
