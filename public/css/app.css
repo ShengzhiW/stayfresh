@@ -1186,6 +1186,7 @@ html {
      overflow: auto;
      white-space: nowrap;
      padding: 10px;
+     margin-top: 5px;
 }
  .home-recipe-card a{
      z-index: 5;
@@ -1235,7 +1236,7 @@ html {
      text-align: center;
 }
  .border-right-dd{
-     border-right: 1px solid gray;
+     border-right: 1px solid #CBCBCB;
 }
 /* .home-recipe-card-inner {
      box-shadow: 0px 0px 10px #C9CACE;
@@ -1250,4 +1251,30 @@ html {
  */
  .home-body-s{
      background-color: #F2F2F2;
+}
+
+
+.freshness-title-b{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.freshness-number-b{
+    font-size: 30px;
+}
+
+.freshness-title-small-b{
+    font-size: 16px
+}
+
+.color-red{
+    color: red;
+}
+
+.color-yellow{
+    color: #F19208
+}
+
+.color-green{
+    color: #1BCE24
 }

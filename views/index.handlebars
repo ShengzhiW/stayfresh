@@ -1,35 +1,17 @@
-<!DOCTYPE html>
-<head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/app.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    {{> facebook}}
-    <script src="/js/account.js"></script>
-</head>
-<body>
-    <div class="container top-containers">
-        <h1 class="nav-title">Home</h1>
-        <a onclick="facebookLogout()"><img class="icon-profile account-logout" src="images/logout.png"/></a>
-    </div>
-    <div class="outer-container">
-        <div class="container">
-            
-            <!-- My Fridge -->
+{{> abtest-top}}
+
+   <!-- My Fridge -->
 
             <div class="row home-title-row">
                 <div class="col-xs-7">
                     <h2 class="home-title">My Fridge</h2>
                 </div>
                 <div class="col-xs-5">
-                    <a href="add-ingredients">
-                        <div class="home-plus-button">+ Add Food</div>
-                    </a>
                 </div>
             </div>
+
+            {{> home-fridge-buttons}}
+
             <div class="row">
                 <div class="col-xs-12">
                     <div class="home-fridge-container">
@@ -93,11 +75,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row ">
-                <a href="view-all-ingredients">
-                    <div class="col-xs-12 home-view-more">View More ></div>
-                </a>
-            </div>
 
             <!-- My Recipes -->
 
@@ -106,29 +83,16 @@
                     <h2 class="home-title">Recipes</h2>
                 </div>
                 <div class="col-xs-5">
-                    <a href="add-recipe">
-                        <div class="home-plus-button">+ New Recipe</div>
-                    </a>
                 </div>
             </div>
-            <div class="row">
+
+            {{> home-recipe-buttons}}
+
+            <div class="row home-scroll-cards">
                 {{#each_upto recipes 4}}
-                <div class="col-xs-6 home-recipe-card">
-                    <a href="/recipe-info/{{id}}">
-                        <div class="home-recipe-card-inner">
-                            <div class="home-recipe-card-inner-image"><img src="{{imageURL}}" alt="recipe"></div>
-                            <div class="home-recipe-card-inner-text">{{name}}</div>
-                        </div>
-                    </a>
-                </div>
+                {{> home-recipe-card}}
                 {{/each_upto}}
             </div>
-            <div class="row">
-                <a href="view-all-recipes">
-                    <div class="col-xs-12 home-view-more view-more20-2">View More ></div>
-                </a>
-            </div>
+
         </div>
-    </div>
-</body>
-</html>
+{{> abtest-bottom}}
