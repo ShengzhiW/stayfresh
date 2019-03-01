@@ -19,6 +19,10 @@ var vAIng = require('./routes/view-all-ingredients');
 var vARecipe = require('./routes/view-all-recipes');
 var signup = require('./routes/sign-up');
 
+// abtest
+var verA = require('./routes/home_page_a');
+var verB = require('./routes/home_page_b');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -58,6 +62,9 @@ app.get('/view-all-recipes', vARecipe.view);
 app.get('/sign-up', signup.view);
 app.get("/recipe-info/:recipeID", recipeInfo.view);
 
+// abtest
+app.get('/home_page_a', verA.view);
+app.get('/home_page_b', verB.view);
 
 // Example route
 // app.get('/users', user.list);
