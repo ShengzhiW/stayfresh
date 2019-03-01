@@ -1211,7 +1211,6 @@ html {
      overflow: hidden;
 }
  .home-recipe-card-inner-image img{
-     height: 100px;
      min-width: 100%;
 }
  .home-recipe-card-inner-text{
