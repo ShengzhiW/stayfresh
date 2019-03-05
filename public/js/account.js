@@ -1,4 +1,3 @@
-$("#logout-ff").click(facebookLogout());
 window.fbAsyncInit = function () {
     FB.init({
         appId: '786299908399210',
@@ -21,6 +20,9 @@ window.fbAsyncInit = function () {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+
+
+
 function facebookLogout(){
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
@@ -32,5 +34,8 @@ function facebookLogout(){
             window.location = "/";
         }
     });
+    if (FB.getLoginStatus() === undefined)
+        window.location = "/";
+    alert("a")
 
 }
