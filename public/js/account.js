@@ -14,6 +14,7 @@ function facebookLogout(){
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
             FB.logout(function(response) {
+                alert (response);
                 window.location = "/";
             });
         }
