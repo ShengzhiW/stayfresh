@@ -93,7 +93,7 @@ function addFood(e) {
         quantity: quant,
 
     }
-    alert(JSON.stringify(json_data));
+    // alert(JSON.stringify(json_data));
 
     $.get("view-all-ingredients", json_data, function(data){
             // alert("Data: " + data + "\nStatus: " + status);
