@@ -7,23 +7,16 @@
 
 
 function facebookLogout(){
-    // try {
-    //     FB.logout(function(response) {});
-    // } catch(e) {
-    //     console.log(e);
-    // }
-    // if( FB.getLoginStatus() === undefined){
-    //     window.location = "/";
-    //     return;
-    // }
-    // 
-    if( FB.getLoginStatus() === undefined){
-        alert("???")
+    try {
+        FB.logout();
+    } catch(e) {
+        console.log(e);
     }
-    FB.getLoginStatus(function(response) {
-        if (response.status === 'connected') {
-            FB.logout();
-        }
-    });
-
+    // FB.getLoginStatus(function(response) {
+    //     if (response.session) {
+    //         FB.logout(function(response) {
+    //             window.location = "/";
+    //         });
+    //     }
+    // });
 }
