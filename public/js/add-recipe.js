@@ -4,6 +4,7 @@ $(document).ready(function () {
 
     enableSelectors(foods);
     $("#rcp-add").click(addRecipe);
+    
 })
 
 
@@ -64,7 +65,18 @@ function enableSelectors() {
 }
 
 
+$.fn.scrollView = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+        }, 1000);
+    });
+}
+
+
 function addRecipe() {
+    if ($('#recipe-name-edit').val() == '') { $('#recipe-name-loc').scrollView(); $('#recipe-name-edit').css('border', 'solid red 1px'); return;} else { $('#recipe-name-edit').css('border', 'solid 0 black'); }
+    if ($('#nre-cooking-instructions').val() == '') { $('#nre-cooking-instructions-loc').scrollView(); $('#nre-cooking-instructions').css('border', 'solid red 1px'); return;} else { $('#nre-cooking-instructions').css('border', 'solid 0 black'); }
     var rcpName = $('#recipe-name-edit').val();
     var recipeID = Math.floor(Math.random() * (1000000-9000000) + 1000000);
     var image = "/images/user-recipe.jpg";

@@ -1036,7 +1036,8 @@ html {
      border-color: #F90101;
 }
  #recipe-name-edit {
-     border: 0!important;
+     border: 0;
+     border-radius: 10px;
      height: 50px;
      width: 80vw;
      margin: 0 auto 0 auto;
@@ -1291,4 +1292,10 @@ html {
     font-size: 30px;
     float: right;
     border-radius: 6px;
+}
+
+.link-anchor{
+     width: 0;
+     height: 0;
+     opacity: 0;
 }

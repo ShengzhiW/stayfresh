@@ -83,7 +83,43 @@
         {
             "name": "Potato",
             "imageURL": "/images/icon-potato.png",
-            "category": "Produce",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Rice",
+            "imageURL": "/images/icon-rice.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Tortilla",
+            "imageURL": "/images/icon-tortillas.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Bread",
+            "imageURL": "/images/icon-bread.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Flour",
+            "imageURL": "/images/icon-flour.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Corn",
+            "imageURL": "/images/icon-corn.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Beans",
+            "imageURL": "/images/icon-beans.png",
+            "category": "Carbs",
             "quantity": 0
         },
         {
