@@ -14,7 +14,7 @@ function initializePage() {
             $(this).closest('.row').find('.CB-fresh').prop('checked', false);
             var quant = $(this).closest('.row').find('.qaf-quantity');
             if (quant.html() > 0)
-                var addbutton = $(this).closest('.row').find('.qaf-add').css("background-color", "#7F7F7F");
+                var addbutton = $(this).closest('.row').find('.qaf-add').css("background-color", "#000");
         }
     });
     $('.CB-okay').change(function() {
@@ -23,7 +23,7 @@ function initializePage() {
             $(this).closest('.row').find('.CB-fresh').prop('checked', false);
             var quant = $(this).closest('.row').find('.qaf-quantity');
             if (quant.html() > 0)
-                var addbutton = $(this).closest('.row').find('.qaf-add').css("background-color", "#7F7F7F");
+                var addbutton = $(this).closest('.row').find('.qaf-add').css("background-color", "#000");
         }
     });
     $('.CB-fresh').change(function() {
@@ -32,7 +32,7 @@ function initializePage() {
             $(this).closest('.row').find('.CB-eatsoon').prop('checked', false);
             var quant = $(this).closest('.row').find('.qaf-quantity');
             if (quant.html() > 0)
-                var addbutton = $(this).closest('.row').find('.qaf-add').css("background-color", "#7F7F7F");
+                var addbutton = $(this).closest('.row').find('.qaf-add').css("background-color", "#000");
         }
     });
 }

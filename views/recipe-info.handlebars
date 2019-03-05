@@ -10,8 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="/js/goBack.js"></script>
 </head>
-<body>
-</body>
+<body class="recipe-ind-body">
 <div class="container top-containers">
   <div class="row">
     <a onclick="goBack()">
@@ -55,6 +54,20 @@
     <div class="col col-xs-3"></div>
   </div>
 </div>
+<h2 id="recipe-info-header">Ingredients</h2>
+  {{#each recipeIngredients}}
+  <div class="container recipe-body-container recipe-ing-container">
+    <input type="checkbox">{{this}}
+  </div>
+  {{/each}}
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col col-xs-3"></div>
+    <div class="col col-xs-6 hr-line"></div>
+    <div class="col col-xs-3"></div>
+  </div>
+</div>
 <h2 id="recipe-info-header">Cooking Instructions</h2>
 <div class="container recipe-body-container">
   <p>{{steps}}</p>
@@ -67,4 +80,5 @@
   <button id="edit-recipe-button">Edit Recipe</button>
   </a> --}}
 </div>
+</body>
 </html>

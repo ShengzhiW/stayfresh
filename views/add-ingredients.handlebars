@@ -34,32 +34,31 @@
     <div class="search-list-container">
         <ul>
             {{#each ingredients}}
-            <li class="search-list-item search-list-item-active">
-                <br>
+            <li class="search-list-item-a">
                 <div class="row">
-                    <div class="col col-xs-1"></div>
-                    <div class="col col-xs-1"><img class="icon-add" src="{{imageURL}}"/></div>
-                    <div class="col col-xs-8"><p class="add-ingredient-name">{{name}}</p></div>
                     <div class="col col-xs-2"></div>
-                    
-                    
+                    <div class="col col-xs-8"><p class="add-ingredient-name"><img class="icon-add" src="{{imageURL}}"/>{{name}}</p></div>
+                    <div class="col col-xs-2"></div>
                 </div>
+                <div class="divider-qaff"></div>
                 <div class="qaf-container">
                     <div class="row qaf-row-1">
-                        Quantity: <span class="qaf-quantity">0</span><br>
+                        <div class="qaf-food-counter-s">Quantity: <span class="qaf-quantity">0</span></div>
                         <div class="qaf-plus-minus quantplus">+</div>
                         <div class="qaf-plus-minus quantminus">-</div>
-                        <br>
-                        {{!-- <button class="qaf-freshness qaf-freshness-1">Fresh</button>
-                        <button class="qaf-freshness qaf-freshness-2">Okay</button>
-                        <button class="qaf-freshness qaf-freshness-3">Eat Soon</button> --}}
-                        <input type="checkbox" name="eatsoon" value="eatsoon" id="eatsoon" class="CB-eatsoon">
-                        <label>Eat Soon</label>
-                        <input type="checkbox" name="okay" value="okay" id="okay" class="CB-okay">
-                        <label>Okay</label>
-                        <input type="checkbox" name="fresh" value="fresh" id="fresh" class="CB-fresh">
-                        <label>Fresh</label>
-
+                        <div class="divider-qaff"></div>
+                        <label class="myCheckbox myCheckbox-s">
+                            <input type="checkbox" name="eatsoon" value="eatsoon" id="eatsoon" class="CB-eatsoon">
+                            <span>Eat<br>Soon</span>
+                        </label>
+                        <label class="myCheckbox myCheckbox-o">
+                            <input type="checkbox" name="okay" value="okay" id="okay" class="CB-okay">
+                            <span>Just<br>Okay</span>
+                        </label>
+                        <label class="myCheckbox myCheckbox-f">
+                            <input type="checkbox" name="fresh" value="fresh" id="fresh" class="CB-fresh">
+                            <span>Still<br>Fresh</span>
+                        </label>
                         <p class="qaf-add">+ Add</p>
 
                     </div>

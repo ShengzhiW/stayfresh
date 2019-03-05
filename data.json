@@ -311,7 +311,7 @@
             "id" : 5,
             "name": "Pan Seared Salmon",
             "imageURL": "/images/recipes-pan-seared-salmon.jpg",
-            "recipeIngredients": ["Salmon", "Capers", "Lemon"],
+            "recipeIngredients": {"Salmon", "Capers", "Lemon"},
             "cookingTime": 20,
             "servingSize": 4,
             "steps": ["Preheat a large heavy skillet over medium heat for 3 minutes.",
