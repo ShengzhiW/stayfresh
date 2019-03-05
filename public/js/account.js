@@ -6,9 +6,10 @@
 
 
 function facebookLogout(){
+    // window.location = "/";
     FB.logout(function(response) {
-        FB.Auth.setAuthResponse(null, 'unknown');
-    });
+        window.location = "/";
+     });
     // FB.getLoginStatus(function(response) {
     //     if (response.session) {
     //         FB.logout(function(response) {
