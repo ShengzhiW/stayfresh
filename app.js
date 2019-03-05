@@ -109,12 +109,17 @@ var hbs = handlebars.create({
         math: function (lvalue, operator, rvalue) {
             lvalue = parseFloat(lvalue);
             rvalue = parseFloat(rvalue);
+            add = (lvalue + rvalue) > 0 ? lvalue + rvalue : 0;
+            sub = (lvalue - rvalue) > 0 ? lvalue - rvalue : 0;
+            mul = (lvalue * rvalue) > 0 ? lvalue * rvalue : 0;
+            div = (lvalue / rvalue) > 0 ? lvalue / rvalue : 0;
+
 
             return {
-              "+": lvalue + rvalue,
-              "-": lvalue - rvalue,
-              "*": lvalue * rvalue,
-              "/": lvalue / rvalue,
+              "+": add,
+              "-": sub,
+              "*": mul,
+              "/": div,
               "%": lvalue % rvalue
             }[operator];
           }
