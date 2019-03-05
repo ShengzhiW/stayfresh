@@ -27,6 +27,9 @@ function facebookLogout(){
                 window.location = "/";
             });
         }
+        else{
+            window.location = "/";
+        }
     });
     // window.location = "/";
 }
