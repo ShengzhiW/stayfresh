@@ -69,7 +69,7 @@ function addFood(e) {
     var cbEat = $(this).closest('.row').find('.CB-eatsoon').is(":checked");
     var cbOkay = $(this).closest('.row').find('.CB-okay').is(":checked");
     var cbFresh = $(this).closest('.row').find('.CB-fresh').is(":checked");
-    var foodName = $(this).closest('.row').closest('.qaf-container').closest('.search-list-item').find('.add-ingredient-name').html();
+    var foodName = $(this).closest('.row').closest('.qaf-container').closest('.search-list-item').find('.add-ingredient-name').text();
     var img = $(this).closest('.row').closest('.qaf-container').closest('.search-list-item').find('.icon-add').attr("src");
     if (!quant > 0)
         return;
