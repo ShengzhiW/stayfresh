@@ -20,17 +20,13 @@ window.fbAsyncInit = function () {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-
 function facebookLogout(){
-    // window.location = "/";
-    FB.logout(function(response) {
-        window.location = "/";
-     });
-    // FB.getLoginStatus(function(response) {
-    //     if (response.session) {
-    //         FB.logout(function(response) {
-    //             window.location = "/";
-    //         });
-    //     }
-    // });
+    FB.getLoginStatus(function(response) {
+        if (response.status === 'connected') {
+            FB.logout(function(response) {
+                window.location = "/";
+            });
+        }
+    });
+    window.location = "/";
 }
