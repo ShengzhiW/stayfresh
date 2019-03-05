@@ -1,3 +1,4 @@
+$("#logout-ff").click(facebookLogout());
 window.fbAsyncInit = function () {
     FB.init({
         appId: '786299908399210',
