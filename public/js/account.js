@@ -5,13 +5,10 @@
 // })
 
 
-
 function facebookLogout(){
-    try {
-        FB.logout();
-    } catch(e) {
-        console.log(e);
-    }
+    FB.logout(function(response) {
+        FB.Auth.setAuthResponse(null, 'unknown');
+    });
     // FB.getLoginStatus(function(response) {
     //     if (response.session) {
     //         FB.logout(function(response) {
