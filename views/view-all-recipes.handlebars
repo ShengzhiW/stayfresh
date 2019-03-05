@@ -45,10 +45,16 @@
           <div>
             <h1 class="rei-card-text-h1">{{name}}</h1>
           </div>
+          <br>
           <div class="rei-card-text">Ingredients: <br>
-          {{recipeIngredients}}</div>
-          <div class="rei-card-text-r">Servings: {{servingSize}}</div>
-          <div class="rei-card-text-r">Time: {{cookingTime}} Minutes</div>
+            {{#each recipeIngredients}}
+            <div class="rei-card-text-recipe">
+              &nbsp;{{this}}&nbsp;
+            </div>
+            {{/each}}
+          </div>
+
+          <div class="rei-card-text-r">Servings: {{servingSize}} <br>Time: {{cookingTime}} Minutes</div>
           <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
         </div>
       </a>
