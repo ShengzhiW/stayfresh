@@ -24,10 +24,12 @@ window.fbAsyncInit = function () {
 
 
 $(document).ready(function() {
-  // setTimeout(loadAfterTime, 2000);
-  var htm = "<form action='index'><input class='login-input' type='email' name='email' placeholder='Email' required><br><input class='login-input' type='password' name='password' placeholder='Password' required><br><input id='login-submit' type='submit' value='Login'></form><br><br><div class='login-new-account'>Don't have an account? <a href='sign-up'>Sign Up</a></div>"
-  $(".login-main").html(htm);
-  initializePage();
+  setTimeout(loadAfterTime, 2000){
+    var htm = "<form action='index'><input class='login-input' type='email' name='email' placeholder='Email' required><br><input class='login-input' type='password' name='password' placeholder='Password' required><br><input id='login-submit' type='submit' value='Login'></form><br><br><div class='login-new-account'>Don't have an account? <a href='sign-up'>Sign Up</a></div>"
+    $(".login-main").html(htm);
+    initializePage();
+  };
+  
 })
 
 function initializePage() {
