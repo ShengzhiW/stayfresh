@@ -12,9 +12,9 @@ function facebookLogout(){
         return;
     }
     FB.getLoginStatus(function(response) {
+        alert (response.status);
         if (response.status === 'connected') {
             FB.logout(function(response) {
-                alert (response);
                 // window.location = "/";
             });
         }
