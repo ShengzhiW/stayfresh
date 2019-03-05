@@ -70,7 +70,9 @@
 </div>
 <h2 id="recipe-info-header">Cooking Instructions</h2>
 <div class="container recipe-body-container">
-  <p>{{steps}}</p>
+  <p><ol>
+    {{#each steps}}<li>{{this}}</li>{{/each}}
+  </ol></p>
 </div>
 <a href="/recipe-rate">
   <div class="row add-recipe-create">Done</div>
