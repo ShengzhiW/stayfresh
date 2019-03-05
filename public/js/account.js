@@ -36,6 +36,5 @@ function facebookLogout(){
     });
     if (FB.getLoginStatus() === undefined)
         window.location = "/";
-    alert("a")
 
 }
