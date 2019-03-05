@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // setTimeout(loadAfterTime, 2000);
-  var htm = "<input class='login-input' type='text' name='email' placeholder='Email' required><br><input class='login-input' type='password' name='password' placeholder='Password' required><br><a href='index'><input id='login-submit' type='submit' value='Login'></a><br><br><div class='login-new-account'>Don't have an account? <a href='sign-up'>Sign Up</a></div>"
+  var htm = "<form action='index'><input class='login-input' type='email' name='email' placeholder='Email' required><br><input class='login-input' type='password' name='password' placeholder='Password' required><br><input id='login-submit' type='submit' value='Login'></form><br><br><div class='login-new-account'>Don't have an account? <a href='sign-up'>Sign Up</a></div>"
   $(".login-main").html(htm);
   initializePage();
 })
