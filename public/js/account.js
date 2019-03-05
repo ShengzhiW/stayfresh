@@ -21,7 +21,7 @@ window.fbAsyncInit = function () {
 }(document, 'script', 'facebook-jssdk'));
 
 function facebookLogout(){
-    if (FB.getLoginStatus(function(response) === undefined) {
+    if (FB.getLoginStatus() === undefined) {
         window.location = "/";
     }
     FB.getLoginStatus(function(response) {
