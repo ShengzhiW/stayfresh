@@ -1097,6 +1097,15 @@ html {
      border: 2px solid #B8BBBB;
      border-radius: 10px;
 }
+
+ .nre-serving-size {
+     width: 200px;
+     height: 50px;
+     padding: 10px;
+     border: 2px solid #B8BBBB;
+     border-radius: 10px;
+}
+
  .recipe-instructions::placeholder {
      text-align: left;
 }
@@ -1400,4 +1409,8 @@ html {
 
 body.recipe-ind-body {
      /* background-color: white!important; */
+}
+
+.recipe-inst{
+     margin-bottom: 10px;
 }
