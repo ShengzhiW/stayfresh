@@ -7,18 +7,21 @@ exports.view = function(req, res){
     console.log(recipeid)
     recipeDetail = data.recipes;
     recipeDetail.forEach( function(element, index) {
-        // console.log(element)
         if(element.id == recipeid){
             found = element;
             console.log('found!')
         }
     });
-    res.render('recipe-info', {
+    jjsondata = {
+        'id' : found.id,
         'name': found.name,
         'imageURL': found.imageURL,
         'recipeIngredients': found.recipeIngredients,
         'cookingTime': found.cookingTime,
         'servingSize' : found.servingSize,
+        'fav' : found.fav,
         'steps' : found.steps
-    });
+    }
+    console.log( jjsondata)
+    res.render('recipe-info',  jjsondata);
 };

@@ -12,6 +12,23 @@ exports.view = function(req, res){
             }
         }
     }
+    else if (Object.keys(req.query).length === 2) {
+        console.log('here!')
+        var id = req.query.id
+        var favorite = req.query.fav
+        console.log("favorite: "+favorite)
+        var ary = data.recipes
+        for (var i = 0; i < ary.length; ++i){
+            if (ary[i].id == id) {
+                console.log('foundhere')
+                console.log(ary[i])
+                ary[i].fav = favorite;
+                console.log(ary[i])
+                data.recipes = ary;
+                break;
+            }
+        }
+    }
     else if (Object.keys(req.query).length !== 0)  {
         var newrecipe = {
             id: req.query.id,
@@ -20,9 +37,10 @@ exports.view = function(req, res){
             recipeIngredients: req.query.recipeIngredients,
             cookingTime: req.query.cookingTime,
             servingSize: req.query.servingSize,
+            fav : req.query.fav,
             steps: req.query.steps
+        }
 
-        }           
         console.log(newrecipe);
         data.recipes.push(newrecipe);
         

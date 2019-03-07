@@ -18,6 +18,7 @@ var recipeRate = require('./routes/recipe-rate');
 var vAIng = require('./routes/view-all-ingredients');
 var vARecipe = require('./routes/view-all-recipes');
 var signup = require('./routes/sign-up');
+var favoriteRecipes = require('./routes/favorite-recipes');
 
 // abtest
 var verA = require('./routes/home_page_a');
@@ -61,6 +62,7 @@ app.get('/view-all-ingredients', vAIng.view);
 app.get('/view-all-recipes', vARecipe.view);
 app.get('/sign-up', signup.view);
 app.get("/recipe-info/:recipeID", recipeInfo.view);
+app.get("/favorite-recipes", favoriteRecipes.view);
 
 // abtest
 app.get('/home_page_a', verA.view);
@@ -104,6 +106,19 @@ var hbs = handlebars.create({
             // if (ary[i]['category'] == categoryName) {
             //   
             // }            
+          return result.join('');
+        },
+        favorited: function (ary, fav, options) {
+          if (!ary || ary.length == 0)
+            return options.inverse(this);
+
+          var result = [];
+          for (var i = 0; i < ary.length; ++i){
+             if (ary[i]['fav'] == fav){
+              console.log('yes')
+              result.push(options.fn(ary[i]));
+             }
+          }       
           return result.join('');
         },
         math: function (lvalue, operator, rvalue) {

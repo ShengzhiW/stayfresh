@@ -18,6 +18,7 @@ html {
  body {
      padding-top: 50px;
      background-color: #F2F2F2;
+     padding-bottom: 50px;
 }
  input:focus::-webkit-input-placeholder {
      color: transparent;
@@ -54,7 +55,7 @@ html {
      background: none;
 }
  .top-containers {
-     background: rgba(0, 0, 0, .7);
+     background: rgba(0, 0, 0, .8);
      -webkit-backdrop-filter: blur(5px);
      color: white;
      text-align: center;
@@ -70,6 +71,11 @@ html {
      line-height: 50px;
      margin-top: 0;
 }
+
+.logo-top-l{
+     height: 50px;
+}
+
  .outer-container {
      width: calc(100vw - 40px);
      margin-left: 20px;
@@ -115,7 +121,7 @@ html {
      text-align: center;
 }
  .login-welcome {
-     margin-top: 50px;
+     margin-top: 0px;
 }
  .login-main {
      margin: 50px auto 50px auto;
@@ -141,7 +147,7 @@ html {
      color: white;
      width: 170px;
      margin-top: 20px;
-     background-color: #7F7F7F;
+     background-color: black;
      border: 0;
      border-radius: 10px;
      font-size: 20px;
@@ -193,7 +199,7 @@ html {
  */
  .add-ingredients-added-count {
      position: fixed;
-     bottom: 15px;
+     bottom: 65px;
      right: 15px;
      background-color: red;
      color: white;
@@ -829,7 +835,7 @@ html {
      padding-left: 10px;
      padding-bottom: 30px;
      margin: 0 auto;
-     margin-top: 15px;
+     margin-top: 45px;
      background-color: white;
      overflow: hidden;
 }
@@ -852,10 +858,10 @@ html {
      font-size: 25px;
      border-radius: 100px;
      text-align: center;
-     margin-top: 10px;
+     margin-top: 20px;
      position: fixed;
      z-index: 100000;
-     box-shadow: 0px 0px 10px 10px #FFF;
+     box-shadow: 0px 0px 10px -5px #000;
 }
  .fridge-edit-row{
      padding-bottom: 30px;
@@ -1021,7 +1027,7 @@ html {
      margin-top: 100px;
      margin-bottom: 50px;
      text-align: center;
-     font-size: 18px;
+     font-size: 28px;
 }
  .sign-up-main {
      text-align: center;
@@ -1413,4 +1419,108 @@ body.recipe-ind-body {
 
 .recipe-inst{
      margin-bottom: 10px;
+}
+
+
+.nav-bottom-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px; 
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid #DFE3E3;
+    z-index: 10000000000
+}
+
+.nav-bottom-icon img{
+     width: 30px;
+     margin-top: 10px;
+}
+
+.addnew-thing{
+     width: 70px;
+     height: 70px;
+     position: fixed;
+     bottom: 65px;
+     right: 15px;
+     z-index: 10000000000;
+     background-color: black;
+     border-radius: 10px;
+     color: white;
+     text-align: center;
+     line-height: 70px;
+     font-size: 60px;
+     padding-top: 2px;
+     box-shadow: 0px 0px 30px #939497;
+}
+
+.app-logo-login{
+     height: 140px;
+     padding-top: 10px;
+}
+
+.app-logo-login img{
+     width: 250px;
+}
+
+#rcp-fav{
+     height: 70px;
+     font-size: 25px;
+     line-height: 35px;
+     background: #F2F2F2;
+     color: #FC0041;
+     border:  1px solid #FC0041;
+     border-radius: 10px;
+     border-radius: 100px;
+}
+
+.recipe-switchers-a{
+     height: 50px;
+     border-radius:20px 20px 0 0;
+     font-size: 20px;
+     line-height: 50px;
+     width: 50%;
+     display: inline-block;
+     margin:  0;
+     vertical-align: top;
+     padding: 0;
+     text-align: center;
+}
+
+.recipe-switchers-b{
+     float: right;
+}
+
+.alsjd-a{
+     height: auto;
+     width: 94vw;
+     margin-left: 3vw;
+
+}
+
+.alsjd-b{
+     margin-top: -20px;
+     padding-top: 20px;
+     padding-bottom: 10px;
+}
+
+.alsjd-bg-gr{
+     background-color: #A0A0A0;
+}
+
+.alsjd-bg-bl{
+     background-color: #606060;
+}
+
+.alsjd-c{
+     width: 94vw;
+     margin-left: 3vw;
+}
+
+ .outer-container-a {
+     width: calc(100% - 20px);
+     margin-left: 10px;
+     margin-bottom: 50px;
 }

@@ -9,8 +9,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="/js/goBack.js"></script>
+  <script src="/js/fav-recipe.js"></script>
 </head>
 <body class="recipe-ind-body">
+  {{> navbottom}}
 <div class="container top-containers">
   <div class="row">
     <a onclick="goBack()">
@@ -25,6 +27,8 @@
     </div>
   </div>
 </div>
+<input type="hidden" value="{{id}}" id='id_stats'>
+<input type="hidden" value={{fav}} id='fav_stats'>
 <div class="recipe-info-recipe-bgc">
   <img class="img-recipe-info" src="{{imageURL}}"/>
 </div>
@@ -74,8 +78,20 @@
     {{#each steps}}<li class="recipe-inst">{{this}}</li><hr>{{/each}}
   </ol></p>
 </div>
-<a href="/recipe-rate">
-  <div class="row add-recipe-create">Done</div>
+<div></div>
+<div class="container">
+  <br><br>
+  <div class="row">
+    <div class="col-xs-2"></div>
+     <div class="col-xs-8">
+        <div id="rcp-fav">♥<br>Add to Favorites</div>
+      </div>
+      <div class="col-xs-2"></div>
+  </div>
+  <br><br>
+</div>
+<a href="/view-all-recipes">
+  <div class="row add-recipe-create">Finish</div>
 </a>
 <div class="edit-recipe-button-container">
   {{!--   <a href="edit-recipe">

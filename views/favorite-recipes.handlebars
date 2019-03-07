@@ -41,22 +41,20 @@
   </div>
   </div>
   <!-- Recipes -->
-
-  <br><br><br><br>
+   <br><br><br><br>
 
     <div class="alsjd-a alsjd-c">
-      <a onclick="return false;">
-          <div class="home-plus-button recipe-switchers-a alsjd-bg-gr">All Recipes</div>
+      <a href="/view-all-recipes">
+          <div class="home-plus-button recipe-switchers-a alsjd-bg-bl">All Recipes</div>
       </a>
-      <a href="/favorite-recipes">
-          <div class="home-plus-button recipe-switchers-a recipe-switchers-b alsjd-bg-bl">♥ Favorite Recipes</div>
+      <a onclick="return false;">
+          <div class="home-plus-button recipe-switchers-a recipe-switchers-b alsjd-bg-gr">♥ Favorite Recipes</div>
       </a>
 
   </div>
   <div class="alsjd-a alsjd-b alsjd-bg-gr">
   <div class="outer-container-a">
-   
-    {{#each recipes}}
+    {{#favorited recipes "true"}}
     <div class="var-card shadow">
       <input type="hidden" value="{{id}}" class='h_v_r'>
       <a href="/recipe-info/{{id}}">
@@ -81,9 +79,9 @@
       <div class="deleteBTNrecipe">✖︎</div>
       <br>
     </div>
-    {{/each}}
+    {{/favorited}}
   </div>
-  </div>
+</div>
   <script>
     $(".recipe-edit").click(function(){
       $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");

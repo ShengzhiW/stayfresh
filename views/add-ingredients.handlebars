@@ -13,6 +13,7 @@
     <script src="/js/goBack.js"></script>
 </head>
 <body>
+    {{> navbottom}}
     <div class="container top-containers">
         <div class="row">
             <a onclick="goBack()">
@@ -31,6 +32,7 @@
     </div>
     --}}
     <a href="/view-all-ingredients"><div class="add-ingredients-added-count shadowPulse"><div id="add-ingredients-added-count">0</div>Items<br>Added</div></a>
+    <br>
     <div class="search-list-container">
         <ul>
             {{#each ingredients}}

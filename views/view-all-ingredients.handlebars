@@ -12,6 +12,12 @@
    <script src="/js/goBack.js"></script>
 </head>
 <body>
+   {{> navbottom}}
+   <a href="add-ingredient">
+   <div class="addnew-thing">
+      +
+   </div>
+   </a>
    <div class="container top-containers">
       <div class="row">
          <a onclick="goBack()">
@@ -28,15 +34,15 @@
       {{!-- <div class="search-bar-container">
          <input class="search-bar" type="text" placeholder="Search for a food to add">
       </div> --}}
-      <div class="row">
-         <div class="col-xs-12">
-            <div class="fridge-container">
-               <div class="row fridge-edit-row">
+      <div class="row fridge-edit-row">
                   <div class="col-xs-8"></div>
                   <div class="col-xs-4 fridge-edit">
                      Edit
                   </div>
                </div>
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="fridge-container">
                <h4 class="home-freshness home-freshness-1">
                   Eat Soon
                </h4>

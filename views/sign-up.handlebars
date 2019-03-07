@@ -21,18 +21,19 @@
                 <h1 class="nav-title">Sign Up</h1>
             </div>
     </div>
-    <p id="please-form">Please fill in this form to create an account.</p>
+    <p id="please-form">Create an Account</p>
     <div class="container sign-up-main">
-        <input class="sign-up-input" type="text" name="Email" placeholder="Email" required>
+        <form action="login">
+        <input class="sign-up-input" type="email" name="Email" placeholder="Email" required>
         <br>
         <input class="sign-up-input" type="password" name="Password" placeholder="Password" required>
         <br>
-        <input class="sign-up-input" type="password" name="Repeat Password" placeholder="Password-repeat" required>
+        <input class="sign-up-input" type="password" name="Repeat Password" placeholder="Password Repeat" required>
         <br>
-
-        <a href="index">
         <input class="sign-up-submit" type="submit" value="Sign Up">
-        </a>
+        </form>
+
+
     </div>
     {{!-- <div class="cancel-new-account"> <a href="login"></a></div>
     <div class="create-new-account"> <a href="index">Sign Up</a></div> --}}
