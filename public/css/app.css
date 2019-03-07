@@ -1014,7 +1014,8 @@ html {
      border-radius: 10px;
 }
  .var-card {
-     margin-top: 20px;
+     margin-top: 10px;
+     margin-bottom: 10px;
      width: 100%;
      overflow: hidden;
      border-radius: 15px;
@@ -1503,7 +1504,8 @@ body.recipe-ind-body {
 .alsjd-b{
      margin-top: -20px;
      padding-top: 20px;
-     padding-bottom: 10px;
+     padding-bottom: 1px;
+     border-radius:  0 0 20px 20px
 }
 
 .alsjd-bg-gr{
@@ -1522,5 +1524,5 @@ body.recipe-ind-body {
  .outer-container-a {
      width: calc(100% - 20px);
      margin-left: 10px;
-     margin-bottom: 50px;
+     margin-bottom: 0px;
 }
