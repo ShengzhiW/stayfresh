@@ -1506,6 +1506,11 @@ body.recipe-ind-body {
     z-index: 10000000000
 }
 
+.nav-bottom-container a div{
+     height: 50px;
+     border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
 .nav-bottom-icon img{
      width: 30px;
      margin-top: 10px;
