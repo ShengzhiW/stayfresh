@@ -553,7 +553,7 @@
         {
             "id" : 9,
             "name": "Hamburger",
-            "imageURL": "/images/recipes-chili-cheese-dogs.jpg",
+            "imageURL": "/images/recipes-hamburger.jpg",
             "recipeIngredients": ["Egg", "Beef (Ground)", "Bread", "Hamburger Bun", "Onion", "Tomato", "Lettuce", "Cheese"],
             "cookingTime": 40,
             "servingSize": 4,
@@ -596,7 +596,7 @@
         {
             "id" : 13,
             "name": "Udon Soup",
-            "imageURL": "/images/recipes-Udon-soup.jpg",
+            "imageURL": "/images/recipes-udon-soup.jpg",
             "recipeIngredients": ["Scallion", "Mushroom", "Ginger", "Garlic", "Udon Noodles", "Butter", "Bok Choy", "Miso Paste", "Tofu"],
             "cookingTime": 30,
             "servingSize": 4,
