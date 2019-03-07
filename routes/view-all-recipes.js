@@ -21,9 +21,9 @@ exports.view = function(req, res){
         for (var i = 0; i < ary.length; ++i){
             if (ary[i].id == id) {
                 console.log('foundhere')
-                console.log(ary[i])
+                // console.log(ary[i])
                 ary[i].fav = favorite;
-                console.log(ary[i])
+                // console.log(ary[i])
                 data.recipes = ary;
                 break;
             }
