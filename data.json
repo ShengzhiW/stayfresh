@@ -135,16 +135,215 @@
             "quantity": 0
         },
         {
-            "name": "Tomato",
-            "imageURL": "/images/icon-tomato.png",
+            "name": "Hotdog Bun",
+            "imageURL": "/images/icon-hotdog-bun.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Hamburger Bun",
+            "imageURL": "/images/icon-hamburger-bun.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Quinoa",
+            "imageURL": "/images/icon-quinoa.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Egg",
+            "imageURL": "/images/icon-egg.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Tuna",
+            "imageURL": "/images/icon-tuna.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Turkey",
+            "imageURL": "/images/icon-turkey.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Almonds",
+            "imageURL": "/images/icon-almonds.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Lentil",
+            "imageURL": "/images/icon-lentil.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Cabbage",
+            "imageURL": "/images/icon-cabbage.png",
             "category": "Produce",
             "quantity": 0
+        },
+        {
+            "name": "Eggplant",
+            "imageURL": "/images/icon-eggplant.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Avocado",
+            "imageURL": "/images/icon-avocado.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Bok Choy",
+            "imageURL": "/images/icon-bok-choy.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Milk",
+            "imageURL": "/images/icon-milk.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Sour Cream",
+            "imageURL": "/images/icon-sour-cream.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Salsa",
+            "imageURL": "/images/icon-salsa.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Mustard",
+            "imageURL": "/images/icon-mustard.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Ketchup",
+            "imageURL": "/images/icon-ketchup.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Hummus",
+            "imageURL": "/images/icon-hummus.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Miso Paste",
+            "imageURL": "/images/icon-miso-paste.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Chicken Stock",
+            "imageURL": "/images/icon-chicken-stock.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Hotdog",
+            "imageURL": "/images/icon-hotdog.png",
+            "category": "Protein",
+            "quantity": 0
+        },
+        {
+            "name": "Chili",
+            "imageURL": "/images/icon-chili.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Relish",
+            "imageURL": "/images/icon-relish.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Bell Pepper",
+            "imageURL": "/images/icon-bell-pepper.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Cilantro",
+            "imageURL": "/images/icon-cilantro.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Vegetable Stock",
+            "imageURL": "/images/icon-vegetable-stock.png",
+            "category": "Other",
+            "quantity": 0
+        },
+        {
+            "name": "Green Peas",
+            "imageURL": "/images/icon-green-peas.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Carrot",
+            "imageURL": "/images/icon-carrot.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Spinach",
+            "imageURL": "/images/icon-spinach.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Mushroom",
+            "imageURL": "/images/icon-mushroom.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Scallion",
+            "imageURL": "/images/icon-scallion.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Ginger",
+            "imageURL": "/images/icon-ginger.png",
+            "category": "Produce",
+            "quantity": 0
+        },
+        {
+            "name": "Egg Noodles",
+            "imageURL": "/images/icon-egg-noodles.png",
+            "category": "Carbs",
+            "quantity": 0
+        },
+        {
+            "name": "Udon Noodles",
+            "imageURL": "/images/icon-udon-noodles.png",
+            "category": "Carbs",
+            "quantity": 0
         }
+
     ],
 
 
     "ingredients_fresh": [
-        {   
+        {
             "id": 1,
             "name": "Beef (Ground)",
             "imageURL": "/images/icon-beef-ground.png",
@@ -237,7 +436,7 @@
             "imageURL": "/images/icon-potato.png",
             "quantity": 1
         },
-        {   
+        {
             "id": 14,
             "name": "Salmon",
             "imageURL": "/images/icon-salmon.png",
@@ -258,17 +457,17 @@
     ],
 
     "recipes": [
-        {   
+        {
             "id" : 1,
             "name": "Peanut Tofu",
             "imageURL": "/images/recipes-peanut-tofu.jpg",
-            "recipeIngredients": ["Tofu", "Onion", "Garlic", "Peanut Butter"],
+            "recipeIngredients": ["Tofu", "Onion", "Garlic", "Peanut Butter", "Ketchup"],
             "cookingTime": 60,
             "servingSize": 4,
             "steps": ["Chop garlic and onions, sautee for 2 minutes.", "Stir in soy sauce, ketchup, peanut butter, maple syrup, Produce broth, and crushed red peppers. Mix.",
               "Add tofu, bring to boil and let sauce reduce and thicken."]
         },
-        {   
+        {
             "id" : 2,
             "name": "Baked Lemon Chicken",
             "imageURL": "/images/recipes-baked-lemon-chicken.jpg",
@@ -282,7 +481,7 @@
               "Bake for 25 minutes or until chicken is cooked through. Bake time may vary depending on the thickness of your chicken breasts.",
               "Spoon the sauce on the bottom of the baking dish over the chicken, then sprinkle with parsley and serve. Garnish with lemon slices if desired."]
         },
-        {   
+        {
             "id" : 3,
             "name": "Beef Broccoli",
             "imageURL": "/images/recipes-beef-broccoli.jpg",
@@ -293,7 +492,7 @@
               "In a large skillet, heat 1 tablespoon oil over medium-high heat; stir-fry beef until browned, 2-3 minutes. Remove from pan.",
               "In same pan, stir-fry broccoli and onion in remaining oil over medium-high heat until crisp-tender, 4-5 minutes. Stir soy sauce mixture; add to pan. Cook and stir until thickened, 1-2 minutes. Return beef to pan; heat through."]
         },
-        {   
+        {
             "id" : 4,
             "name": "Pork and Potato Hash",
             "imageURL": "/images/recipes-pork-and-potato-hash.jpg",
@@ -329,6 +528,84 @@
             "steps": ["Cook first 3 ingredients in a Dutch oven, stirring until beef crumbles and is no longer pink; drain well. Return beef mixture to pan.",
               "Stir in tomato sauce and next 8 ingredients; bring to a boil. Cover, reduce heat, and simmer, stirring often, 30 minutes.",
               "Add pasta; cover and simmer, stirring often, 20 minutes or until pasta is tender. Serve with cheese, and garnish."]
+        },
+        {
+            "id" : 7,
+            "name": "Creamed Turkey on Mashed Potatoes",
+            "imageURL": "/images/recipes-creamed-turkey-on-mashed-potatoes.jpg",
+            "recipeIngredients": ["Onion", "Butter", "Flour", "Milk", "Turkey", "Potato"],
+            "cookingTime": 20,
+            "servingSize": 4,
+            "steps": ["In a large saucepan, saute the onion in butter until tender. Sprinkle with the flour, salt and pepper. Stir in the milk until blended.",
+              "Bring to a boil; cook and stir for 2 minutes or until thickened and bubbly. Add the turkey and vegetables; cover and simmer until heated through. Serve with mashed potatoes."]
+        },
+        {
+            "id" : 8,
+            "name": "Chili Cheese Dogs",
+            "imageURL": "/images/recipes-chili-cheese-dogs.jpg",
+            "recipeIngredients": ["Hotdog", "Hotdog Bun", "Chili", "Cheese", "Onion", "Mustard", "Ketchup", "Relish"],
+            "cookingTime": 50,
+            "servingSize": 4,
+            "steps": ["Preheat oven to 375 degrees F. Line a 9×13 baking pan with tin-foil (for easy clean-up). Place hot dog buns inside.",
+              "Squeeze desired amounts of mustard, ketchup and relish into the inside bottom of each bun. Then put a hot dog inside each bun, over the sauces.",
+              "Ladle 1/3 cup of chili onto each hot dog, and then sprinkle with shredded cheddar cheese and onion. Cover pan with foil. Bake for 30 minutes."]
+        },
+        {
+            "id" : 9,
+            "name": "Hamburger",
+            "imageURL": "/images/recipes-chili-cheese-dogs.jpg",
+            "recipeIngredients": ["Egg", "Beef (Ground)", "Bread", "Hamburger Bun", "Onion", "Tomato", "Lettuce", "Cheese"],
+            "cookingTime": 40,
+            "servingSize": 4,
+            "steps": ["Preheat an outdoor grill for high heat and lightly oil grate.",
+              "In a medium bowl, whisk together egg, salt and pepper. Place ground beef and bread crumbs into the mixture. With hands or a fork, mix until well blended. Form into 4 patties approximately 3/4 inch thick.",
+              "Place patties on the prepared grill. Cover and cook 6 to 8 minutes per side, or to desired doneness.",
+              "Place patties and everything else in a hamburger bun."]
+        },
+        {
+            "id" : 10,
+            "name": "Black Bean and Corn Quinoa",
+            "imageURL": "/images/recipes-black-bean-and-corn-quinoa.jpg",
+            "recipeIngredients": ["Onion", "Bell Pepper", "Celery", "Vegetable Stock", "Corn", "Quinoa", "Beans", "Cilantro"],
+            "cookingTime": 30,
+            "servingSize": 4,
+            "steps": ["In a large skillet, heat oil over medium-high heat. Add onion, red pepper, celery and seasonings; cook and stir 5-7 minutes or until vegetables are tender.",
+              "Stir in stock and corn; bring to a boil. Stir in quinoa. Reduce heat; simmer, covered, 12-15 minutes or until liquid is absorbed.",
+              "Add beans and 1/3 cup cilantro; heat through, stirring occasionally. Sprinkle with remaining cilantro."]
+        },
+        {
+            "id" : 11,
+            "name": "Tuna Casserole",
+            "imageURL": "/images/recipes-tuna-casserole.jpg",
+            "recipeIngredients": ["Egg Noodles", "Green Peas", "Tuna", "Onion", "Cheese"],
+            "cookingTime": 30,
+            "servingSize": 4,
+            "steps": ["Bring a large pot of water to a boil. Add noodles and frozen peas. Cook until noodles are al dente, drain well. Return noodles and peas to the pot.",
+              "Mix soup, tuna fish, onions, processed cheese and pepper into the pot. Stir constantly until all of the ingredients are well mixed and the cheese has melted."]
+        },
+        {
+            "id" : 12,
+            "name": "Lentil Soup",
+            "imageURL": "/images/recipes-lentil-soup.jpg",
+            "recipeIngredients": ["Onion", "Carrot", "Celery", "Garlic", "Tomato", "Lentil", "Spinach"],
+            "cookingTime": 60,
+            "servingSize": 4,
+            "steps": ["In a large soup pot, heat oil over medium heat. Add onions, carrots, and celery; cook and stir until onion is tender. Stir in garlic, bay leaf, oregano, and basil; cook for 2 minutes.",
+              "Stir in lentils, and add water and tomatoes. Bring to a boil. Reduce heat, and simmer for at least 1 hour. When ready to serve stir in spinach, and cook until it wilts. Stir in vinegar, and season to taste with salt and pepper."]
+        },
+        {
+            "id" : 13,
+            "name": "Udon Soup",
+            "imageURL": "/images/recipes-Udon-soup.jpg",
+            "recipeIngredients": ["Scallion", "Mushroom", "Ginger", "Garlic", "Udon Noodles", "Butter", "Bok Choy", "Miso Paste", "Tofu"],
+            "cookingTime": 30,
+            "servingSize": 4,
+            "steps": ["Make the broth: In a large pot, bring 8 cups water to a boil over high heat. Add scallion, dried mushrooms, seaweed (if using), ginger, garlic, fresh mushroom trimmings and salt.",
+                "Reduce heat to a gentle simmer and cook for 20 minutes. Strain and set aside.",
+                "Meanwhile, in a separate pot, cook udon noodles until al dente, then drain, rinse well with cold water, and keep at room temperature.",
+                "In a soup pot, melt butter over medium-high heat and swirl to coat the bottom of the pot. Add leeks and sliced shiitake and cook, stirring, until softened, about 2 to 3 minutes.",
+                "Add ginger, garlic, mirin, sesame oil and soy sauce and cook for 1 minute. Turn heat to high, add reserved broth and bring to a simmer.",
+                "Add bok choy and reserved noodles and cook for 1 to 2 minutes, until greens are cooked and noodles are heated through. Gently stir in miso and tofu. Turn off heat."]
         }
     ]
 }
