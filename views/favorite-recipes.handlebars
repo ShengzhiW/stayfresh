@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 <head>
-  {{> analytics}}
-  <title>My Recipes</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/app.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="/js/remove-recipe.js"></script>
-  <script src="/js/goBack.js"></script>
+    {{> analytics}}
+    <title>My Recipes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/app.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="/js/remove-recipe.js"></script>
+    <script src="/js/goBack.js"></script>
+    <sript src="/js/fav-recipe-all.js"></sript>
 </head>
 <body>
-  {{> navbottom}}
-  <a href="add-recipe">
-   <div class="addnew-thing">
-      +
-   </div>
-   </a>
-  <div class="container top-containers">
-    <div class="row">
-      <a onclick="goBack()">
-        <div class="col col-xs-2">
-          <p class="back"><</p>
+    {{> navbottom}}
+    <a href="add-recipe">
+        <div class="addnew-thing">
+            +
         </div>
-      </a>
-      <div class="col col-xs-8">
-        <h1 id="recipe-name">Recipes</h1>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 recipe-edit">
-        Edit
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <!-- Recipes -->
-   <br><br><br><br>
-
-    <div class="alsjd-a alsjd-c">
-      <a href="/view-all-recipes">
-          <div class="home-plus-button recipe-switchers-a alsjd-bg-bl">All Recipes</div>
-      </a>
-      <a onclick="return false;">
-          <div class="home-plus-button recipe-switchers-a recipe-switchers-b alsjd-bg-gr"><img src='/images/fav-button.png' width='20px'> Favorite Recipes</div>
-      </a>
-
-  </div>
-  <div class="alsjd-a alsjd-b alsjd-bg-gr">
-  <div class="outer-container-a">
-    {{#favorited recipes "true"}}
-    <div class="var-card shadow">
-      <input type="hidden" value="{{id}}" class='h_v_r'>
-      <a href="/recipe-info/{{id}}">
-        <div>
-          <div>
-            <h1 class="rei-card-text-h1">{{name}}</h1>
-          </div>
-          <br>
-          <div class="rei-card-text">Ingredients: <br>
-            {{#each recipeIngredients}}
-            <div class="rei-card-text-recipe">
-              &nbsp;{{this}}&nbsp;
+    </a>
+    <div class="container top-containers">
+        <div class="row">
+            <a onclick="goBack()">
+                <div class="col col-xs-2">
+                    <p class="back"><</p>
+                </div>
+            </a>
+            <div class="col col-xs-8">
+                <h1 id="recipe-name">Recipes</h1>
             </div>
-            {{/each}}
-          </div>
-
-          <div class="rei-card-text-r">Servings: {{servingSize}} <br>Time: {{cookingTime}} Minutes</div>
-          <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
         </div>
-      </a>
-      <br>
-      <div class="deleteBTNrecipe">✖︎</div>
-      <br>
     </div>
-    {{/favorited}}
-  </div>
-</div>
-  <script>
-    $(".recipe-edit").click(function(){
-      $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");
-      if ($(".deleteBTNrecipe").hasClass("deleteBTNrecipe-appear")) {
-          $(".recipe-edit").html("Done")
-      }
-      else $(".recipe-edit").html("Edit")
-    });
-    $(".deleteBTNrecipe").click(function(){
-      // var card = $(this).closest(".var-card");
-      // card.hide('slow', function(){ $(this).remove(); });
-    });
-  </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 recipe-edit">
+                Edit
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Recipes -->
+    <br><br><br><br>
+    <div class="alsjd-a alsjd-c">
+        <a href="/view-all-recipes">
+            <div class="home-plus-button recipe-switchers-a alsjd-bg-bl">All Recipes</div>
+        </a>
+        <a onclick="return false;">
+            <div class="home-plus-button recipe-switchers-a recipe-switchers-b alsjd-bg-gr"><img src='/images/fav-button.png' width='20px'> Favorites</div>
+        </a>
+    </div>
+    <div class="alsjd-a alsjd-b alsjd-bg-gr">
+        <div class="outer-container-a">
+            {{#favorited recipes "true"}}
+            <div class="var-card shadow">
+                <input type="hidden" value="{{id}}" class='h_v_r'>
+                <input type="hidden" value="{{fav}}" class='fav_stats'>
+                <a href="/recipe-info/{{id}}">
+                    <div>
+                        <div>
+                            <h1 class="rei-card-text-h1">{{name}}</h1>
+                        </div>
+                        <br>
+                        <div class="rei-card-text">
+                            Ingredients: <br>
+                            {{#each recipeIngredients}}
+                            <div class="rei-card-text-recipe">
+                                &nbsp;{{this}}&nbsp;
+                            </div>
+                            {{/each}}
+                        </div>
+                        <div class="rei-card-text-r">Servings: {{servingSize}} <br>Time: {{cookingTime}} Minutes</div>
+                        <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
+                    </div>
+                </a>
+                <br>
+                <div class="favBTNrecipe"><img src='/images/fav-button-cross.png'> Remove from Favorites</div>
+                <br>
+                <div class="deleteBTNrecipe"><span class="x-ssz-s">✖︎</span>&nbsp;&nbsp;&nbsp;Delete from All Recipes</div>
+                <br>
+            </div>
+            {{/favorited}}
+        </div>
+    </div>
+    <script>
+        $(".recipe-edit").click(function(){
+          $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");
+          $(".var-recipePic").toggleClass("var-recipePic-appear");
+          $(".favBTNrecipe").toggleClass("favBTNrecipe-appear");
+          if ($(".deleteBTNrecipe").hasClass("deleteBTNrecipe-appear")) {
+              $(".recipe-edit").html("Done")
+          }
+          else $(".recipe-edit").html("Edit")
+        });
+    </script>
 </body>
 </html>

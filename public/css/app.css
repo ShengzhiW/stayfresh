@@ -124,7 +124,7 @@ html {
      margin-top: 0px;
 }
  .login-main {
-     margin: 50px auto 50px auto;
+     margin: 10px auto 50px auto;
 }
  .login-welcome-line-1 {
      font-size: 29px;
@@ -1007,12 +1007,33 @@ html {
      max-height: 200px;
      overflow: hidden;
      border-radius: 10px;
-     margin: 20px auto 0px auto;
+     margin: 20px auto -100px auto;
+     transition: height .5s, margin .5s;
 }
+
+ .var-recipePic-2{
+     height: 200px;
+     margin: 20px auto 0px auto;
+     transition: height .5s, margin .5s;
+ }
+
  .var-recipePic img {
      width: 100%;
      border-radius: 10px;
 }
+
+.var-recipePic-appear{
+     height: 100px;
+     margin: 20px auto 0px auto;
+     transition: height .5s, margin .5s;
+}
+
+.var-recipePic-appear-2{
+     height: 140px;
+     margin: 20px auto 0px auto;
+     transition: height .5s, margin .5s;
+}
+
  .var-card {
      margin-top: 10px;
      margin-bottom: 10px;
@@ -1224,24 +1245,74 @@ html {
 }
  .deleteBTNrecipe{
      text-align: center;
-     width: 40px;
+     width: 260px;
      height: 40px;
      color: white;
      background-color: red;
      margin-left: auto;
      margin-right: auto;
      border-radius: 100px;
-     line-height: 42px;
-     font-size: 25px;
+     line-height: 40px;
+     font-size: 20px;
      opacity: 1;
      transition: margin-left .5s, opacity .1s;
      margin-left: 110vw;
      transition: margin-left .5s;
 }
  .deleteBTNrecipe-appear{
-     margin-left: calc(50% - 20px);
+    margin-left: calc(50% - 130px);
      transition: margin-left .5s;
 }
+
+.x-ssz-s{
+     font-size: 25px;
+}
+
+ .favBTNrecipe{
+     text-align: center;
+     width: 260px;
+     height: 40px;
+     color: #FC0041;
+     background-color: white;
+     border:  1px #FC0041 solid;
+     margin-right: auto;
+     border-radius: 100px;
+     line-height: 40px;
+     font-size: 20px;
+     opacity: 1;
+     margin-left: 110vw;
+     margin-bottom: 0px;
+     /* margin-left: calc(50% - 130px); */
+     transition: margin-left .5s, margin-bottom .5s;
+}
+
+ .favBTNrecipe-appear{
+     margin-left: calc(50% - 130px);
+     margin-bottom: 0px;
+     transition: margin-left .5s, margin-bottom .5s;
+}
+
+ .favBTNrecipe img{
+     height: 25px;
+     margin-top: 0px;
+     margin-right: 5px;
+ }
+
+
+.favBTNrecipe-2{
+     margin-left: calc(50% - 130px);
+     margin-bottom: -60px;
+     transition: margin-left .5s, margin-bottom .5s;
+}
+
+
+.favBTNrecipe-appear-2{
+     margin-left: calc(50% - 130px);
+     margin-bottom: 0px;
+     transition: margin-left .5s, margin-bottom .5s;
+}
+
+
  .home-scroll-cards{
      overflow: auto;
      white-space: nowrap;

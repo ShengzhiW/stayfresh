@@ -1,3 +1,10 @@
+window.onpageshow = function(evt) {
+    if (evt.persisted) {
+        document.body.style.display = "none";
+        location.reload();
+    }
+};
+
 window.fbAsyncInit = function () {
     FB.init({
         appId: '786299908399210',

@@ -49,7 +49,7 @@
           <div class="home-plus-button recipe-switchers-a alsjd-bg-gr">All Recipes</div>
       </a>
       <a href="/favorite-recipes">
-          <div class="home-plus-button recipe-switchers-a recipe-switchers-b alsjd-bg-bl"><img src='/images/fav-button.png' width='20px'> Favorite Recipes</div>
+          <div class="home-plus-button recipe-switchers-a recipe-switchers-b alsjd-bg-bl"><img src='/images/fav-button.png' width='20px'> Favorites</div>
       </a>
 
   </div>
@@ -59,6 +59,7 @@
     {{#each recipes}}
     <div class="var-card shadow">
       <input type="hidden" value="{{id}}" class='h_v_r'>
+      <input type="hidden" value="{{fav}}" class='h_v_ff'>
       <a href="/recipe-info/{{id}}">
         <div>
           <div>
@@ -74,28 +75,29 @@
           </div>
 
           <div class="rei-card-text-r">Servings: {{servingSize}} <br>Time: {{cookingTime}} Minutes</div>
-          <div class="var-recipePic"><img src="{{imageURL}}" alt=""></div>
+          <div class="var-recipePic var-recipePic-2"><img src="{{imageURL}}" alt=""></div>
         </div>
       </a>
       <br>
-      <div class="deleteBTNrecipe">✖︎</div>
+      <div class="favBTNrecipe favBTNrecipe-2"><img src='/images/fav-button-pink.png'>Added to Favorites</div>
+      <br>
+      <div class="deleteBTNrecipe"><span class="x-ssz-s">✖︎</span>&nbsp;&nbsp;&nbsp;Delete Recipe</div>
       <br>
     </div>
     {{/each}}
   </div>
   </div>
   <script>
+  $(".favBTNrecipe").addClass("favBTNrecipe-appear");
     $(".recipe-edit").click(function(){
-      $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");
-      if ($(".deleteBTNrecipe").hasClass("deleteBTNrecipe-appear")) {
-          $(".recipe-edit").html("Done")
-      }
-      else $(".recipe-edit").html("Edit")
-    });
-    $(".deleteBTNrecipe").click(function(){
-      // var card = $(this).closest(".var-card");
-      // card.hide('slow', function(){ $(this).remove(); });
-    });
+          $(".deleteBTNrecipe").toggleClass("deleteBTNrecipe-appear");
+          $(".var-recipePic").toggleClass("var-recipePic-appear-2");
+          $(".favBTNrecipe").toggleClass("favBTNrecipe-appear-2")
+          if ($(".deleteBTNrecipe").hasClass("deleteBTNrecipe-appear")) {
+              $(".recipe-edit").html("Done")
+          }
+          else $(".recipe-edit").html("Edit")
+            });
   </script>
 </body>
 </html>

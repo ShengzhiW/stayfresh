@@ -94,7 +94,7 @@ function addRecipe() {
         recipeIngredients: ingredients,
         cookingTime: time,
         servingSize: serving,
-        fav : false,
+        fav : "false",
         steps: instructions
     }
     // alert(JSON.stringify(json_data))
