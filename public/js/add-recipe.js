@@ -95,7 +95,7 @@ function addRecipe() {
         cookingTime: time,
         servingSize: serving,
         fav : "false",
-        steps: instructions
+        steps: [instructions]
     }
     // alert(JSON.stringify(json_data))
     $.get("view-all-recipes", json_data, function(data){
