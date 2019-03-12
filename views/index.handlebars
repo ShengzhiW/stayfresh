@@ -7,92 +7,49 @@
                     <h2 class="home-title">My Fridge</h2>
                 </div>
                 <div class="col-xs-5">
+                    <a href="add-ingredients">
+                        <div class="black-square-add-b">
+                            +
+                        </div>
+                    </a>
                 </div>
             </div>
 
-            {{> home-fridge-buttons}}
+            
 
             <div class="row">
                 <div class="col-xs-12">
                     <div class="home-fridge-container">
-                        <h4 class="home-freshness home-freshness-1">
-                            Eat Soon
-                        </h4>
-                        {{#each_upto ingredients_soon 2}}
-                        <div class="row home-home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-2">
-                                <img class="icon" src="{{imageURL}}"/>
-                            </div>
-                            <div class="home-freshness-col-2 col-xs-5">
-                                {{name}}
-                            </div>
-                            <div class="home-freshness-col-3 col-xs-5">
-                                x {{quantity}}
-                            </div>
-                        </div>
-                        {{/each_upto}}
-                        <div class="row home-home-freshness-row graytext" id="x-more-items-soon">
-                            ... {{math ingredients_soon.length "-" 2}} more entries
-                        </div>
-                        <h4 class="home-freshness home-freshness-2">
-                            Okay
-                        </h4>
-                        {{#each_upto ingredients_ok 2}}
-                        <div class="row home-home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-2">
-                                <img class="icon" src="{{this.imageURL}}"/>
-                            </div>
-                            <div class="home-freshness-col-2 col-xs-5">
-                                {{this.name}}
-                            </div>
-                            <div class="home-freshness-col-3 col-xs-5">
-                                x {{this.quantity}}
-                            </div>
-                        </div>
-                        {{/each_upto}}
-                        <div class="row home-home-freshness-row graytext" id="x-more-items-ok">
-                            ... {{math ingredients_ok.length "-" 2}} more entries
-                        </div>
-                        <h4 class="home-freshness home-freshness-3">
-                            Fresh
-                        </h4>
-                        {{#each_upto ingredients_fresh 2}}
-                        <div class="row home-home-freshness-row">
-                            <div class="home-freshness-col-1 col-xs-2">
-                                <img class="icon" src="{{this.imageURL}}"/>
-                            </div>
-                            <div class="home-freshness-col-2 col-xs-5">
-                                {{this.name}}
-                            </div>
-                            <div class="home-freshness-col-3 col-xs-5">
-                                x {{this.quantity}}
-                            </div>
-                        </div>
-                        {{/each_upto}}
-                        <div class="row home-home-freshness-row graytext" id="x-more-items-fresh">
-                            ... {{math ingredients_fresh.length "-" 2}} more entries
-                        </div>
+
+                    <div class="row">
+                        <a href="view-all-ingredients">
+                        <div class="col-xs-4 border-right-dd freshness-number-b color-red"><span class="freshness-title-b">Eat Soon</span><br>{{ingredients_soon.length}}<br><span class="freshness-title-small-b">Entries</span></div>
+                        <div class="col-xs-4 border-right-dd freshness-number-b color-yellow"><span class="freshness-title-b">Just Okay</span><br>{{ingredients_ok.length}}<br><span class="freshness-title-small-b">Entries</span></div>
+                        <div class="col-xs-4 freshness-number-b color-green"><span class="freshness-title-b">Still Fresh</span><br>{{ingredients_fresh.length}}<br><span class="freshness-title-small-b">Entries</span></div>
+                        </a>
+                    </div>
+                        
                     </div>
                 </div>
             </div>
-
+            {{> home-fridge-buttons-b}}
+            </div>
             <!-- My Recipes -->
-
+            <div class="container">
             <div class="row home-title-row">
-                <div class="col-xs-7">
-                    <h2 class="home-title">Recipes</h2>
+                <div class="col-xs-12">
+                    <h2 class="home-title">What to Cook Today</h2>
                 </div>
-                <div class="col-xs-5">
-                </div>
+            </div>
             </div>
 
-            {{> home-recipe-buttons}}
-            </div>
-            
             <div class="row home-scroll-cards">
                 {{#each_upto recipes 6}}
                 {{> home-recipe-card}}
                 {{/each_upto}}
+            </div>
+            <div class="container">
+            {{> home-recipe-buttons-b}}
             </div>
 
         </div>
