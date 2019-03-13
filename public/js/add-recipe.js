@@ -12,53 +12,53 @@ function enableSelectors() {
 
     $('#callbacks').multiSelect({
         afterSelect: function (values) {
-            console.log('adding: ' + values)
+            // console.log('adding: ' + values)
             foods.push(values);
-            console.log(foods);
+            // console.log(foods);
         },
         afterDeselect: function (values) {
-            console.log('removing' + values)
+            // console.log('removing' + values)
             foods = foods.filter(e => e != values.toString());
-            console.log(foods);
+            // console.log(foods);
         }
     });
 
     $('#callbacks2').multiSelect({
         afterSelect: function (values) {
-            console.log('adding: ' + values)
+            // console.log('adding: ' + values)
             foods.push(values);
-            console.log(foods);
+            // console.log(foods);
         },
         afterDeselect: function (values) {
-            console.log('removing' + values)
+            // console.log('removing' + values)
             foods = foods.filter(e => e != values.toString());
-            console.log(foods);
+            // console.log(foods);
         }
     });
 
     $('#callbacks3').multiSelect({
         afterSelect: function (values) {
-            console.log('adding: ' + values)
+            // console.log('adding: ' + values)
             foods.push(values);
-            console.log(foods);
+            // console.log(foods);
         },
         afterDeselect: function (values) {
-            console.log('removing' + values)
+            // console.log('removing' + values)
             foods = foods.filter(e => e != values.toString());
-            console.log(foods);
+            // console.log(foods);
         }
     });
 
     $('#callbacks4').multiSelect({
         afterSelect: function (values) {
-            console.log('adding: ' + values)
+            // console.log('adding: ' + values)
             foods.push(values);
-            console.log(foods);
+            // console.log(foods);
         },
         afterDeselect: function (values) {
-            console.log('removing' + values)
+            // console.log('removing' + values)
             foods = foods.filter(e => e != values.toString());
-            console.log(foods);
+            // console.log(foods);
         }
     });
 

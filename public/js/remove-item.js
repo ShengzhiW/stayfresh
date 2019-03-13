@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log('here..')
+    // console.log('here..')
     initializePage();
 })
 
@@ -9,7 +9,7 @@ function initializePage() {
 
 function removeItem(e) { 
     var removeID = $(this).closest('.home-freshness-col-3').closest('.row').find('.h_v').val();
-    console.log('removeID is '+ removeID);
+    // console.log('removeID is '+ removeID);
     var json_data = {
         id: removeID
     }

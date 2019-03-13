@@ -10,14 +10,14 @@ function initializePage() {
         $(this).html("<img src='/images/fav-button.png'>Added to Favorites")
     }
         });
-    console.log('here!')
+    // console.log('here!')
     $(".deleteBTNrecipe").click(removeItem);
     $(".favBTNrecipe").click(favRecipe);
 }
 
 function removeItem(e) { 
     var removeID = $(this).closest('.var-card').find('.h_v_r').val();
-    console.log('removeID is '+ removeID);
+    // console.log('removeID is '+ removeID);
     var json_data = {
         id: removeID
     }
